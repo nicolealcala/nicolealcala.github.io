@@ -12,6 +12,10 @@ body {
   background-size: cover;
 }
 
+header {
+  position: sticky;
+}
+
 .menu-check {
   display: none;
 }
@@ -289,6 +293,19 @@ body {
 }
 .left {
   z-index: 5;
+}
+
+.right {
+  position: relative;
+}
+
+#landing-pic {
+  position: absolute;
+  z-index: 2;
+  width: auto;
+  top: 70px;
+  height: 600px;
+  border-radius: 0 0 90px 90px;
 }
 
 #blob {
