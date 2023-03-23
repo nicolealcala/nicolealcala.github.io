@@ -85,6 +85,7 @@ body {
 
 .txt {
   line-height: 35px;
+  display: flex;
 }
 
 .primaryBtn {
@@ -148,7 +149,7 @@ body {
 
 .primaryBtn:hover #container-stars {
   z-index: 1;
-  background-color: #0B011A;
+  background-color: #0b011a;
 }
 
 .primaryBtn:hover {
@@ -269,7 +270,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #0B011A;
+  background-color: #0b011a;
   z-index: 2;
   color: white;
   font-weight: bold;
@@ -285,4 +286,15 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+.left {
+  z-index: 5;
+}
+
+#blob {
+  position: relative;
+  width: 850px;
+  z-index: 1;
+  box-shadow: 0px 0px 40px rgba(162, 122, 251, 0.4);
+  transform: rotate(-85.85deg);
 }/*# sourceMappingURL=index.css.map */
