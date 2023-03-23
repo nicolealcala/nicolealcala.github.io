@@ -20,6 +20,11 @@
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
@@ -56,10 +61,60 @@
         </div>
       </header>
 
+      <!-- Page Indicator -->
+      <!-- <div class="indicatorDiv d-flex flex-column">
+        <input
+          class="form-check-input indicator"
+          type="radio"
+          name="pageIndicator"
+          id="home"
+        />
+        <label for="home" class="indicatorLbl"></label>
+
+        <input
+          class="form-check-input indicator"
+          type="radio"
+          name="pageIndicator"
+          id="about"
+        />
+        <label for="about" class="indicatorLbl"></label>
+
+        <input
+          class="form-check-input indicator"
+          type="radio"
+          name="pageIndicator"
+          id="portfolio"
+        />
+        <label for="portfolio" class="indicatorLbl"></label>
+
+        <input
+          class="form-check-input indicator"
+          type="radio"
+          name="pageIndicator"
+          id="contact"
+        />
+        <label for="contact" class="indicatorLbl"></label>
+      </div> -->
+
+      <!-- Socials -->
+      <div class="socialsDiv d-flex flex-column justify-content-center">
+        <a href="https://web.facebook.com/nicole.alcala.m" class="my-2"
+          ><i class="fa-brands fa-facebook-f socials"></i
+        ></a>
+
+        <a href="https://www.instagram.com/nicolealcalq/" class="my-2"
+          ><i class="fa-brands fa-instagram socials"></i
+        ></a>
+
+        <a href="www.linkedin.com/in/nicolealcala/" class="my-2"
+          ><i class="fa-brands fa-linkedin socials"></i
+        ></a>
+      </div>
+
       <!-- Menu -->
       <section class="menuPage d-none">
-        <div class="container">
-          <div class="menuTxt d-flex flex-column">
+        <div class="container d-flex justify-content-center aligh-items-center">
+          <div class="menuTxt d-flex flex-column text-center">
             <span class="stroked">Home</span>
             <span class="stroked">About</span>
             <span class="stroked">Portfolio</span>
@@ -69,7 +124,7 @@
       </section>
 
       <!-- Landing Page -->
-      <section class="landing">
+      <section class="landingPage">
         <div class="container">
           <div class="row mx-0">
             <!-- Left Column -->
@@ -131,10 +186,57 @@
       </section>
 
       <!-- About Page -->
-      <section id="aboutPage">
-        <div class="container">
+      <section class="aboutPage">
+        <div class="container slide">
           <div class="row mx-0">
-            
+            <!-- Left Column -->
+            <div
+              class="col-12 col-sm-6 d-flex justify-content-end align-items-center"
+            >
+              <div class="left">
+                <img
+                  src="https://github.com/nicolealcala/Portfolio/blob/main/assets/round.png?raw=true"
+                  id="about-round"
+                  alt=""
+                />
+                <span class="sub">SELF-INTRODUCTION</span>
+                <p>
+                  <span class="filled">About</span>
+                  <span class="stroked">Myself</span>
+                </p>
+                <span class="txt" style="width: 460px">
+                  Hi! I’m Nicole, an upcoming Bachelor of Science in Information
+                  Technology graduate from Polytechnic University of the
+                  Philippines - Sto. Tomas. I have a good foundation in full
+                  stack web development, UI/UX design, and database management.
+                </span>
+              </div>
+            </div>
+            <!-- Right Column -->
+            <div
+              class="col-12 col-sm-6 d-flex justify-content-end align-items-center"
+            >
+              <div class="right" style="width: 500px">
+                <span class="txt">
+                  With experience in HTML, CSS, JavaScript, Bootstrap, jQuery,
+                  Sass, PHP, and SQL, I have contributed to several projects
+                  that have honed my web development skills.
+                  <br />
+                  <br />
+                  For instance, I was part of a team that developed a dynamic
+                  web-based information system that leveraged QR Code technology
+                  and a responsive, locally-hosted, music streaming web
+                  application.
+                  <br />
+                  <br />
+                  These projects challenged me to think creatively, work
+                  collaboratively with team members, and solve complex problems.
+                  I also have experience using several tools commonly used in
+                  the industry, including Adobe XD, Figma, GitHub, VS Code, and
+                  Chrome DevTools.
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

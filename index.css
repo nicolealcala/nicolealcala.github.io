@@ -5,15 +5,69 @@ body {
   margin: 0;
   padding: 0;
   color: #cdcdcd;
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: url("https://github.com/nicolealcala/Portfolio/blob/main/assets/bg.png?raw=true");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+}
+
+.container-fluid {
+  position: relative;
 }
 
 header {
-  position: sticky;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.indicatorDiv {
+  width: 5px;
+}
+.indicatorDiv input[type=radio] {
+  display: none;
+}
+.indicatorDiv label {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 1px;
+  font-size: 3px;
+  border: 2px solid #cdcdcd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.indicatorDiv input[type=radio]:checked + label {
+  border-color: #333;
+  background-color: #333;
+  color: #fff;
+}
+
+.socialsDiv {
+  height: 100vh;
+  position: fixed;
+  right: 60px;
+}
+.socialsDiv a {
+  text-decoration: none;
+  color: #aeaeae;
+}
+.socialsDiv a:hover {
+  color: #a07dff;
+}
+.socialsDiv .socials {
+  font-size: 20px;
+}
+.socialsDiv .socials:hover {
+  box-shadow: 0px 0px 10px #774373;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .menu-check {
@@ -67,29 +121,6 @@ header {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   width: 0px;
-}
-
-.sub {
-  color: #bd41bd;
-  letter-spacing: 8px;
-}
-
-.filled {
-  font-size: 95px;
-  color: white;
-  font-weight: 700;
-}
-
-.stroked {
-  font-size: 95px;
-  color: transparent;
-  font-weight: 700;
-  -webkit-text-stroke: 1px white;
-}
-
-.txt {
-  line-height: 35px;
-  display: flex;
 }
 
 .primaryBtn {
@@ -291,12 +322,46 @@ header {
     background-position: 0% 50%;
   }
 }
-.left {
+.sub {
+  color: #bd41bd;
+  letter-spacing: 8px;
+}
+
+.filled {
+  font-size: 95px;
+  color: white;
+  font-weight: 700;
   z-index: 5;
+}
+
+.stroked {
+  font-size: 95px;
+  color: transparent;
+  font-weight: 700;
+  -webkit-text-stroke: 1px white;
+  z-index: 5;
+}
+
+.txt {
+  line-height: 35px;
+  display: flex;
+}
+
+.left {
+  position: relative;
+  z-index: 5;
+}
+
+#about-round {
+  position: absolute;
+  top: -40px;
+  left: 560px;
+  z-index: -1;
 }
 
 .right {
   position: relative;
+  z-index: 5;
 }
 
 #landing-pic {
@@ -313,4 +378,8 @@ header {
   width: 850px;
   z-index: 1;
   transform: rotate(-85.85deg);
+}
+
+.aboutPage {
+  overflow-x: scroll;
 }/*# sourceMappingURL=index.css.map */
