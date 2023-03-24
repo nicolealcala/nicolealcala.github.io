@@ -13,6 +13,78 @@ body {
   background-attachment: fixed;
 }
 
+.pyramid-loader {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: block;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg);
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.pyramid-loader .wrapper .side {
+  width: 70px;
+  height: 70px;
+  /* you can choose any gradient or color you want */
+  /* background: radial-gradient( #2F2585 10%, #F028FD 70%, #2BDEAC 120%); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: center top;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.pyramid-loader .wrapper .side1 {
+  transform: rotateZ(-30deg) rotateY(90deg);
+  background: conic-gradient(#2bdeac, #f028fd, #d8cce6, #2f2585);
+}
+
+.pyramid-loader .wrapper .side2 {
+  transform: rotateZ(30deg) rotateY(90deg);
+  background: conic-gradient(#2f2585, #d8cce6, #f028fd, #2bdeac);
+}
+
+.pyramid-loader .wrapper .side3 {
+  transform: rotateX(30deg);
+  background: conic-gradient(#2f2585, #d8cce6, #f028fd, #2bdeac);
+}
+
+.pyramid-loader .wrapper .side4 {
+  transform: rotateX(-30deg);
+  background: conic-gradient(#2bdeac, #f028fd, #d8cce6, #2f2585);
+}
+
+.pyramid-loader .wrapper .shadow {
+  width: 60px;
+  height: 60px;
+  background: #8b5ad5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotateX(90deg) translateZ(-40px);
+  filter: blur(12px);
+}
+
 .container-fluid {
   position: relative;
 }
@@ -63,10 +135,21 @@ header {
 .socialsDiv .socials:hover {
   box-shadow: 0px 0px 10px #774373;
 }
+.socialsDiv .scroll {
+  position: absolute;
+  bottom: 160px;
+  transform: rotate(270deg);
+}
+.socialsDiv .scroll .dash {
+  height: 2px;
+  width: 80px;
+  background-color: #a07dff;
+}
 
 section {
   height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -380,6 +463,28 @@ section {
   transform: rotate(-85.85deg);
 }
 
-.aboutPage {
-  overflow-x: scroll;
+.number {
+  width: 70px;
+  font-size: 30px;
+  text-shadow: 0px 0px 20px #b750cd;
+  font-weight: 600;
+  color: #a07dff;
+}
+
+strong {
+  font-size: 16px;
+  color: white;
+}
+
+.card {
+  width: 170px;
+  background: rgba(11, 1, 26, 0.01);
+  box-shadow: 0px 4px 28px rgba(186, 104, 200, 0.4);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.card .icons {
+  height: 80px;
+  width: auto;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=index.css.map */
