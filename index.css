@@ -403,6 +403,11 @@ section {
   z-index: 5;
 }
 
+.txt {
+  line-height: 35px;
+  display: flex;
+}
+
 .left {
   position: relative;
   z-index: 5;
@@ -447,6 +452,18 @@ section {
 strong {
   font-size: 16px;
   color: white;
+}
+
+.exp {
+  height: 200px;
+  background: linear-gradient(83.92deg, rgba(64, 34, 113, 0.2) 0.45%, rgba(144, 57, 201, 0.2) 101.33%);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  border-radius: 5px;
+}
+.exp .icons {
+  color: white;
+  box-shadow: 0px 0px 20px #b750cd;
 }
 
 .skillsTitle {
