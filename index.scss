@@ -430,10 +430,10 @@ section {
   z-index: 5;
 }
 
-.txt {
-  line-height: 35px;
-  display: flex;
-}
+// .txt {
+//   line-height: 35px;
+//   display: flex;
+// }
 
 // Left
 .left {
@@ -486,6 +486,15 @@ strong {
 }
 
 // Skills
+.skillsTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+
 .toolsDiv {
   position: relative;
   .toolsContainer {
@@ -494,17 +503,105 @@ strong {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    border: 2px solid #e35596;
-    width: 72px;
-    height: 72px;
+    border: 2px solid #ef53d6;
+    width: 70px;
+    height: 70px;
     float: left;
-    margin-left: 30px;
+    margin-left: 20px;
 
     .tools {
       height: auto;
       width: 40px;
     }
   }
+}
+
+.progress {
+  padding: 2px;
+  height: 11px;
+  background: transparent;
+  border-radius: 20px;
+  // border: 1px solid rgb(255, 255, 255, 0.10);
+  background: rgba(0, 0, 0, 0.25);
+  // box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+  //   0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-move {
+  height: 6px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #7c3ee9 0%, #ef53d6 102.5%);
+
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.move90 {
+  width: 90%;
+  animation: animate90 1s;
+  animation-delay: 0.5s;
+}
+
+.move85 {
+  width: 85%;
+  animation: animate85 1s;
+  animation-delay: 0.5s;
+}
+
+.move80 {
+  width: 80%;
+  animation: animate80 1s;
+  animation-delay: 0.5s;
+}
+
+.move75 {
+  width: 75%;
+  animation: animate75 1s;
+  animation-delay: 0.5s;
+}
+
+@keyframes animate90 {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes animate85 {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes animate80 {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes animate75 {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+.technology,
+.counter {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  animation-delay: 1s;
 }
 
 // Projects
@@ -517,14 +614,37 @@ strong {
   font-weight: 300;
 }
 
+.btn-group > .navBtn:hover {
+  background: #1d172f;
+  box-shadow: inset 0 0 0 1px white;
+}
+
 .btn-group > .btn.active {
   background-color: #a07dff;
   color: #1d172f;
   font-weight: 500;
 }
+
+.btn-group > .btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 40%;
+  border: 10px solid transparent;
+  border-top: 10px solid #a07dff;
+  transform: rotate(0deg);
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 300px);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
 .imgContainer {
-  width: 100%;
-  height: 360px;
+  width: 300px;
+  height: 300px;
 
   .gridImg {
     width: 100%;
