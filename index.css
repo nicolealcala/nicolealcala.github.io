@@ -596,19 +596,18 @@ strong {
   justify-content: center;
   align-items: center;
 }
-
-.imgContainer {
+.gallery .imgContainer {
   width: 300px;
   height: 300px;
 }
-.imgContainer .gridImg {
+.gallery .imgContainer .gridImg {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   filter: grayscale(100%);
 }
-.imgContainer .gridImg:hover {
+.gallery .imgContainer .gridImg:hover {
   filter: grayscale(0%);
   transition: 0.5s ease-in-out;
 }/*# sourceMappingURL=index.css.map */
