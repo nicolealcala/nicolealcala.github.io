@@ -1,4 +1,11 @@
 $(document).ready(function () {
+  var bodyBgImage = new Image();
+  bodyBgImage.onload = function () {
+    $(".content").removeClass("d-none");
+  };
+  bodyBgImage.src =
+    "https://github.com/nicolealcala/Portfolio/blob/main/assets/background01.png?raw=true";
+
   // $("#menu-check").click(
   //   function () {
   //     $(".menuPage").removeClass("d-none");

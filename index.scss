@@ -14,7 +14,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-
+span {
+  display: inline-block;
+}
 //Scrollbar
 ::-webkit-scrollbar {
   position: absolute;
@@ -708,6 +710,13 @@ strong {
 }
 
 //Animation
-.animate__animated.animate__slideInLeft {
-  --animate-duration: 2s;
+:root {
+  transition: ease-in;
+  --animate-duration: 1.5s;
+  --animate-delay: 2000ms;
+}
+
+.img-fluid.logo.animate__animated.animate__fadeIn {
+  --animate-duration: 0.5s;
+  --animate-delay: 0.1s;
 }
