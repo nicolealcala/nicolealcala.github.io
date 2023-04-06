@@ -13,6 +13,21 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
+//Scrollbar
+::-webkit-scrollbar {
+  position: absolute;
+  width: 10px;
+  height: 100vh;
+  background: #222222;
+  height: auto;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  width: 8px;
+  border: 1px solid white;
+}
 // Loader
 .pyramid-loader {
   position: relative;
@@ -487,7 +502,9 @@ strong {
 
 // What I do
 .exp {
-  height: 200px;
+  position: relative;
+  height: 260px;
+  padding: 30px;
   background: linear-gradient(
     83.92deg,
     rgba(64, 34, 113, 0.2) 0.45%,
@@ -496,9 +513,22 @@ strong {
   backdrop-filter: blur(2.5px);
   border-radius: 5px;
 
-  .icons {
-    color: white;
-    box-shadow: 0px 0px 20px #b750cd;
+  .icon {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+  }
+
+  .expTxt {
+    position: relative;
+    width: 400px;
+    margin-top: 70px;
+  }
+
+  .triangle {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
   }
 }
 // Skills

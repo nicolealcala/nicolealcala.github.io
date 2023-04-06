@@ -28,6 +28,12 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -154,8 +160,10 @@
             <!-- Left Column -->
             <div class="col-12 col-sm-6 d-flex align-items-center">
               <div class="left">
-                <span class="sub">HELLO THERE, I AM</span>
-                <p>
+                <span class="sub"
+                  >HELLO THERE, I AM</span
+                >
+                <p class="animate__animated animate__slideInDown" id="brandTitle">
                   <span class="filled">Nicole</span>
                   <span class="stroked">Alcala</span>
                 </p>
@@ -285,66 +293,315 @@
           </div>
           <div class="row mx-0 mt-5 gy-4">
             <div class="col-6 d-flex justify-content-end align-items-start">
-              <div class="exp mt-2 p-4">
+              <div class="exp">
                 <svg
                   class="icon"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    d="M16 0C11.7565 0 7.68687 1.68571 4.68629 4.68629C1.68571 7.68687 0 11.7565 0 16C0 20.2435 1.68571 24.3131 4.68629 27.3137C7.68687 30.3143 11.7565 32 16 32C20.2435 32 24.3131 30.3143 27.3137 27.3137C30.3143 24.3131 32 20.2435 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0ZM1.97333 17.2089H6.43556C6.50667 18.8267 6.73244 20.4338 7.11111 22.0089H3.27111C2.55503 20.4993 2.11548 18.8736 1.97333 17.2089ZM17.2089 7.60889V2.11556C18.9221 2.76662 20.3299 4.03489 21.1556 5.67111C21.52 6.288 21.8418 6.92978 22.1156 7.59111L17.2089 7.60889ZM22.9333 10.0089C23.3458 11.5787 23.5911 13.1876 23.6622 14.8089H17.2089V10.0089H22.9333ZM14.7911 2.11556V7.60889H9.88444C10.1587 6.94702 10.4795 6.30541 10.8444 5.68889C11.6666 4.04596 13.0748 2.77095 14.7911 2.11556ZM14.7911 10.0089V14.8089H8.35556C8.42667 13.1876 8.672 11.5787 9.08444 10.0089H14.7911ZM6.43556 14.7911H1.97333C2.11548 13.1264 2.55503 11.5007 3.27111 9.99111H7.11111C6.73172 11.5656 6.50548 13.1731 6.43556 14.7911ZM8.35556 17.2089H14.7911V22.0089H9.08444C8.67206 20.4392 8.42773 18.8302 8.35556 17.2089ZM14.8089 24.32V29.8133C13.0957 29.1623 11.6879 27.894 10.8622 26.2578C10.4973 25.6413 10.1765 24.9997 9.90222 24.3378L14.8089 24.32ZM17.2089 29.8133V24.4089H22.1156C21.8413 25.0708 21.5205 25.7124 21.1556 26.3289C20.3299 27.9651 18.9221 29.2334 17.2089 29.8844V29.8133ZM17.2089 21.92V17.12H23.6444C23.5723 18.7413 23.3279 20.3504 22.9156 21.92H17.2089ZM25.5822 17.12H30.0444C29.9023 18.7847 29.4627 20.4105 28.7467 21.92H24.8889C25.2622 20.3733 25.488 18.7964 25.5644 17.2089L25.5822 17.12ZM25.5822 14.72C25.5008 13.1312 25.2687 11.5538 24.8889 10.0089H28.7289C29.4453 11.52 29.8844 13.1449 30.0267 14.8089L25.5822 14.72ZM27.36 7.60889H24.1778C23.602 5.99164 22.7674 4.47862 21.7067 3.12889C23.9189 4.12192 25.8405 5.66409 27.2889 7.60889H27.36ZM10.2933 3.12889C9.23257 4.47862 8.398 5.99164 7.82222 7.60889H4.71111C6.15951 5.66409 8.0811 4.12192 10.2933 3.12889ZM4.69333 24.4622H7.82222C8.398 26.0795 9.23257 27.5925 10.2933 28.9422C8.07498 27.9342 6.15279 26.3732 4.71111 24.4089L4.69333 24.4622ZM21.6889 28.9422C22.7497 27.5925 23.5842 26.0795 24.16 24.4622H27.2889C25.8316 26.381 23.9108 27.898 21.7067 28.8711L21.6889 28.9422Z"
-                    fill="white"
-                  />
+                  <g filter="url(#filter0_d_2943_783)">
+                    <path
+                      d="M36 20C31.7565 20 27.6869 21.6857 24.6863 24.6863C21.6857 27.6869 20 31.7565 20 36C20 40.2435 21.6857 44.3131 24.6863 47.3137C27.6869 50.3143 31.7565 52 36 52C40.2435 52 44.3131 50.3143 47.3137 47.3137C50.3143 44.3131 52 40.2435 52 36C52 31.7565 50.3143 27.6869 47.3137 24.6863C44.3131 21.6857 40.2435 20 36 20ZM21.9733 37.2089H26.4356C26.5067 38.8267 26.7324 40.4338 27.1111 42.0089H23.2711C22.555 40.4993 22.1155 38.8736 21.9733 37.2089ZM37.2089 27.6089V22.1156C38.9221 22.7666 40.3299 24.0349 41.1556 25.6711C41.52 26.288 41.8418 26.9298 42.1156 27.5911L37.2089 27.6089ZM42.9333 30.0089C43.3458 31.5787 43.5911 33.1876 43.6622 34.8089H37.2089V30.0089H42.9333ZM34.7911 22.1156V27.6089H29.8844C30.1587 26.947 30.4795 26.3054 30.8444 25.6889C31.6666 24.046 33.0748 22.771 34.7911 22.1156ZM34.7911 30.0089V34.8089H28.3556C28.4267 33.1876 28.672 31.5787 29.0844 30.0089H34.7911ZM26.4356 34.7911H21.9733C22.1155 33.1264 22.555 31.5007 23.2711 29.9911H27.1111C26.7317 31.5656 26.5055 33.1731 26.4356 34.7911ZM28.3556 37.2089H34.7911V42.0089H29.0844C28.6721 40.4392 28.4277 38.8302 28.3556 37.2089ZM34.8089 44.32V49.8133C33.0957 49.1623 31.6879 47.894 30.8622 46.2578C30.4973 45.6413 30.1765 44.9997 29.9022 44.3378L34.8089 44.32ZM37.2089 49.8133V44.4089H42.1156C41.8413 45.0708 41.5205 45.7124 41.1556 46.3289C40.3299 47.9651 38.9221 49.2334 37.2089 49.8844V49.8133ZM37.2089 41.92V37.12H43.6444C43.5723 38.7413 43.3279 40.3504 42.9156 41.92H37.2089ZM45.5822 37.12H50.0444C49.9023 38.7847 49.4627 40.4105 48.7467 41.92H44.8889C45.2622 40.3733 45.488 38.7964 45.5644 37.2089L45.5822 37.12ZM45.5822 34.72C45.5008 33.1312 45.2687 31.5538 44.8889 30.0089H48.7289C49.4453 31.52 49.8844 33.1449 50.0267 34.8089L45.5822 34.72ZM47.36 27.6089H44.1778C43.602 25.9916 42.7674 24.4786 41.7067 23.1289C43.9189 24.1219 45.8405 25.6641 47.2889 27.6089H47.36ZM30.2933 23.1289C29.2326 24.4786 28.398 25.9916 27.8222 27.6089H24.7111C26.1595 25.6641 28.0811 24.1219 30.2933 23.1289ZM24.6933 44.4622H27.8222C28.398 46.0795 29.2326 47.5925 30.2933 48.9422C28.075 47.9342 26.1528 46.3732 24.7111 44.4089L24.6933 44.4622ZM41.6889 48.9422C42.7497 47.5925 43.5842 46.0795 44.16 44.4622H47.2889C45.8316 46.381 43.9108 47.898 41.7067 48.8711L41.6889 48.9422Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_2943_783"
+                      x="0"
+                      y="0"
+                      width="72"
+                      height="72"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset />
+                      <feGaussianBlur stdDeviation="10" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.717647 0 0 0 0 0.313726 0 0 0 0 0.803922 0 0 0 1 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_2943_783"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_2943_783"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
                 </svg>
 
-                <p style="width: 400px">
+                <div class="expTxt">
                   <strong>Responsive Web Applications</strong>
-                  <br />
-                  <br />
-                  I have experience in developing informational websites,
-                  personal websites, dynamic websites, and information systems.
-                </p>
+                  <p class="mt-2">
+                    I have experience in developing informational websites,
+                    personal websites, dynamic websites, and information
+                    systems.
+                  </p>
+                </div>
+                <svg
+                  class="triangle"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M23 0V23H0L23 0Z" fill="white" fill-opacity="0.5" />
+                </svg>
               </div>
             </div>
 
             <div class="col-6 d-flex justify-content-start align-items-start">
-              <div class="exp mt-2 p-4">
-                <p style="width: 400px">
+              <div class="exp">
+                <svg
+                  class="icon"
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_3032_112)">
+                    <path
+                      d="M36 52C31.5259 52 27.7404 51.3108 24.6436 49.9324C21.5467 48.5541 19.9988 46.8729 20 44.8889V27.1111C20 25.1556 21.5633 23.4815 24.6898 22.0889C27.8163 20.6963 31.5864 20 36 20C40.4148 20 44.1855 20.6963 47.312 22.0889C50.4385 23.4815 52.0012 25.1556 52 27.1111V44.8889C52 46.8741 50.4516 48.5559 47.3547 49.9342C44.2578 51.3126 40.4729 52.0012 36 52ZM36 30.7111C38.637 30.7111 41.2889 30.333 43.9556 29.5769C46.6222 28.8207 48.1185 28.0136 48.4444 27.1556C48.1185 26.2963 46.6293 25.4815 43.9769 24.7111C41.3244 23.9407 38.6655 23.5556 36 23.5556C33.3037 23.5556 30.659 23.9336 28.0658 24.6898C25.4726 25.4459 23.9692 26.2673 23.5556 27.1538C23.9704 28.0427 25.4744 28.8575 28.0676 29.5982C30.6607 30.339 33.3049 30.7099 36 30.7111ZM36 39.5556C37.2444 39.5556 38.4444 39.4963 39.6 39.3778C40.7556 39.2593 41.8596 39.0886 42.912 38.8658C43.9633 38.6441 44.9559 38.3704 45.8898 38.0444C46.8237 37.7185 47.6753 37.3481 48.4444 36.9333V31.6C47.6741 32.0148 46.8219 32.3852 45.888 32.7111C44.9541 33.037 43.9615 33.3114 42.9102 33.5342C41.859 33.7559 40.7556 33.9259 39.6 34.0444C38.4444 34.163 37.2444 34.2222 36 34.2222C34.7556 34.2222 33.5407 34.163 32.3556 34.0444C31.1704 33.9259 30.0516 33.7553 28.9991 33.5324C27.9479 33.3108 26.963 33.037 26.0444 32.7111C25.1259 32.3852 24.2963 32.0148 23.5556 31.6V36.9333C24.2963 37.3481 25.1259 37.7185 26.0444 38.0444C26.963 38.3704 27.9484 38.6447 29.0009 38.8676C30.0521 39.0892 31.1704 39.2593 32.3556 39.3778C33.5407 39.4963 34.7556 39.5556 36 39.5556ZM36 48.4444C37.363 48.4444 38.7479 48.3407 40.1547 48.1333C41.5615 47.9259 42.8581 47.6516 44.0444 47.3102C45.2296 46.9701 46.2222 46.5849 47.0222 46.1547C47.8222 45.7244 48.2963 45.2877 48.4444 44.8444V40.4889C47.6741 40.9037 46.8219 41.2741 45.888 41.6C44.9541 41.9259 43.9615 42.2003 42.9102 42.4231C41.859 42.6447 40.7556 42.8148 39.6 42.9333C38.4444 43.0519 37.2444 43.1111 36 43.1111C34.7556 43.1111 33.5407 43.0519 32.3556 42.9333C31.1704 42.8148 30.0516 42.6441 28.9991 42.4213C27.9479 42.1997 26.963 41.9259 26.0444 41.6C25.1259 41.2741 24.2963 40.9037 23.5556 40.4889V44.8889C23.7037 45.3333 24.1707 45.763 24.9564 46.1778C25.7422 46.5926 26.7271 46.9707 27.9111 47.312C29.0963 47.6521 30.4 47.9259 31.8222 48.1333C33.2444 48.3407 34.637 48.4444 36 48.4444Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_3032_112"
+                      x="0"
+                      y="0"
+                      width="72"
+                      height="72"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset />
+                      <feGaussianBlur stdDeviation="10" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.717647 0 0 0 0 0.313726 0 0 0 0 0.803922 0 0 0 1 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_3032_112"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_3032_112"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+
+                <div class="expTxt">
                   <strong>Robust Relational Databases</strong>
-                  <br />
-                  <br />
-                  I developed and managed a number of robust databases for
-                  various academic projects.
-                </p>
+                  <p class="mt-2">
+                    I developed and managed a number of robust databases for
+                    various academic projects.
+                  </p>
+                </div>
+                <svg
+                  class="triangle"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M23 0V23H0L23 0Z" fill="white" fill-opacity="0.5" />
+                </svg>
               </div>
             </div>
 
             <div class="col-6 d-flex justify-content-end align-items-start">
-              <div class="exp mt-2 p-4">
-                <p style="width: 400px">
+              <div class="exp">
+                <svg
+                  class="icon"
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_3032_98)">
+                    <path
+                      d="M36 52C33.8989 52 31.8183 51.5861 29.8771 50.7821C27.9359 49.978 26.172 48.7994 24.6863 47.3137C21.6857 44.3131 20 40.2435 20 36C20 31.7565 21.6857 27.6869 24.6863 24.6863C27.6869 21.6857 31.7565 20 36 20C44.8 20 52 26.4 52 34.4C52 36.9461 50.9886 39.3879 49.1882 41.1882C47.3879 42.9886 44.9461 44 42.4 44H39.52C39.04 44 38.72 44.32 38.72 44.8C38.72 44.96 38.88 45.12 38.88 45.28C39.52 46.08 39.84 47.04 39.84 48C40 50.24 38.24 52 36 52ZM36 23.2C32.6052 23.2 29.3495 24.5486 26.949 26.949C24.5486 29.3495 23.2 32.6052 23.2 36C23.2 39.3948 24.5486 42.6505 26.949 45.051C29.3495 47.4514 32.6052 48.8 36 48.8C36.48 48.8 36.8 48.48 36.8 48C36.8 47.68 36.64 47.52 36.64 47.36C36 46.56 35.68 45.76 35.68 44.8C35.68 42.56 37.44 40.8 39.68 40.8H42.4C44.0974 40.8 45.7252 40.1257 46.9255 38.9255C48.1257 37.7253 48.8 36.0974 48.8 34.4C48.8 28.16 43.04 23.2 36 23.2ZM27.2 32.8C28.48 32.8 29.6 33.92 29.6 35.2C29.6 36.48 28.48 37.6 27.2 37.6C25.92 37.6 24.8 36.48 24.8 35.2C24.8 33.92 25.92 32.8 27.2 32.8ZM32 26.4C33.28 26.4 34.4 27.52 34.4 28.8C34.4 30.08 33.28 31.2 32 31.2C30.72 31.2 29.6 30.08 29.6 28.8C29.6 27.52 30.72 26.4 32 26.4ZM40 26.4C41.28 26.4 42.4 27.52 42.4 28.8C42.4 30.08 41.28 31.2 40 31.2C38.72 31.2 37.6 30.08 37.6 28.8C37.6 27.52 38.72 26.4 40 26.4ZM44.8 32.8C46.08 32.8 47.2 33.92 47.2 35.2C47.2 36.48 46.08 37.6 44.8 37.6C43.52 37.6 42.4 36.48 42.4 35.2C42.4 33.92 43.52 32.8 44.8 32.8Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_3032_98"
+                      x="0"
+                      y="0"
+                      width="72"
+                      height="72"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset />
+                      <feGaussianBlur stdDeviation="10" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.717647 0 0 0 0 0.313726 0 0 0 0 0.803922 0 0 0 1 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_3032_98"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_3032_98"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+
+                <div class="expTxt">
                   <strong>User-centered Web Designs</strong>
-                  <br />
-                  <br />
-                  I created multiple web designs for various academic and
-                  non-academic projects with the goal of enhancing user
-                  experience.
-                </p>
+                  <p class="mt-2">
+                    I created multiple web designs for various academic and
+                    non-academic projects with the goal of enhancing user
+                    experience.
+                  </p>
+                </div>
+                <svg
+                  class="triangle"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M23 0V23H0L23 0Z" fill="white" fill-opacity="0.5" />
+                </svg>
               </div>
             </div>
 
             <div class="col-6 d-flex justify-content-start align-items-start">
-              <div class="exp mt-2 p-4">
-                <p style="width: 400px">
+              <div class="exp">
+                <svg
+                  class="icon"
+                  width="76"
+                  height="76"
+                  viewBox="0 0 76 76"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g filter="url(#filter0_d_3032_104)">
+                    <path
+                      d="M22.6532 53.2951L33.773 42.1752M47.776 37.2304L44.4473 47.2162C44.3942 47.3763 44.3033 47.5212 44.1822 47.6386C44.0611 47.756 43.9135 47.8425 43.7519 47.8907L23.3469 53.9556C23.163 54.0102 22.9677 54.0133 22.7823 53.9646C22.5968 53.9159 22.4282 53.8173 22.2949 53.6795C22.1615 53.5417 22.0686 53.3699 22.0261 53.1829C21.9836 52.9959 21.9932 52.8008 22.0539 52.6189L28.6796 32.745C28.7271 32.6023 28.8048 32.4715 28.9073 32.3615C29.0098 32.2514 29.1348 32.1647 29.2737 32.1073L38.6865 28.2317C38.8778 28.1527 39.0883 28.1321 39.2914 28.1725C39.4944 28.2129 39.681 28.3126 39.8275 28.4589L47.5226 36.1558C47.6606 36.2936 47.7574 36.4672 47.8022 36.657C47.8469 36.8468 47.8379 37.0454 47.776 37.2304Z"
+                      stroke="white"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M47.9831 36.6163L52.9245 31.6732C53.5796 31.0179 53.9477 30.1292 53.9477 29.2025C53.9477 28.2759 53.5796 27.3872 52.9245 26.7318L49.2202 23.024C48.8957 22.6994 48.5104 22.4419 48.0863 22.2661C47.6622 22.0904 47.2077 22 46.7486 22C46.2896 22 45.8351 22.0904 45.411 22.2661C44.9869 22.4419 44.6016 22.6994 44.2771 23.024L39.3357 27.9672M37.4801 38.4685C37.2366 38.2252 36.9476 38.0321 36.6296 37.9005C36.3115 37.7688 35.9706 37.7011 35.6264 37.7012C35.2822 37.7013 34.9414 37.7692 34.6234 37.901C34.3054 38.0328 34.0165 38.2259 33.7731 38.4694C33.5298 38.7128 33.3368 39.0018 33.2051 39.3199C33.0735 39.6379 33.0058 39.9788 33.0059 40.323C33.0059 40.6672 33.0738 41.008 33.2056 41.326C33.3374 41.644 33.5306 41.9329 33.774 42.1763C34.2657 42.6677 34.9325 42.9437 35.6277 42.9436C36.3228 42.9434 36.9895 42.6671 37.4809 42.1754C37.9724 41.6837 38.2484 41.0169 38.2482 40.3218C38.2481 39.6266 37.9717 38.9599 37.4801 38.4685Z"
+                      stroke="white"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_3032_104"
+                      x="0.75"
+                      y="0.75"
+                      width="74.4473"
+                      height="74.498"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset />
+                      <feGaussianBlur stdDeviation="10" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.717647 0 0 0 0 0.313726 0 0 0 0 0.803922 0 0 0 1 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_3032_104"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_3032_104"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+
+                <div class="expTxt">
                   <strong>Logo Making</strong>
-                  <br />
-                  <br />
-                  I have conceptualized and designed unique logos for all of the
-                  projects I have participated in, with the aim of conveying
-                  specific impressions and identity.
-                </p>
+                  <p class="mt-2">
+                    I have conceptualized and designed unique logos for all of
+                    the projects I have participated in, with the aim of
+                    conveying specific impressions and identity.
+                  </p>
+                </div>
+                <svg
+                  class="triangle"
+                  width="23"
+                  height="23"
+                  viewBox="0 0 23 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M23 0V23H0L23 0Z" fill="white" fill-opacity="0.5" />
+                </svg>
               </div>
             </div>
           </div>
