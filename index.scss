@@ -8,6 +8,7 @@ body {
   color: #cdcdcd;
   overflow-x: hidden;
   background-image: url("https://github.com/nicolealcala/Portfolio/blob/main/assets/background01.png?raw=true");
+  // background-color: black;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -704,4 +705,9 @@ strong {
       transition: 0.5s ease-in-out;
     }
   }
+}
+
+//Animation
+.animate__animated.animate__slideInLeft {
+  --animate-duration: 2s;
 }
