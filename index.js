@@ -1,22 +1,97 @@
 $(document).ready(function () {
+  // Animations
   var bodyBgImage = new Image();
   bodyBgImage.onload = function () {
     $(".content").removeClass("d-none");
+    $(".content").css("--animate-delay", "1s");
   };
   bodyBgImage.src =
     "https://github.com/nicolealcala/Portfolio/blob/main/assets/background01.png?raw=true";
 
-  // $("#menu-check").click(
-  //   function () {
-  //     $(".menuPage").removeClass("d-none");
-  //     $("section").not('.menuPage').addClass("d-none");
-  //   },
+  //Entrance and Exit animations on scroll
+  // Function to add exit animation to elements in the current section
+  function addExitAnimationToCurrentSection() {
+    var currentSection = $("section.active");
+    currentSection
+      .find(".animate__animated.animate__slideInDown")
+      .removeClass("animate__slideInDown")
+      .addClass("animate__fadeOutUp");
+    currentSection
+      .find(".animate__animated.animate__slideInUp")
+      .removeClass("animate__slideInUp")
+      .addClass("animate__fadeOutDown");
+    currentSection
+      .find(".animate__animated.animate__slideInLeft")
+      .removeClass("animate__slideInLeft")
+      .addClass("animate__fadeOutLeft");
+    currentSection
+      .find(".animate__animated.animate__slideInRight")
+      .removeClass("animate__slideInRight")
+      .addClass("animate__fadeOutRight");
+  }
 
-  //   function () {
-  //     $(".menuPage").addClass("d-none");
-  //     $("section").not('.menuPage').removeClass("d-none");
-  //   }
-  // );
+  // Function to add entrance animation to elements in the next section
+  function addEntranceAnimationToNextSection() {
+    var nextSection = $("section.active").next("section");
+    nextSection
+      .find(".animate__animated.animate__slideInDown")
+      .removeClass("animate__slideInDown")
+      .addClass("animate__fadeOutUp");
+    nextSection
+      .find(".animate__animated.animate__slideInUp")
+      .removeClass("animate__slideInUp")
+      .addClass("animate__fadeOutDown");
+    nextSection
+      .find(".animate__animated.animate__slideInLeft")
+      .removeClass("animate__slideInLeft")
+      .addClass("animate__fadeOutLeft");
+    nextSection
+      .find(".animate__animated.animate__slideInRight")
+      .removeClass("animate__slideInRight")
+      .addClass("animate__fadeOutRight");
+  }
+
+  // Function to add entrance animation to elements in the previous section
+  function addEntranceAnimationToPreviousSection() {
+    var prevSection = $("section.active").prev("section");
+    prevSection
+      .find(".animate__animated.animate__slideInDown")
+      .removeClass("animate__slideInDown")
+      .addClass("animate__fadeOutUp");
+    prevSection
+      .find(".animate__animated.animate__slideInUp")
+      .removeClass("animate__slideInUp")
+      .addClass("animate__fadeOutDown");
+    prevSection
+      .find(".animate__animated.animate__slideInLeft")
+      .removeClass("animate__slideInLeft")
+      .addClass("animate__fadeOutLeft");
+    prevSection
+      .find(".animate__animated.animate__slideInRight")
+      .removeClass("animate__slideInRight")
+      .addClass("animate__fadeOutRight");
+  }
+
+  // Detect when the user scrolls
+  $(window).on("scroll", function () {
+    var currentSection = null;
+    $("section").each(function () {
+      var sectionTop = $(this).offset().top;
+      var sectionHeight = $(this).outerHeight();
+      var scrollTop = $(window).scrollTop();
+      if (scrollTop >= sectionTop && scrollTop < sectionTop + sectionHeight) {
+        currentSection = $(this);
+      }
+    });
+
+    // Remove "active" class from all sections
+    $("section").removeClass("active");
+
+    // Add "active" class to the currently visible section
+    if (currentSection) {
+      currentSection.addClass("active");
+    }
+  });
 
   // SKILLS
   const counter90 = $(".counter90");

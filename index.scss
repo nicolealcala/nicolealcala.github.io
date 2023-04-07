@@ -14,9 +14,11 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
 span {
   display: inline-block;
 }
+
 //Scrollbar
 ::-webkit-scrollbar {
   position: absolute;
@@ -176,7 +178,7 @@ header {
 
 section {
   // margin: 50px 0 350px 0;
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -445,7 +447,17 @@ section {
   line-height: 94px;
   font-weight: 700;
   -webkit-text-stroke: 1px white;
-  z-index: 5;
+  z-index: 8;
+}
+
+#brandTitle {
+  display: inline-flex;
+  position: absolute;
+  width: 100%;
+  #nicole,
+  #alcala {
+    font-size: 115px;
+  }
 }
 
 .txt {
@@ -459,6 +471,11 @@ section {
   z-index: 5;
 }
 
+#landing-txt {
+  width: 460px;
+  margin-top: 130px;
+}
+
 #about-round {
   position: absolute;
   top: -40px;
@@ -470,7 +487,7 @@ section {
 
 .right {
   position: relative;
-  z-index: 5;
+  z-index: 1;
 }
 
 #landing-pic {
@@ -712,11 +729,11 @@ strong {
 //Animation
 :root {
   transition: ease-in;
-  --animate-duration: 1.5s;
-  --animate-delay: 2000ms;
+  --animate-duration: 1s;
+  --animate-delay: 5000ms;
 }
 
 .img-fluid.logo.animate__animated.animate__fadeIn {
   --animate-duration: 0.5s;
-  --animate-delay: 0.1s;
+  --animate-delay: 0;
 }
