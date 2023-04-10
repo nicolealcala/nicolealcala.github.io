@@ -1,54 +1,52 @@
 $(document).ready(function () {
   //Menu Page
-  // $(".menu-label").click(function () {
-  $("#menu-check").on("change", function () {
-    if ($(this).is(":checked")) {
-      $(".menuPage").removeClass("d-none");
-      $(".line1").css({
-        width: "70px",
-        margin: "0 2px 0 0",
-        transform: "rotate(45deg) scaleX(0.55) translate(45px, -4.5px)",
-        "border-radius": "50px 50px 50px 0",
-      });
-      $(".line2 ").css({
-        "border-top-right-radius": "50px",
-        "border-bottom-right-radius": "50px",
-        width: "0px",
-      });
-      $(".line3").css({
-        margin: "27px 0 0 0",
-        transform: "rotate(-45deg) scaleX(0.55) translate(40px, 4.5px)",
-        "border-radius": "0 50px 50px 50px",
-      });
-      $("section").not(".menuPage").addClass("d-none");
-      $(".menuPage")
-        .removeClass("animate__slideOutUp d-none")
-        .addClass("animate__slideInDown");
-    } else {
-      $(".line1, .line2, .line3").css({
-        width: "70px",
-        height: "2px",
-        "background-color": "#fff",
-        margin: "0",
-        position: "absolute",
-        transform: "rotate(0deg) scaleX(1) translate(0, 0)",
-      });
-      $(".line2").css({ width: "50px", margin: "18px 0 0 0" });
-      $(".line3").css("margin", "36px 0 0 0");
-      $(".menuPage")
+  $(".menu-label").click(function () {
+    $("#menu-check").on("change", function () {
+      if ($(this).is(":checked")) {
+        $(".menuPage").removeClass("d-none");
+        $(".line1").css({
+          width: "70px",
+          margin: "0 2px 0 0",
+          transform: "rotate(45deg) scaleX(0.55) translate(45px, -4.5px)",
+          "border-radius": "50px 50px 50px 0",
+        });
+        $(".line2 ").css({
+          "border-top-right-radius": "50px",
+          "border-bottom-right-radius": "50px",
+          width: "0px",
+        });
+        $(".line3").css({
+          margin: "27px 0 0 0",
+          transform: "rotate(-45deg) scaleX(0.55) translate(40px, 4.5px)",
+          "border-radius": "0 50px 50px 50px",
+        });
+        $(".page").addClass("d-none");
+        $(".menuPage")
+          .removeClass("animate__slideOutUp d-none")
+          .addClass("animate__slideInDown");
+      } else {
+        $(".line1, .line2, .line3").css({
+          width: "70px",
+          height: "2px",
+          "background-color": "#fff",
+          margin: "0",
+          position: "absolute",
+          transform: "rotate(0deg) scaleX(1) translate(0, 0)",
+        });
+        $(".line2").css({ width: "50px", margin: "18px 0 0 0" });
+        $(".line3").css("margin", "36px 0 0 0");
+        $(".menuPage")
           .removeClass("animate__slideInDown")
           .addClass("animate__slideOutUp");
-      setTimeout(function () {
-         $(".menuPage").addClass("d-none");
-         
-      }, 500);
-      setTimeout(function(){
-        $(".page.active").removeClass("d-none");
-      }, 500);
-      
-    }
+        setTimeout(function () {
+          $(".menuPage").addClass("d-none");
+        }, 500);
+        setTimeout(function () {
+          $(".page").removeClass("d-none");
+        }, 500);
+      }
+    });
   });
-  // });
 
   // Links
   $(".navTxt").each(function () {
@@ -57,7 +55,7 @@ $(document).ready(function () {
         .removeClass("animate__slideInDown")
         .addClass("animate__slideOutUp");
       setTimeout(function () {
-        $(".menuPage").css("display", "none");
+        $(".menuPage").addClass("d-none");
       }, 1000);
       $(".line1, .line2, .line3").css({
         width: "70px",
@@ -66,47 +64,43 @@ $(document).ready(function () {
         position: "absolute",
         transform: "rotate(0deg) scaleX(1) translate(0, 0)",
       });
-      $(".line1").css("margin", "0 2px 0 0");
+      $(".line1").css("margin", "0");
       $(".line2").css("width", "50px");
       $(".line3").css("margin", "36px 0 0 0");
       $(this).removeClass("stroked").addClass("nav-active");
+      $(".page").removeClass("d-none");
     });
   });
 
   $("#link-home").click(function () {
     $(this).addClass("nav-active");
     $(".navTxt").not(this).removeClass("nav-active").addClass("stroked");
-    $("#landing").removeClass("d-none").addClass("active");
-    $(".page").not("#landing").removeClass("active").addClass("d-none");
+    $("#landing").addClass("active");
   });
 
   $("#learnMore").click(function () {
-    $("#about").removeClass("d-none").addClass("active");
-    $(".page").not("#about").removeClass("active").addClass("d-none");
+    $("#about").addClass("active");
   });
 
   $("#link-about").click(function () {
     $(this).addClass("nav-active");
     $(".navTxt").not(this).removeClass("nav-active").addClass("stroked");
-    $("#about").removeClass("d-none").addClass("active");
-    $(".page").not("#about").removeClass("active").addClass("d-none");
+    $("#about").addClass("active");
   });
 
   $("#link-portfolio").click(function () {
     $(this).addClass("nav-active");
     $(".navTxt").not(this).removeClass("nav-active").addClass("stroked");
-    $("#portfolio").removeClass("d-none").addClass("active");
-    $(".page").not("#portfolio").removeClass("active").addClass("d-none");
+    $("#portfolio").addClass("active");
   });
 
   $("#link-contact").click(function () {
     $(this).addClass("nav-active");
     $(".navTxt").not(this).removeClass("nav-active").addClass("stroked");
-    $("#contact").removeClass("d-none").addClass("active");
-    $(".page").not("#contact").removeClass("active").addClass("d-none");
+    $("#contact").addClass("active");
   });
 
-  // Animations
+  // Animations loading after bg
   var bodyBgImage = new Image();
   bodyBgImage.onload = function () {
     $(".content").removeClass("d-none");
@@ -115,124 +109,29 @@ $(document).ready(function () {
   bodyBgImage.src =
     "https://github.com/nicolealcala/Portfolio/blob/main/assets/background01.png?raw=true";
 
-  // //Entrance and Exit animations on scroll
-  // // Function to add exit animation to elements in the current section
-  // function addExitAnimationToCurrentSection() {
-  //   // var currentSection = $("section.active");
-  // }
+  // Adjust nav color on bg brightness
+  // Get the position of the last section
+  var contactTop = $("#contact").offset().top;
 
-  // // Function to add entrance animation to elements in the next section
-  // function addEntranceAnimationToNextSection() {
-  //   var nextSection = $("section.active").next("section");
-  // }
+  // Attach scroll event handler to window
+  $(window).scroll(function () {
+    // Get the current scroll position
+    var scrollPos = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    var windowCenter = windowHeight / 2;
 
-  // // Function to add entrance animation to elements in the previous section
-  // function addEntranceAnimationToPreviousSection() {
-  //   var prevSection = $("section.active").prev("section");
-  //   prevSection
-  //     .find(".animate__animated.animate__slideInDown")
-  //     .removeClass("animate__slideInDown")
-  //     .addClass("animate__fadeOutUp");
-  //   prevSection
-  //     .find(".animate__animated.animate__slideInUp")
-  //     .removeClass("animate__slideInUp")
-  //     .addClass("animate__fadeOutDown");
-  //   prevSection
-  //     .find(".animate__animated.animate__slideInLeft")
-  //     .removeClass("animate__slideInLeft")
-  //     .addClass("animate__fadeOutLeft");
-  //   prevSection
-  //     .find(".animate__animated.animate__slideInRight")
-  //     .removeClass("animate__slideInRight")
-  //     .addClass("animate__fadeOutRight");
-  // }
-
-  // var currentSection; // Variable to keep track of current section
-
-  // // Function to animate exit of current section
-  // function animateSectionExit(currentSection) {
-  //   currentSection
-  //     .find(".animate__animated.animate__slideInDown")
-  //     .removeClass("animate__slideInDown")
-  //     .addClass("animate__fadeOutUp");
-  //   currentSection
-  //     .find(".animate__animated.animate__slideInUp")
-  //     .removeClass("animate__slideInUp")
-  //     .addClass("animate__fadeOutDown");
-  //   currentSection
-  //     .find(".animate__animated.animate__slideInLeft")
-  //     .removeClass("animate__slideInLeft")
-  //     .addClass("animate__fadeOutLeft");
-  //   currentSection
-  //     .find(".animate__animated.animate__slideInRight")
-  //     .removeClass("animate__slideInRight")
-  //     .addClass("animate__fadeOutRight");
-  //   setTimeout(function () {
-  //     currentSection.find("animate__animated animate__fadeOutUp");
-  //     currentSection.removeClass("animate__fadeOutUp");
-  //     currentSection.find("animate__animated animate__fadeOutDown");
-  //     currentSection.removeClass("animate__fadeOutDown");
-  //     currentSection.find("animate__animated animate__fadeOutLeft");
-  //     currentSection.removeClass("animate__fadeOutLeft");
-  //     currentSection.find("animate__animated animate__fadeOutRight");
-  //     currentSection.removeClass("animate__fadeOutRight");
-  //     currentSection.hide();
-  //   }, 1000); // Add a delay to allow animation to complete
-  // }
-
-  // // Function to animate entrance of next section
-  // function animateSectionEntrance(nextSection) {
-  //   nextSection
-  //     .find(".animate__animated.animate__slideInDown")
-  //     .removeClass("animate__slideInDown")
-  //     .addClass("animate__fadeOutUp");
-  //   nextSection
-  //     .find(".animate__animated.animate__slideInUp")
-  //     .removeClass("animate__slideInUp")
-  //     .addClass("animate__fadeOutDown");
-  //   nextSection
-  //     .find(".animate__animated.animate__slideInLeft")
-  //     .removeClass("animate__slideInLeft")
-  //     .addClass("animate__fadeOutLeft");
-  //   nextSection
-  //     .find(".animate__animated.animate__slideInRight")
-  //     .removeClass("animate__slideInRight")
-  //     .addClass("animate__fadeOutRight");
-  //   nextSection.show();
-  //   setTimeout(function () {
-  //     nextSection.removeClass("animate__animated animate__fadeInDown");
-  //     currentSection.find("animate__animated animate__fadeOutUp");
-  //     nextSection.removeClass("animate__fadeOutUp");
-  //     nextSection.find("animate__animated animate__fadeOutDown");
-  //     nextSection.removeClass("animate__fadeOutDown");
-  //     nextSection.find("animate__animated animate__fadeOutLeft");
-  //     nextSection.removeClass("animate__fadeOutLeft");
-  //     nextSection.find("animate__animated animate__fadeOutRight");
-  //     nextSection.removeClass("animate__fadeOutRight");
-  //   }, 1000); // Add a delay to allow animation to complete
-  // }
-
-  // // Scroll event listener
-  // $(window).on("scroll", function () {
-  //   var scrollTop = $(window).scrollTop();
-  //   var windowHeight = $(window).height();
-
-  //   // Check if scrolled down
-  //   if (scrollTop > windowHeight) {
-  //     animateSectionExit(currentSection);
-  //     currentSection = currentSection.next("section"); // Update current section
-  //     animateSectionEntrance(currentSection);
-  //   }
-  //   // Check if scrolled up
-  //   else {
-  //     animateSectionExit(currentSection);
-  //     currentSection = currentSection.prev("section"); // Update current section
-  //     animateSectionEntrance(currentSection);
-  //   }
-  // });
-
-  // currentSection = $("#landing"); // Set initial current section as section A
-  // animateSectionEntrance(currentSection); // Show section A with entrance animation
+    // Check if the current scroll position has reached the last section
+    if (scrollPos >= contactTop) {
+      // Set the div color to black
+      $(".line1, .line2, .line3").css("background-color", "#505050");
+      $(".socialsDiv > a, #scrollTxt").css("color", "#505050");
+    } else {
+      // Set the div color to white
+      $(".line1, .line2, .line3").css("background-color", "white");
+      $(".socialsDiv > a").css("color", "#909090");
+      $("#scrollTxt").css("color", "#aeaeae");
+    }
+  });
 
   // SKILLS
   const counter90 = $(".counter90");
@@ -294,4 +193,18 @@ $(document).ready(function () {
     $(this).addClass("active");
     $(".navBtn").not(this).removeClass("active");
   });
+
+  // CONTACTS
+  initMap();
 });
+
+let map;
+async function initMap() {
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+
+  map = new Map($("#map")[0], {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}

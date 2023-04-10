@@ -34,6 +34,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <!-- MAPS -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -47,7 +49,7 @@
         <span class="shadow"></span>
       </div>
     </div> -->
-    <div class="container-fluid content d-none">
+    <div class="container-fluid content">
       <!-- Logo and Menu BTN -->
       <header class="py-4">
         <div class="row mx-0">
@@ -60,7 +62,9 @@
               class="img-fluid logo animate__animated animate__fadeIn"
             />
           </div>
-          <div class="col-6 d-flex justify-content-end align-items-center pe-5  animate__animated animate__fadeIn">
+          <div
+            class="col-6 d-flex justify-content-end align-items-center pe-5 animate__animated animate__fadeIn"
+          >
             <input class="menu-check" id="menu-check" type="checkbox" />
 
             <label
@@ -113,14 +117,14 @@
 
       <!-- Socials -->
       <div
-        class="socialsDiv d-flex flex-column justify-content-center align-items-center  animate__animated animate__fadeIn"
+        class="socialsDiv d-flex flex-column justify-content-center align-items-center animate__animated animate__fadeIn"
       >
         <a
           href="https://web.facebook.com/nicole.alcala.m"
           target="_blank"
           class="my-2"
-          ><i class="fa-brands fa-facebook-f socials"></i
-        ></a>
+          ><i class="fa-brands fa-facebook-f socials"></i>
+        </a>
 
         <a
           href="https://www.instagram.com/nicolealcalq/"
@@ -135,8 +139,11 @@
         <!-- Scroll -->
         <div class="scroll d-flex align-items-center">
           <div class="dash me-3"></div>
-          <span class="sub animate__animated animate__slideInDown" style="font-size: 12px; color: #cdcdcd"
-            >NICOLE</span
+          <span
+            class="sub animate__animated animate__slideInDown"
+            style="font-size: 12px; color: #aeaeae"
+            id="scrollTxt"
+            >SCROLL</span
           >
         </div>
       </div>
@@ -144,30 +151,84 @@
       <!-- Menu -->
       <section class="menuPage d-none animate__animated animate__slideInDown">
         <div class="container d-flex justify-content-center aligh-items-center">
-          <div class="menuTxt d-flex flex-column text-center animate__animated animate__backInDown">
+          <div
+            class="menuTxt d-flex flex-column text-center animate__animated animate__backInDown"
+          >
             <a class="navTxt nav-active" href="#landing" id="link-home">Home</a>
             <a class="navTxt stroked" href="#about" id="link-about">About</a>
             <a class="navTxt stroked" href="#skills" id="link-skills">Skills</a>
-            <a class="navTxt stroked" href="#portfolio" id="link-portfolio">Portfolio</a>
-            <a class="navTxt stroked" href="#contact" id="link-contact">Contact</a>
+            <a class="navTxt stroked" href="#portfolio" id="link-portfolio"
+              >Portfolio</a
+            >
+            <a class="navTxt stroked" href="#contact" id="link-contact"
+              >Contact</a
+            >
           </div>
 
-          <svg class="animate__animated animate__backInUp" width="454" height="454" viewBox="0 0 454 454" fill="none" xmlns="http://www.w3.org/2000/svg" id="menu-blob">
+          <svg
+            class="animate__animated animate__backInUp"
+            width="454"
+            height="454"
+            viewBox="0 0 454 454"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="menu-blob"
+          >
             <g filter="url(#filter0_d_2949_910)">
-              <circle cx="227" cy="227" r="187" fill="url(#paint0_linear_2949_910)" fill-opacity="0.9" shape-rendering="auto" id="blob-circle" />
+              <circle
+                cx="227"
+                cy="227"
+                r="187"
+                fill="url(#paint0_linear_2949_910)"
+                fill-opacity="0.9"
+                shape-rendering="auto"
+                id="blob-circle"
+              />
             </g>
             <defs>
-              <filter id="filter0_d_2949_910" x="0" y="0" width="454" height="454" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <filter
+                id="filter0_d_2949_910"
+                x="0"
+                y="0"
+                width="454"
+                height="454"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
                 <feOffset />
                 <feGaussianBlur stdDeviation="20" />
                 <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0.635294 0 0 0 0 0.478431 0 0 0 0 0.984314 0 0 0 0.4 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2949_910" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2949_910" result="shape" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.635294 0 0 0 0 0.478431 0 0 0 0 0.984314 0 0 0 0.4 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_2949_910"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_2949_910"
+                  result="shape"
+                />
               </filter>
-              <linearGradient id="paint0_linear_2949_910" x1="227" y1="40" x2="227" y2="414" gradientUnits="userSpaceOnUse">
+              <linearGradient
+                id="paint0_linear_2949_910"
+                x1="227"
+                y1="40"
+                x2="227"
+                y2="414"
+                gradientUnits="userSpaceOnUse"
+              >
                 <stop stop-color="#D64BD5" />
                 <stop offset="1" stop-color="#A576F8" />
               </linearGradient>
@@ -177,9 +238,15 @@
               </animateMotion>
             </defs>
             <!-- Circle with flame-like glow animation -->
-            <circle cx="227" cy="227" r="187" fill="#A27AFB" fill-opacity="0.4" shape-rendering="auto" />
+            <circle
+              cx="227"
+              cy="227"
+              r="187"
+              fill="#A27AFB"
+              fill-opacity="0.4"
+              shape-rendering="auto"
+            />
           </svg>
-                  
         </div>
       </section>
 
@@ -190,12 +257,18 @@
             <!-- Left Column -->
             <div class="col-12 col-sm-6 d-flex align-items-center">
               <div class="left">
-                <span class="sub animate__animated animate__slideInDown">HELLO THERE, I AM</span>
+                <span class="sub animate__animated animate__slideInDown"
+                  >HELLO THERE, I AM</span
+                >
                 <p id="brandTitle">
-                  <span class="filled animate__animated animate__slideInLeft animate__animated animate__slideInLeft" id="nicole"
+                  <span
+                    class="filled animate__animated animate__slideInLeft animate__animated animate__slideInLeft"
+                    id="nicole"
                     >Nicole</span
                   >
-                  <span class="stroked animate__animated animate__slideInRight" id="alcala"
+                  <span
+                    class="stroked animate__animated animate__slideInRight"
+                    id="alcala"
                     >Alcala</span
                   >
                 </p>
@@ -210,12 +283,16 @@
                   </div>
                   <div class="col-6 col-sm-4 mt-5">
                     <a href="#about">
-                      <button type="button" class="btn primaryBtn" id="learnMore">
+                      <button
+                        type="button"
+                        class="btn primaryBtn"
+                        id="learnMore"
+                      >
                         <span class="btnTxt">Learn more</span>
                         <div id="container-stars">
                           <div id="stars"></div>
                         </div>
-  
+
                         <div id="glow">
                           <div class="circle"></div>
                           <div class="circle"></div>
@@ -257,7 +334,7 @@
       </section>
 
       <!-- About Page -->
-      <section class="page aboutPage d-none" id="about">
+      <section class="page" id="about">
         <div class="container slide" id="slide1">
           <div class="row mx-0">
             <!-- Left Column -->
@@ -270,10 +347,16 @@
                   id="about-round"
                   alt=""
                 />
-                <span class="sub animate__animated animate__slideInDown">SELF-INTRODUCTION</span>
+                <span class="sub animate__animated animate__slideInDown"
+                  >SELF-INTRODUCTION</span
+                >
                 <p>
-                  <span class="filled animate__animated animate__slideInLeft">About</span>
-                  <span class="stroked animate__animated animate__slideInRight">Myself</span>
+                  <span class="filled animate__animated animate__slideInLeft"
+                    >About</span
+                  >
+                  <span class="stroked animate__animated animate__slideInRight"
+                    >Myself</span
+                  >
                 </p>
                 <span class="txt" style="width: 460px">
                   Hi! I’m Nicole, an upcoming Bachelor of Science in Information
@@ -313,19 +396,26 @@
       </section>
 
       <!-- Experience -->
-      <section class="page experience d-none" id="experience">
+      <section class="page" id="experience">
         <div class="container slide" id="slide2">
           <div class="row mx-0">
             <div
               class="col-12 d-flex justify-content-center align-items-center"
             >
-              <span class="sub animate__animated animate__slideInDown text-center">FIELDS OF EXPRIENCE</span>
+              <span
+                class="sub animate__animated animate__slideInDown text-center"
+                >FIELDS OF EXPRIENCE</span
+              >
             </div>
             <div
               class="col-12 mb-5 d-flex justify-content-center align-items-center"
             >
-              <span class="filled animate__animated animate__slideInLeft">What&nbsp;</span>
-              <span class="stroked animate__animated animate__slideInRight">I do</span>
+              <span class="filled animate__animated animate__slideInLeft"
+                >What&nbsp;</span
+              >
+              <span class="stroked animate__animated animate__slideInRight"
+                >I do</span
+              >
             </div>
           </div>
           <div class="row mx-0 mt-5 gy-4">
@@ -646,7 +736,7 @@
       </section>
 
       <!-- Skills -->
-      <section class="page skills d-none" id="skills">
+      <section class="page" id="skills">
         <div class="container">
           <div class="row m-0">
             <!-- Left Column -->
@@ -961,9 +1051,20 @@
             >
               <div>
                 <div class="right text-end">
-                  <span class="sub animate__animated animate__slideInDown" style="width: 100%">CAPABILITIES</span>
-                  <span class="filled animate__animated animate__slideInLeft" style="font-size: 90px">Technical</span>
-                  <span class="stroked animate__animated animate__slideInRight" style="font-size: 90px">
+                  <span
+                    class="sub animate__animated animate__slideInDown"
+                    style="width: 100%"
+                    >CAPABILITIES</span
+                  >
+                  <span
+                    class="filled animate__animated animate__slideInLeft"
+                    style="font-size: 90px"
+                    >Technical</span
+                  >
+                  <span
+                    class="stroked animate__animated animate__slideInRight"
+                    style="font-size: 90px"
+                  >
                     Skills & Tools</span
                   >
                 </div>
@@ -1024,16 +1125,23 @@
       </section>
 
       <!-- Portfolio -->
-      <section class="page projectsPage d-none" id="portfolio">
+      <section class="page" id="portfolio">
         <div class="container">
           <div class="row mx-0">
             <div class="col-12 text-center">
-              <span class="sub animate__animated animate__slideInDown">ACADEMIC PROJECTS</span>
+              <span class="sub animate__animated animate__slideInDown"
+                >ACADEMIC PROJECTS</span
+              >
               <br />
-              <span class="filled animate__animated animate__slideInLeft">Portfolio</span>
-              <span class="stroked animate__animated animate__slideInRight">Projects</span>
+              <span class="filled animate__animated animate__slideInLeft"
+                >Portfolio</span
+              >
+              <span class="stroked animate__animated animate__slideInRight"
+                >Projects</span
+              >
             </div>
-            <div
+            <!-- Portfolio navigations -->
+            <!-- <div
               class="col-12 my-5 d-flex justify-content-center align-items-center"
             >
               <div class="btn-group" role="group" aria-label="Project Nav">
@@ -1047,10 +1155,10 @@
                   Branding
                 </button>
               </div>
-            </div>
+            </div> -->
           </div>
 
-          <div class="row mx-0">
+          <div class="row mx-0 mt-5">
             <div class="col-12">
               <div class="gallery">
                 <div class="imgContainer">
@@ -1107,7 +1215,77 @@
       </section>
 
       <!-- Contact -->
-      <section class="page lightBG d-none" id="contact"></section>
+      <section class="page" id="contact">
+        <div class="container">
+          <div class="row mx-0 mb-5">
+            <div
+              class="col-12 d-flex justify-content-center align-items-center mb-5"
+            >
+              <div class="txt">
+                <span class="filled" style="color: #303030">Contact</span>
+                <span
+                  class="stroked"
+                  style="color: transparent; -webkit-text-stroke: 1px #303030"
+                  >Details</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col-4">
+              <div class="d-flex">
+                <div
+                  class="circles d-flex justify-content-center align-items-center"
+                >
+                  <i class="contact-icon fa-solid fa-phone"></i>
+                </div>
+                <div
+                  class="txt d-inline align-items-center justify-content-center"
+                  style="width: 300px"
+                >
+                  <span class="contact-title w-100">Phone</span>
+                  <span class="contact-txt">+63 976 045 3722</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="d-flex">
+                <div
+                  class="circles d-flex justify-content-center align-items-center"
+                >
+                  <i class="contact-icon fa-solid fa-location-dot"></i>
+                </div>
+                <div
+                  class="txt d-inline align-items-center justify-content-center"
+                  style="width: 300px"
+                >
+                  <span class="contact-title w-100">Location</span>
+                  <span class="contact-txt">Laguna, PH</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="d-flex">
+                <div
+                  class="circles d-flex justify-content-center align-items-center"
+                >
+                  <i class="contact-icon fa-solid fa-at"></i>
+                </div>
+                <div
+                  class="txt d-inline align-items-center justify-content-center"
+                  style="width: 300px"
+                >
+                  <span class="contact-title">Email</span>
+                  <span class="contact-txt">nmlalcala@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="maps"></div>
+        </div>
+      </section>
     </div>
 
     <!-- Custom Script -->
