@@ -1,116 +1,109 @@
 $(document).ready(function () {
   //Menu Page
-  $(".menu-label").click(function () {
-    $("#menu-check").on("change", function () {
-      if ($(this).is(":checked")) {
-        $(".line1").css({
-          width: "70px",
-          margin: "0 2px 0 0",
-          transform: "rotate(45deg) scaleX(0.55) translate(45px, -4.5px)",
-          "border-radius": "50px 50px 50px 0",
-        });
-        $(".line2 ").css({
-          "border-top-right-radius": "50px",
-          "border-bottom-right-radius": "50px",
-          width: "0px",
-        });
-        $(".line3").css({
-          width: "70px",
-          margin: "27px 0 0 0",
-          transform: "rotate(-45deg) scaleX(0.55) translate(40px, 4.5px)",
-          "border-radius": "0 50px 50px 50px",
-        });
-        $(".menuPage").removeClass("d-none");
-        $("section").not(".menuPage").addClass("d-none");
+  // $(".menu-label").click(function () {
+  $("#menu-check").on("change", function () {
+    if ($(this).is(":checked")) {
+      $(".menuPage").removeClass("d-none");
+      $(".line1").css({
+        width: "70px",
+        margin: "0 2px 0 0",
+        transform: "rotate(45deg) scaleX(0.55) translate(45px, -4.5px)",
+        "border-radius": "50px 50px 50px 0",
+      });
+      $(".line2 ").css({
+        "border-top-right-radius": "50px",
+        "border-bottom-right-radius": "50px",
+        width: "0px",
+      });
+      $(".line3").css({
+        margin: "27px 0 0 0",
+        transform: "rotate(-45deg) scaleX(0.55) translate(40px, 4.5px)",
+        "border-radius": "0 50px 50px 50px",
+      });
+      $("section").not(".menuPage").addClass("d-none");
+      $(".menuPage")
+        .removeClass("animate__slideOutUp d-none")
+        .addClass("animate__slideInDown");
+    } else {
+      $(".line1, .line2, .line3").css({
+        width: "70px",
+        height: "2px",
+        "background-color": "#fff",
+        margin: "0",
+        position: "absolute",
+        transform: "rotate(0deg) scaleX(1) translate(0, 0)",
+      });
+      $(".line2").css({ width: "50px", margin: "18px 0 0 0" });
+      $(".line3").css("margin", "36px 0 0 0");
+      $(".menuPage")
+          .removeClass("animate__slideInDown")
+          .addClass("animate__slideOutUp");
+      setTimeout(function () {
+         $(".menuPage").addClass("d-none");
+         
+      }, 500);
+      setTimeout(function(){
+        $(".page.active").removeClass("d-none");
+      }, 500);
+      
+    }
+  });
+  // });
 
-        // Links
-        $("#link-home").click(function () {
-          $(this).removeClass("stroked").addClass("nav-active");
-          $(".navTxt").not(this).removeClass("nav-active").addClass("stroked");
-          $("#landing").removeClass("d-none").addClass("active");
-          $("section").not("#landing").removeClass("active").addClass("d-none");
-          $(".line1, .line2, .line3").css({
-            width: "70px",
-            height: "2px",
-            "background-color": "#fff",
-            position: "absolute",
-            transform: "rotate(0deg) scaleX(1) translate(0, 0)",
-          });
-          $(".line2").css("width", "50px");
-          $(".line3").css("margin", "36px 0 0 0");
-        });
-        $("#link-about").click(function () {
-          $(this).removeClass("stroked").addClass("nav-active");
-          $(".navTxt").not(this).removeClass("nav-active").addClass("stroked");
-          $("#about").removeClass("d-none").addClass("active");
-          $("section").not("#about").removeClass("active").addClass("d-none");
-          $(".line1, .line2, .line3").css({
-            width: "70px",
-            height: "2px",
-            "background-color": "#fff",
-            position: "absolute",
-            transform: "rotate(0deg) scaleX(1) translate(0, 0)",
-          });
-          $(".line2").css("width", "50px");
-          $(".line3").css("margin", "36px 0 0 0");
-        });
-        $("#link-portfolio").click(function () {
-          $(this).removeClass("stroked").addClass("nav-active");
-          $(".navTxt").not(this).removeClass("nav-active").addClass("stroked");
-          $("#portfolio").removeClass("d-none").addClass("active");
-          $("section")
-            .not("#portfolio")
-            .removeClass("active")
-            .addClass("d-none");
-          $(".line1, .line2, .line3").css({
-            width: "70px",
-            height: "2px",
-            "background-color": "#fff",
-            position: "absolute",
-            transform: "rotate(0deg) scaleX(1) translate(0, 0)",
-          });
-          $(".line2").css("width", "50px");
-          $(".line3").css("margin", "36px 0 0 0");
-        });
-        $("#link-contact").click(function () {
-          $(this).removeClass("stroked").addClass("nav-active");
-          $(".navTxt").not(this).removeClass("nav-active").addClass("stroked");
-          $("#contact").removeClass("d-none").addClass("active");
-          $("section").not("#contact").removeClass("active").addClass("d-none");
-          $(".line1, .line2, .line3").css({
-            width: "70px",
-            height: "2px",
-            "background-color": "#fff",
-            position: "absolute",
-            transform: "rotate(0deg) scaleX(1) translate(0, 0)",
-          });
-          $(".line2").css("width", "50px");
-          $(".line3").css("margin", "36px 0 0 0");
-        });
-      } else {
-        $(".line1, .line2, .line3").css({
-          width: "70px",
-          height: "2px",
-          "background-color": "#fff",
-          margin: "0",
-          position: "absolute",
-          transform: "rotate(0deg) scaleX(1) translate(0, 0)",
-        });
-        $(".line2").css({ width: "50px", margin: "18px 0 0 0" });
-        $(".line3").css("margin", "36px 0 0 0");
-        setTimeout(function () {
-          $(".menuPage")
-            .removeClass("animate__slideInDown")
-            .addClass("animate__slideOutUp");
-        }, 3000);
-        // $(".menuPage").addClass("d-none");
-        $("section.active").removeClass("d-none");
-      }
+  // Links
+  $(".navTxt").each(function () {
+    $(this).click(function () {
+      $(".menuPage")
+        .removeClass("animate__slideInDown")
+        .addClass("animate__slideOutUp");
+      setTimeout(function () {
+        $(".menuPage").css("display", "none");
+      }, 1000);
+      $(".line1, .line2, .line3").css({
+        width: "70px",
+        height: "2px",
+        "background-color": "#fff",
+        position: "absolute",
+        transform: "rotate(0deg) scaleX(1) translate(0, 0)",
+      });
+      $(".line1").css("margin", "0 2px 0 0");
+      $(".line2").css("width", "50px");
+      $(".line3").css("margin", "36px 0 0 0");
+      $(this).removeClass("stroked").addClass("nav-active");
     });
   });
 
+  $("#link-home").click(function () {
+    $(this).addClass("nav-active");
+    $(".navTxt").not(this).removeClass("nav-active").addClass("stroked");
+    $("#landing").removeClass("d-none").addClass("active");
+    $(".page").not("#landing").removeClass("active").addClass("d-none");
+  });
+
   $("#learnMore").click(function () {
-    $("section").not("#about").removeClass("active").addClass("d-none");
+    $("#about").removeClass("d-none").addClass("active");
+    $(".page").not("#about").removeClass("active").addClass("d-none");
+  });
+
+  $("#link-about").click(function () {
+    $(this).addClass("nav-active");
+    $(".navTxt").not(this).removeClass("nav-active").addClass("stroked");
+    $("#about").removeClass("d-none").addClass("active");
+    $(".page").not("#about").removeClass("active").addClass("d-none");
+  });
+
+  $("#link-portfolio").click(function () {
+    $(this).addClass("nav-active");
+    $(".navTxt").not(this).removeClass("nav-active").addClass("stroked");
+    $("#portfolio").removeClass("d-none").addClass("active");
+    $(".page").not("#portfolio").removeClass("active").addClass("d-none");
+  });
+
+  $("#link-contact").click(function () {
+    $(this).addClass("nav-active");
+    $(".navTxt").not(this).removeClass("nav-active").addClass("stroked");
+    $("#contact").removeClass("d-none").addClass("active");
+    $(".page").not("#contact").removeClass("active").addClass("d-none");
   });
 
   // Animations
