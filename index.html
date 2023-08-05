@@ -8,10 +8,341 @@
 
     <!-- ICON -->
     <link rel="icon" href="assets/logo.png" type="image/png">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <!-- Nav start -->
+    <nav>
+        <div class="row mx-0">
+            <div class="col-6 d-flex align-items-center">
+                <img src="assets/logo.png" alt="" width="35px">
+                <a class="navbar-brand poppinsFont ms-3" href="index.html">clinoae</a>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-end">
+                <button class="btn d-flex align-items-center" id="menuBtn">
+                    <span class="poppinsFont" id="menuText">HOME</span>
+                    <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox">
+                    <label class="icon-menu ms-5" for="check-icon">
+                        <div class="bar bar-1"></div>
+                        <div class="bar bar-2"></div>
+                        <div class="bar bar-3"></div>
+                    </label>
+                </button>
+            </div>
+        </div>
+        <!-- Nav end -->
+    </nav>
+    <main>
 
+        <!-- Landing start -->
+        <section class="mx-0 pt-0">
+            <div class="container">
+                <div class="row">
+                    <!-- Landing left start -->
+                    <div class="col-6 d-flex flex-column justify-content-center align-items-start flex-container">
+                        <span class="poppinsFont pink">Designer | Developer</span>
+                        <div class="row">
+                            <div class="col-6 poppinsFont landingName">
+                                Nicole
+                            </div>
+                            <div class="col-6 poppinsFont stroked landingName">
+                                Alcala
+                            </div>
+                        </div>
+                        <p class="poppinsFont" id="landingSummary">
+                            Committed to lifelong learning and development, I am eager to learn and be taught and
+                            motivated
+                            to
+                            make a positive impact to the world.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center" id="landingSocials">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-github"></i>
+                            <div id="landingDivider"></div>
+                            <button class="btn poppinsFont pink" style="font-weight: 500">View CV <i
+                                    class="fa-solid fa-angles-right pink"></i></button>
+                        </div>
+                        <!-- Landing left end -->
+                    </div>
+
+                    <!-- Landing right start -->
+                    <div class="col-6 position-relative d-flex align-items-center justify-content-center">
+                        <img src="assets/pink.png" alt="pink-bg" class="vectorBg">
+                        <img src="assets/landing_pic.jpg" alt="landing-pic" class="pic">
+                        <!-- Landing right end -->
+                    </div>
+                </div>
+                <div class="landingHr my-0" style="background-color: #303030; height: 1px; width: 100%;"></div>
+                <div class="row">
+                    <div class="col-12 poppinsFont py-4" id="landingWhatIDo">
+                        What I Do?
+                    </div>
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-12 landingSubTexts pb-3">
+                                Responsive Web Applications
+                            </div>
+                            <div class="col-12 landingSubDetails">
+                                I have experience in developing informational websites, personal websites, dynamic
+                                websites,
+                                and
+                                information systems.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-12 landingSubTexts pb-3">
+                                User-centered Web Designs
+                            </div>
+                            <div class="col-12 landingSubDetails">
+                                I created multiple web designs for various academic and non-academic projects with the
+                                goal of enhancing user experience.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-12 landingSubTexts pb-3">
+                                Robust Relational Databases
+                            </div>
+                            <div class="col-12 landingSubDetails">
+                                I developed and managed some robust relational databases for various academic projects.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-12 landingSubTexts pb-3">
+                                Logo Making
+                            </div>
+                            <div class="col-12 landingSubDetails">
+                                I have created unique logos for all of the projects I have participated in, with the aim
+                                of
+                                conveying specific impressions and vibes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Landing end -->
+        </section>
+
+        <!-- About start -->
+        <section class="mx-0" style="background-color: #131313;">
+            <div class="container">
+                <div class="row">
+                    <!-- About left start -->
+                    <div class="col-6 d-flex align-items-center justify-content-start position-relative">
+                        <img class="vectorBg" src="assets/blue.png" alt="blue-bg" id="blueBg">
+                        <img class="pic rounded-4" src="assets/toga_pic.jpg" alt="toga-pic"
+                            style="box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);">
+                        <!-- About left start -->
+                    </div>
+
+                    <!-- About right start -->
+                    <div class="col-6 d-flex flex-column justify-content-center align-items-start flex-container">
+                        <span class="poppinsFont" id="aboutText">About Me</span>
+                        <span class="poppinsFont pink mt-5" style="letter-spacing: 10px;">INTRODUCTION</span>
+                        <p class="poppinsFont mt-2" id="aboutHighlight">
+                            I’m a graduating student with a good foundation in Web Development and UI/UX Design.
+                        </p>
+                        <p class="lightText my-3">I am pursuing a Bachelor of Science in Information Technology at the
+                            Polytechnic University of the Philippines - Sto. Tomas.</p>
+                        <p class="lightText my-3">I initially chose this degree program for practical reasons, but to my
+                            surprise, I found myself enjoying this field even more than I had anticipated. Through
+                            diligent efforts and
+                            dedication, I consistently achieved the President's List award every semester from 2019 to
+                            2023, maintaining a prominent position within the class. As a result of my hard work, I have
+                            the privilege of being recognized as a <span style="color: #9DD6FF">Magna Cum Laude
+                                candidate</span> for the Class of 2023.
+                        </p>
+
+                        <button class="btn rounded-3 learnMore">
+                            Learn more
+                        </button>
+                        <!-- About left end -->
+                    </div>
+                </div>
+            </div>
+            <!-- About start -->
+        </section>
+
+        <!-- Latest project start -->
+        <section class="mx-0">
+            <div class="container">
+                <div class="row">
+                    <!-- Latest project left start -->
+                    <div class="col-6 d-flex flex-column flex-container align-self-start justify-content-center lh-1">
+                        <span class="poppinsFont blue mb-4" style="letter-spacing: 10px;">LATEST PROJECT</span>
+                        <span class="poppinsFont landingName pink">
+                            UNBLOKC
+                        </span>
+                        <span class="poppinsFont stroked landingName" style="-webkit-text-stroke: 2px #FF7CAD;
+                        -moz-text-stroke: 2px #FF7CAD;
+                        text-stroke: 2px #FF7CAD">
+                            Hackathon
+                        </span>
+                        <span class="mt-5">Role: Front End Developer, UI/UX Designer</span>
+                        <span class="my-2">Link:&nbsp;<a href="https://hackathon.theblokc.media"
+                                style="color: #75C6FF"><em>https://hackathon.theblokc.media</em></a></span>
+                        <p class="my-3">I had the opportunity to work on this exciting project during my
+                            internship period at The BLOKC. I designed and developed this website aiming to facilitate
+                            the UNBLOKC 2023 hackathon participants. The website serves as a valuable resource,
+                            providing participants with all the
+                            necessary information, schedule, and guidelines they need to excel in the upcoming
+                            hackathon.
+                        </p>
+                        <button class="btn rounded-3 learnMore">
+                            Learn more
+                        </button>
+                        <!-- Latest project left end -->
+                    </div>
+
+                    <!-- Latest project right start -->
+                    <div class="col-6 d-flex align-items-center justify-content-start position-relative">
+                        <img class="pic" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
+                    </div>
+                </div>
+            </div>
+            <!-- Latest project end -->
+        </section>
+
+
+        <!-- Contact start -->
+        <section class="mx-0" style="background-color: #131313;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="poppinsFont landingName" style="color: white">
+                            Let's
+                        </div>
+                        <div class="poppinsFont stroked landingName" style="-webkit-text-stroke: 2px white;
+                        -moz-text-stroke: 2px white;
+                        text-stroke: 2px white;">
+                            Talk
+                        </div>
+                    </div>
+
+                    <!-- Contact left start -->
+                    <div class="col-4">
+                        <div class="row my-4">
+                            <div class="col-12 pink poppinsFont">
+                                Contact Details
+                            </div>
+                        </div>
+
+                        <div class="row ps-1">
+                            <div class="col-1 d-flex justify-content-start">
+                                <i class="fa-solid fa-location-dot contactIcon" style="color: white"></i>
+                            </div>
+                            <div class="col-11">
+                                <div class="row">
+                                    <div class="col-12 lightText contactHead">
+                                        Calamba City, Laguna
+                                    </div>
+                                    <div class="col-12 lightText">
+                                        Philippines
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-1 mt-3 d-flex justify-content-start">
+                                <i class="fa-solid fa-mobile-screen-button contactIcon" style="color: white"></i>
+                            </div>
+                            <div class="col-11 mt-3">
+                                <div class="row">
+                                    <div class="col-12 lightText contactHead">
+                                        (+63) 976 045 3722
+                                    </div>
+                                    <div class="col-12 lightText">
+                                        Mobile No.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-1 mt-3 d-flex justify-content-start">
+                                <i class="fa-solid fa-at contactIcon" style="color: white"></i>
+                            </div>
+                            <div class="col-11 mt-3">
+                                <div class="row">
+                                    <div class="col-12 lightText contactHead">
+                                        nclmalcala@gmail.com
+                                    </div>
+                                    <div class="col-12 lightText">
+                                        Email
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-1 mt-3 d-flex justify-content-start">
+                                <i class="fa-solid fa-at contactIcon" style="color: white"></i>
+                            </div>
+                            <div class="col-11 mt-3">
+                                <div class="row">
+                                    <div class="col-12 lightText contactHead">
+                                        nicolealcala.github.io
+                                    </div>
+                                    <div class="col-12 lightText">
+                                        Website
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contact left end -->
+                    </div>
+
+                    <!-- Contact right start -->
+                    <div class="col-8">
+                        <div class="row my-4">
+                            <div class="col-12 pink poppinsFont">
+                                Send a Message
+                            </div>
+                        </div>
+
+                        <div class="row mx-0 d-flex">
+                            <form action="">
+                                <div class="col-5">
+                                    <input class="form-control contactMessage my-3" type="text"
+                                        placeholder="First Name">
+                                    <input class="form-control contactMessage my-3" type="text" placeholder="Last Name">
+                                    <input class="form-control contactMessage my-3" type="email" placeholder="Email">
+                                    <input class="form-control contactMessage my-3" type="text"
+                                        placeholder="Contact No.">
+                                </div>
+
+                                <!-- <div class="col-7 d-flex flex-column flex-container">
+                                    <input class="form-control contactMessage my-2" type="text" placeholder="Subject">
+                                </div> -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact start -->
+        </section>
+    </main>
+
+    <!-- BOOTSTRAP -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FONTAWESOME -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </body>
 
 </html>

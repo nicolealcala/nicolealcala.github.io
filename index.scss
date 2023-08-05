@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #303030;
+    background-color: #FFFFFC;
+}
+
+
+.pink {
+    color: #FF7CAD;
+    font-weight: 500;
+}
+
+.blue {
+    color: #6cc2ff;
+}
+
+.lightText {
+    color: #cdcdcd;
+    line-height: 30px;
+}
+
+p {
+    line-height: 30px;
+}
+
+section {
+    padding: 200px 0px;
+}
+
+.learnMore {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: #9DD6FF;
+    width: 140px;
+}
+
+.learnMore:hover {
+    outline: 3px solid #9DD6FF;
+    outline-offset: -3px;
+    color: #9DD6FF
+}
+
+#blueBg {
+    right: 70px;
+}
+
+.poppinsFont {
+    font-family: 'Poppins', sans-serif;
+}
+
+.stroked {
+    color: transparent;
+    -webkit-text-stroke: 2px #303030;
+    -moz-text-stroke: 2px #303030;
+    text-stroke: 2px #303030;
+}
+
+nav {
+    padding: 24px;
+
+    .navbar-brand,
+    #menuText {
+        font-weight: 500;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    #menuBtn {
+        border: none;
+
+        #menuText {
+            font-weight: 400;
+            letter-spacing: 2px;
+            font-size: 18px;
+            color: #303030;
+        }
+
+        .icon-menu {
+            --gap: 5px;
+            --height-bar: 2px;
+            --pos-y-bar-one: 0;
+            --pos-y-bar-three: 0;
+            --scale-bar: 1;
+            --rotate-bar-one: 0;
+            --rotate-bar-three: 0;
+            width: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .bar {
+            position: relative;
+            height: var(--height-bar);
+            width: 100%;
+            border-radius: .5rem;
+            background-color: #303030;
+        }
+
+        .bar-1 {
+            top: var(--pos-y-bar-one);
+            transform: rotate(var(--rotate-bar-one));
+            transition: top 200ms 100ms, transform 100ms;
+        }
+
+        .bar-2 {
+            transform: scaleX(var(--scale-bar));
+            transition: transform 150ms 100ms;
+            width: 20px;
+            align-self: end;
+        }
+
+        .bar-3 {
+            bottom: var(--pos-y-bar-three);
+            transform: rotate(var(--rotate-bar-three));
+            transition: bottom 200ms 100ms, transform 100ms;
+        }
+
+        .check-icon:checked+.icon-menu>.bar--1 {
+            transition: top 200ms, transform 200ms 100ms;
+        }
+
+        .check-icon:checked+.icon-menu>.bar--3 {
+            transition: bottom 200ms, transform 200ms 100ms;
+        }
+
+        .check-icon:checked+.icon-menu {
+            --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+            --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+            --scale-bar: 0;
+            --rotate-bar-one: 45deg;
+            --rotate-bar-three: -45deg;
+        }
+    }
+}
+
+.landingName,
+#aboutText {
+    font-size: 98px;
+    font-weight: 700;
+}
+
+#landingSummary {
+    width: 490px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#landingSocials {
+    width: 368px;
+}
+
+
+.fa-brands {
+    font-size: 25rem;
+}
+
+#landingDivider {
+    width: 1px;
+    height: 60px;
+    background-color: #303030;
+}
+
+.vectorBg {
+    z-index: 0;
+    position: absolute;
+    top: auto;
+    width: 650px;
+
+}
+
+.pic {
+    height: 650px;
+    position: relative;
+    z-index: 5;
+}
+
+#landingWhatIDo,
+#aboutHighlight {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.landingSubTexts {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.landingSubDetails {
+    width: 300px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#aboutText {
+    color: white;
+    font-size: 55px;
+}
+
+#aboutHighlight {
+    color: #cdcdcd;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+#unblokcPic {
+    width: 750px;
+    height: auto;
+    right: 40px;
+}
+
+.contactIcon {
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+.contactHead {
+    font-weight: 500;
+}
+
+.form-control.contactMessage {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.form-control.contactMessage::placeholder {
+    color: #aeaeae;
+}
