@@ -4,7 +4,7 @@ $(document).ready(function () {
         loader.hide(); // Hide the loader when the page has finished loading
     });
 
-    var landingPageHeight = $("#landingPage").height();
+    var landingPageHeight = $("#landingPage").outerHeight();
     $(window).scroll(function () {
         if ($(this).scrollTop() > landingPageHeight) {
             $('#backToTop').fadeIn();

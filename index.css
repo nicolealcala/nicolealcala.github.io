@@ -73,7 +73,6 @@ section {
   color: #303030;
   height: 50px;
   width: 50px;
-  padding: auto;
   z-index: 10;
 }
 #backToTop .fa-arrow-up {
