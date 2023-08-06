@@ -9,6 +9,9 @@
     <!-- ICON -->
     <link rel="icon" href="assets/logo.png" type="image/png">
 
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 
@@ -20,13 +23,14 @@
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+
+
 </head>
 
 <body>
 
     <!-- Loader start -->
-    <section class="d-flex justify-content-center align-items-center"
-        style="background-color: #131313; width: 100%; height: 100vh">
+    <section style="background-color: #131313; width: 100%; height: 100vh" id="sectionLoader">
         <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg"
             class="loader">
             <defs>
@@ -49,20 +53,9 @@
                         dur="2s" repeatCount="indefinite"></animateMotion>
                 </circle>
             </g>
-            <!-- Loader end -->
         </svg>
+        <!-- Loader end -->
     </section>
-
-    <section class="d-flex justify-content-center align-items-center"
-        style="background-color: #131313; width: 100%; height: 100vh">
-        <div class="loader2 d-flex justify-content-center align-items-center">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </section>
-
-
 
     <!-- Nav start -->
     <nav>
@@ -410,6 +403,8 @@
         </section>
     </main>
 
+
+
     <!-- BOOTSTRAP -->
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -417,6 +412,9 @@
     <!-- FONTAWESOME -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="index.js"></script>
 </body>
 
 </html>
