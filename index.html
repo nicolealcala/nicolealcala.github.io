@@ -16,9 +16,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="loader.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
 </head>
 
 <body>
+
+    <!-- Loader start -->
+    <section class="d-flex justify-content-center align-items-center"
+        style="background-color: #131313; width: 100%; height: 100vh">
+        <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="loader">
+            <defs>
+                <path id="move-path"
+                    d="M102.546 83.5C109.859 70.8333 128.141 70.8333 135.454 83.5L157.971 122.5C165.284 135.167 156.143 151 141.517 151H96.4833C81.8571 151 72.7158 135.167 80.0289 122.5L102.546 83.5Z"
+                    fill="#FF7CAD"></path>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -32">
+                    </feColorMatrix>
+                </filter>
+            </defs>
+            <g filter="url(#goo)">
+                <circle cx="119" cy="74" r="20" stroke="#FF7CAD " stroke-width="8"></circle>
+                <circle cx="79" cy="141" r="20" stroke="#9DD6FF" stroke-width="8"></circle>
+                <circle cx="157" cy="141" r="20" stroke="#FFDF66" stroke-width="8"></circle>
+                <circle id="liquid" cx="0" cy="0" r="14" fill="#FF7CAD">
+                    <animateMotion
+                        path="M102.546 83.5C109.859 70.8333 128.141 70.8333 135.454 83.5L157.971 122.5C165.284 135.167 156.143 151 141.517 151H96.4833C81.8571 151 72.7158 135.167 80.0289 122.5L102.546 83.5Z"
+                        dur="2s" repeatCount="indefinite"></animateMotion>
+                </circle>
+            </g>
+            <!-- Loader end -->
+        </svg>
+    </section>
+
+    <section class="d-flex justify-content-center align-items-center"
+        style="background-color: #131313; width: 100%; height: 100vh">
+        <div class="loader2 d-flex justify-content-center align-items-center">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+
+
     <!-- Nav start -->
     <nav>
         <div class="row mx-0">
@@ -48,7 +93,7 @@
                 <div class="row">
                     <!-- Landing left start -->
                     <div class="col-6 d-flex flex-column justify-content-center align-items-start flex-container">
-                        <span class="poppinsFont pink">Designer | Developer</span>
+                        <span class="poppinsFont pink animate__animated animate__bounce">Designer | Developer</span>
                         <div class="row">
                             <div class="col-6 poppinsFont landingName">
                                 Nicole
@@ -69,8 +114,9 @@
                             <i class="fa-brands fa-linkedin-in"></i>
                             <i class="fa-brands fa-github"></i>
                             <div id="landingDivider"></div>
-                            <button class="btn poppinsFont pink" style="font-weight: 500">View CV <i
-                                    class="fa-solid fa-angles-right pink"></i></button>
+                            <a class="poppinsFont"
+                                href="https://drive.google.com/file/d/11-oI-twf_Hffe8rPiLOzRIxY16zuIk-2/view?usp=sharing"
+                                target="_blank" id="viewCV">View CV <i class="fa-solid fa-angles-right"></i></a>
                         </div>
                         <!-- Landing left end -->
                     </div>
@@ -150,13 +196,13 @@
                         <img class="vectorBg" src="assets/blue.png" alt="blue-bg" id="blueBg">
                         <img class="pic rounded-4" src="assets/toga_pic.jpg" alt="toga-pic"
                             style="box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);">
-                        <!-- About left start -->
+                        <!-- About left end -->
                     </div>
 
                     <!-- About right start -->
                     <div class="col-6 d-flex flex-column justify-content-center align-items-start flex-container">
                         <span class="poppinsFont" id="aboutText">About Me</span>
-                        <span class="poppinsFont pink mt-5" style="letter-spacing: 10px;">INTRODUCTION</span>
+                        <span class="poppinsFont pink mt-5">Introduction</span>
                         <p class="poppinsFont mt-2" id="aboutHighlight">
                             I’m a graduating student with a good foundation in Web Development and UI/UX Design.
                         </p>
@@ -171,19 +217,19 @@
                                 candidate</span> for the Class of 2023.
                         </p>
 
-                        <button class="btn rounded-3 learnMore">
+                        <button class="btn rounded-3 learnMore mt-4">
                             Learn more
                         </button>
-                        <!-- About left end -->
+                        <!-- About right end -->
                     </div>
                 </div>
             </div>
-            <!-- About start -->
+            <!-- About end -->
         </section>
 
         <!-- Latest project start -->
         <section class="mx-0">
-            <div class="container">
+            <div class="container py-5">
                 <div class="row">
                     <!-- Latest project left start -->
                     <div class="col-6 d-flex flex-column flex-container align-self-start justify-content-center lh-1">
@@ -206,7 +252,7 @@
                             necessary information, schedule, and guidelines they need to excel in the upcoming
                             hackathon.
                         </p>
-                        <button class="btn rounded-3 learnMore">
+                        <button class="btn rounded-3 learnMore mt-4">
                             Learn more
                         </button>
                         <!-- Latest project left end -->
@@ -215,6 +261,7 @@
                     <!-- Latest project right start -->
                     <div class="col-6 d-flex align-items-center justify-content-start position-relative">
                         <img class="pic" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
+                        <!-- Latest project right end -->
                     </div>
                 </div>
             </div>
@@ -240,7 +287,7 @@
                     <!-- Contact left start -->
                     <div class="col-4">
                         <div class="row my-4">
-                            <div class="col-12 pink poppinsFont">
+                            <div class="col-12 pink poppinsFont" style="font-weight: 600">
                                 Contact Details
                             </div>
                         </div>
@@ -308,31 +355,58 @@
                     <!-- Contact right start -->
                     <div class="col-8">
                         <div class="row my-4">
-                            <div class="col-12 pink poppinsFont">
+                            <div class="col-12 pink poppinsFont" style="font-weight: 600">
                                 Send a Message
                             </div>
                         </div>
+                        <form action="">
+                            <div class="row mx-0 d-flex">
 
-                        <div class="row mx-0 d-flex">
-                            <form action="">
                                 <div class="col-5">
-                                    <input class="form-control contactMessage my-3" type="text"
-                                        placeholder="First Name">
-                                    <input class="form-control contactMessage my-3" type="text" placeholder="Last Name">
-                                    <input class="form-control contactMessage my-3" type="email" placeholder="Email">
-                                    <input class="form-control contactMessage my-3" type="text"
-                                        placeholder="Contact No.">
+                                    <input class="form-control contactMessage" type="text" placeholder="First Name">
+                                    <input class="form-control contactMessage" type="text" placeholder="Last Name">
+                                    <input class="form-control contactMessage" type="email" placeholder="Email">
+                                    <input class="form-control contactMessage" type="text" placeholder="Contact No.">
                                 </div>
 
-                                <!-- <div class="col-7 d-flex flex-column flex-container">
-                                    <input class="form-control contactMessage my-2" type="text" placeholder="Subject">
-                                </div> -->
-                            </form>
-                        </div>
+                                <div class="col-7 d-flex flex-column flex-container">
+                                    <input class="form-control contactMessage" type="text" placeholder="Subject">
+                                    <textarea class="form-control contactMessage" id="" cols="30" rows="7"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mx-0">
+                                <div class="col-12 d-flex align-items-center justify-content-end">
+                                    <button class="btn" type="submit" id="contactSend">Send email</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Contact right end -->
                     </div>
                 </div>
+
+                <div class="landingHr" style="background-color: #cdcdcd; height: 1px; width: 100%;" id="footerHr">
+                </div>
+
+                <footer class="mt-4">
+                    <div class="col-12 d-flex justify-content-start align-items-center">
+                        <span class="poppinsFont pink me-3" style="font-weight: 600">Follow Me:</span>
+                        <a href="https://www.facebook.com/nicole.alcala.m/" target="_blank"><i
+                                class="fab fa-facebook footerIcon"></i></a>
+                        <a href="https://www.instagram.com/nicolealcalq/" target="_blank">
+                            <div class="iconBG rounded-pill d-flex justify-content-center align-items-center"><i
+                                    class="fab fa-instagram footerIconBG"></i></div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nicolealcala" target="_blank">
+                            <div class="iconBG rounded-pill d-flex justify-content-center align-items-center"><i
+                                    class="fab fa-linkedin-in footerIconBG"></i></div>
+                        </a>
+                        <a href="https://github.com/nicolealcala" target="_blank"><i
+                                class="fab fa-github footerIcon"></i></a>
+                    </div>
+                </footer>
             </div>
-            <!-- Contact start -->
+            <!-- Contact end -->
         </section>
     </main>
 

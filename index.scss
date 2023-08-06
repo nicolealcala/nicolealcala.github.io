@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #303030;
     background-color: #FFFFFC;
+    scroll-behavior: smooth;
 }
 
 
@@ -27,14 +32,14 @@ p {
 }
 
 section {
-    padding: 200px 0px;
+    padding: 100px 0px;
 }
 
-.learnMore {
+.learnMore,
+#contactSend {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     padding: 10px 20px;
-    margin-top: 30px;
     background-color: #9DD6FF;
     width: 140px;
 }
@@ -168,6 +173,30 @@ nav {
     background-color: #303030;
 }
 
+#viewCV {
+    position: relative;
+    font-weight: 500;
+    text-decoration: none;
+    color: #FF7CAD;
+}
+
+#viewCV::after {
+    content: "";
+    /* Create the pseudo-element content */
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0px;
+    height: 3px;
+    background-color: #FF7CAD;
+    opacity: 1;
+    transition: width 0.2s;
+}
+
+#viewCV:hover::after {
+    width: 100%;
+}
+
 .vectorBg {
     z-index: 0;
     position: absolute;
@@ -177,7 +206,7 @@ nav {
 }
 
 .pic {
-    height: 650px;
+    height: 630px;
     position: relative;
     z-index: 5;
 }
@@ -226,10 +255,43 @@ nav {
 }
 
 .form-control.contactMessage {
+    margin-bottom: 34px;
     background-color: rgba(255, 255, 255, 0);
     color: white;
 }
 
 .form-control.contactMessage::placeholder {
     color: #aeaeae;
+}
+
+#footerHr {
+    margin-top: 60px;
+}
+
+.footerIcon,
+.iconBG {
+    font-size: 40px;
+    color: #cdcdcd;
+    margin: 0px 5px;
+}
+
+.iconBG {
+    width: 40px;
+    height: 40px;
+    background-color: #cdcdcd;
+}
+
+.footerIcon:hover {
+    color: #FF7CAD;
+    transition: 0.2s ease-in;
+}
+
+.iconBG:hover {
+    background-color: #FF7CAD;
+    transition: 0.2s ease-in;
+}
+
+.footerIconBG {
+    font-size: 25px;
+    color: #131313;
 }
