@@ -4,6 +4,19 @@ $darkTxt: #303030;
 $lightTxt: #DDDDDD;
 $white: white;
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: $darkTxt;
+    scroll-behavior: smooth;
+}
+
 // Fonts
 .poppinsFont {
     font-family: 'Poppins', sans-serif;
@@ -62,6 +75,86 @@ p {
     line-height: 30px;
 }
 
+// Nav
+nav {
+    padding: 24px;
+
+    .navbar-brand,
+    #menuText {
+        font-weight: 500;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    #menuBtn {
+        border: none;
+
+        #menuText {
+            font-weight: 400;
+            letter-spacing: 2px;
+            font-size: 18px;
+        }
+
+        .icon-menu {
+            --gap: 5px;
+            --height-bar: 2px;
+            --pos-y-bar-one: 0;
+            --pos-y-bar-three: 0;
+            --scale-bar: 1;
+            --rotate-bar-one: 0;
+            --rotate-bar-three: 0;
+            width: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .bar {
+            position: relative;
+            height: var(--height-bar);
+            width: 100%;
+            border-radius: .5rem;
+        }
+
+        .bar-1 {
+            top: var(--pos-y-bar-one);
+            transform: rotate(var(--rotate-bar-one));
+            transition: top 200ms 100ms, transform 100ms;
+        }
+
+        .bar-2 {
+            transform: scaleX(var(--scale-bar));
+            transition: transform 150ms 100ms;
+            width: 20px;
+            align-self: end;
+        }
+
+        .bar-3 {
+            bottom: var(--pos-y-bar-three);
+            transform: rotate(var(--rotate-bar-three));
+            transition: bottom 200ms 100ms, transform 100ms;
+        }
+
+        .check-icon:checked+.icon-menu>.bar--1 {
+            transition: top 200ms, transform 200ms 100ms;
+        }
+
+        .check-icon:checked+.icon-menu>.bar--3 {
+            transition: bottom 200ms, transform 200ms 100ms;
+        }
+
+        .check-icon:checked+.icon-menu {
+            --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+            --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+            --scale-bar: 0;
+            --rotate-bar-one: 45deg;
+            --rotate-bar-three: -45deg;
+        }
+    }
+}
+
 // Sections
 section {
     background-color: transparent;
@@ -70,6 +163,15 @@ section {
 
 .darkSection {
     background-color: #131313;
+}
+
+#sectionLoader {
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 // Buttons
@@ -104,6 +206,10 @@ section {
 }
 
 // Anchors
+a {
+    text-decoration: none;
+}
+
 .footerIcon,
 .iconBG {
     font-size: 40px;
@@ -135,4 +241,68 @@ section {
 // Images
 .picShadow {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+}
+
+// Divider
+.dividerHr {
+    height: 1px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    // Texts and Colors
+    .heading {
+        font-size: 85px;
+        font-weight: 700;
+    }
+
+    .secondaryTxt {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .tertiaryTxt {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .pink {
+        color: $pink;
+    }
+
+    .blue {
+        color: $blue;
+    }
+
+    .white {
+        color: white;
+    }
+
+    .stroked {
+        color: transparent;
+        -webkit-text-stroke: 2px $darkTxt;
+        -moz-text-stroke: 2px $darkTxt;
+    }
+
+    .pinkStroked {
+        color: transparent;
+        -webkit-text-stroke: 2px #FF7CAD;
+        -moz-text-stroke: 2px #FF7CAD;
+    }
+
+    .whiteStroked {
+        color: transparent;
+        -webkit-text-stroke: 2px white;
+        -moz-text-stroke: 2px white;
+    }
+
+    .lightText {
+        color: $lightTxt;
+    }
+
+    p {
+        line-height: 25px;
+    }
 }

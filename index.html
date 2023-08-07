@@ -7,7 +7,7 @@
     <title>clinoae</title>
 
     <!-- ICON -->
-    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="icon" href="assets/logoLight.png" type="image/png">
 
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -25,14 +25,12 @@
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
-
-
 </head>
 
 <body>
 
     <!-- Loader start -->
-    <section style="background-color: #131313; width: 100%; height: 100vh" id="sectionLoader">
+    <section class="darkSection" style="width: 100%; height: 100vh" id="sectionLoader">
         <div class="container d-flex align-items-center justify-content-center">
             <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg"
                 class="loader">
@@ -59,14 +57,6 @@
             </svg>
         </div>
         <!-- Loader end -->
-
-        <!-- Loader 2 start-->
-        <!-- <div class="container">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div> -->
-
     </section>
 
     <!-- Back to Top start -->
@@ -77,7 +67,7 @@
     <nav>
         <div class="row mx-0">
             <div class="col-6 d-flex align-items-center">
-                <img src="assets/logo.png" alt="" width="45px">
+                <img src="assets/logoLight.png" alt="" width="45px">
                 <a class="navbar-brand poppinsFont ms-3" href="index.html">clinoae</a>
             </div>
             <div class="col-6 d-flex align-items-center justify-content-end">
@@ -94,21 +84,22 @@
         </div>
         <!-- Nav end -->
     </nav>
-    <main>
 
+    <main>
         <!-- Landing start -->
         <section class="pt-0" id="landingPage">
             <div class="container">
-                <div class="row">
+                <!-- For Large Screen start-->
+                <div class="row mx-0 d-none d-lg-flex">
                     <!-- Landing left start -->
                     <div class="col-6 d-flex flex-column justify-content-center align-items-start flex-container">
                         <span class="poppinsFont pink tertiaryTxt">Designer | Developer</span>
-                        <div class="row">
-                            <div class="col-6 poppinsFont heading">
+                        <div class="row mx-0">
+                            <div class="col-12 d-flex poppinsFont heading">
                                 Nicole
-                            </div>
-                            <div class="col-6 poppinsFont stroked heading">
-                                Alcala
+                                <span class="stroked heading">
+                                    Alcala
+                                </span>
                             </div>
                         </div>
                         <p id="landingSummary">
@@ -118,13 +109,17 @@
                             make a positive impact to the world.
                         </p>
                         <div class="d-flex justify-content-between align-items-center" id="landingSocials">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-linkedin-in"></i>
-                            <i class="fa-brands fa-github"></i>
+                            <a href="https://www.facebook.com/nicole.alcala.m/" target="_blank" class="homeSocials"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/nicolealcalq/" target="_blank" class="homeSocials"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/nicolealcala" target="_blank" class="homeSocials"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/nicolealcala" target="_blank" class="homeSocials"><i
+                                    class="fa-brands fa-github"></i></a>
                             <div id="landingDivider"></div>
                             <a class="poppinsFont"
-                                href="https://drive.google.com/file/d/11-oI-twf_Hffe8rPiLOzRIxY16zuIk-2/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1MC4E6owlVbjJpAE2BL0KxcIC9EPo-t1-/view?usp=sharing"
                                 target="_blank" id="viewCV">View CV <i class="fa-solid fa-angles-right"></i></a>
                         </div>
                         <!-- Landing left end -->
@@ -136,19 +131,62 @@
                         <img src="assets/landing_pic.png" alt="landing-pic" class="homePic">
                         <!-- Landing right end -->
                     </div>
+                    <!-- For Large Screen end-->
                 </div>
-                <div class="dividerHr my-0" style="background-color: #303030; height: 1px; width: 100%;"></div>
-                <div class="row">
-                    <div class="col-12 poppinsFont secondaryTxt py-4">
+
+                <!-- For Smaller Screen start -->
+                <div class="row mx-0 d-flex d-lg-none">
+                    <span class="poppinsFont pink tertiaryTxt">Designer | Developer</span>
+                    <div class="row mx-0">
+                        <div class="col-12 d-flex poppinsFont heading">
+                            Nicole
+                            <span class="stroked heading">
+                                Alcala
+                            </span>
+                        </div>
+                        <div class="col-12 d-flex flex-column flex-container">
+                            <p id="landingSummary">
+                                Committed to lifelong learning and development, I am eager to learn and be taught and
+                                motivated
+                                to
+                                make a positive impact to the world.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center" id="landingSocials">
+                                <a href="https://www.facebook.com/nicole.alcala.m/" target="_blank"
+                                    class="homeSocials"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/nicolealcalq/" target="_blank" class="homeSocials"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/nicolealcala" target="_blank"
+                                    class="homeSocials"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://github.com/nicolealcala" target="_blank" class="homeSocials"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <div id="landingDivider"></div>
+                                <a class="poppinsFont"
+                                    href="https://drive.google.com/file/d/1MC4E6owlVbjJpAE2BL0KxcIC9EPo-t1-/view?usp=sharing"
+                                    target="_blank" id="viewCV">View CV <i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center position-relative pt-5">
+                            <img src="assets/pink.png" alt="pink-bg" id="pinkBg">
+                            <img src="assets/landing_pic.png" alt="landing-pic" class="homePic">
+                        </div>
+                    </div>
+                    <!-- For Smaller Screen end -->
+                </div>
+
+                <div class="dividerHr my-0" style="background-color: #303030;"></div>
+
+                <div class="row mx-0 mt-3 gy-4 gx-5">
+                    <div class="col-12 poppinsFont secondaryTxt">
                         What I Do?
                     </div>
-                    <div class="col-3">
-                        <div class="row">
-                            <div class="col-12 subTxtTitle pb-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="row mx-0">
+                            <div class="col-12 subTxtTitle pb-2">
                                 Responsive Web Applications
                             </div>
                             <div class="col-12 subTxtDetails">
-                                I have experience in developing informational websites, personal websites, dynamic
+                                I have experience developing informational websites, personal websites, dynamic
                                 websites,
                                 and
                                 information systems.
@@ -156,9 +194,9 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
-                        <div class="row">
-                            <div class="col-12 subTxtTitle pb-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="row mx-0">
+                            <div class="col-12 subTxtTitle pb-2">
                                 User-centered Web Designs
                             </div>
                             <div class="col-12 subTxtDetails">
@@ -168,9 +206,9 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
-                        <div class="row">
-                            <div class="col-12 subTxtTitle pb-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="row mx-0">
+                            <div class="col-12 subTxtTitle pb-2">
                                 Robust Relational Databases
                             </div>
                             <div class="col-12 subTxtDetails">
@@ -179,9 +217,9 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
-                        <div class="row">
-                            <div class="col-12 subTxtTitle pb-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="row mx-0">
+                            <div class="col-12 subTxtTitle pb-2">
                                 Logo Making
                             </div>
                             <div class="col-12 subTxtDetails">
@@ -199,10 +237,11 @@
         <!-- About start -->
         <section class="darkSection">
             <div class="container">
-                <div class="row">
+                <!-- For Larger Screen start -->
+                <div class="row mx-0 d-none d-lg-flex">
                     <!-- About left start -->
                     <div class="col-6 d-flex align-items-center justify-content-start position-relative">
-                        <img class="vectorBg" src="assets/blue.png" alt="blue-bg" id="blueBg">
+                        <img src="assets/blue.png" alt="blue-bg" id="blueBg">
                         <img class="homePic picShadow rounded-4" src="assets/toga_pic.jpg" alt="toga-pic">
                         <!-- About left end -->
                     </div>
@@ -224,12 +263,59 @@
                             the privilege of being recognized as a <span class="blue">Magna Cum Laude
                                 candidate</span> for the Class of 2023.
                         </p>
-
-                        <button class="btn rounded-3 actionBtn mt-4">
+                        <a class="btn rounded-3 actionBtn mt-4" href="about.html" target="_blank">
                             Learn more
-                        </button>
+                        </a>
                         <!-- About right end -->
                     </div>
+
+                    <!-- For Larger Screen end -->
+                </div>
+
+                <!-- For smaller screen start -->
+                <div class="row mx-0 p-0 d-block d-lg-none">
+                    <!-- About left start -->
+                    <div class="col-12 poppinsFont" id="aboutText">
+                        About Me
+                    </div>
+                    <div class="col-12 poppinsFont pink tertiaryTxt mt-3">
+                        Introduction
+                        <p class="poppinsFont secondaryTxt mt-2" id="aboutHighlight">
+                            I’m a graduating student with a good foundation in Web Development and UI/UX Design.
+                        </p>
+                    </div>
+
+                    <div class="row mx-0 my-5">
+                        <div class="col-12 d-flex align-items-center justify-content-center position-relative">
+                            <img src="assets/blue.png" alt="blue-bg" id="blueBg">
+                            <img class="homePic picShadow rounded-4" src="assets/toga_pic.jpg" alt="toga-pic">
+                            <!-- About left end -->
+                        </div>
+                    </div>
+
+                    <div class="row mx-0">
+                        <div class="col-12">
+                            <p class="lightText my-3">I am pursuing a Bachelor of Science in Information Technology at
+                                the
+                                Polytechnic University of the Philippines - Sto. Tomas.</p>
+                            <p class="lightText my-3">I initially chose this degree program for practical reasons, but
+                                to my
+                                surprise, I found myself enjoying this field even more than I had anticipated. Through
+                                diligent efforts and
+                                dedication, I consistently achieved the President's List award every semester from 2019
+                                to
+                                2023, maintaining a prominent position within the class. As a result of my hard work, I
+                                have
+                                the privilege of being recognized as a <span class="blue">Magna Cum Laude
+                                    candidate</span> for the Class of 2023.
+                            </p>
+                        </div>
+                    </div>
+
+                    <a class="btn rounded-3 actionBtn mt-4" href="about.html" target="_blank">
+                        Learn more
+                    </a>
+                    <!-- For smaller screen end -->
                 </div>
             </div>
             <!-- About end -->
@@ -238,17 +324,14 @@
         <!-- Latest project start -->
         <section>
             <div class="container py-5">
-                <div class="row">
+                <!-- For Large Screen start -->
+                <div class="row mx-0 d-none d-lg-flex">
                     <!-- Latest project left start -->
                     <div class="col-6 d-flex flex-column flex-container align-self-start justify-content-center lh-1">
                         <span class="poppinsFont tertiaryTxt mb-4" style="letter-spacing: 10px; color: #6cc2ff">LATEST
                             PROJECT</span>
-                        <span class="poppinsFont heading pink">
-                            UNBLOKC
-                        </span>
-                        <span class="poppinsFont heading pinkStroked">
-                            Hackathon
-                        </span>
+                        <span class="poppinsFont heading pink">UNBLOKC</span>
+                        <span class="poppinsFont heading pinkStroked">Hackathon</span>
                         <span class="mt-5">Role: Front End Developer, UI/UX Designer</span>
                         <span class="my-2">Link:&nbsp;<a href="https://hackathon.theblokc.media"
                                 title="UNBLOKC Hackathon"
@@ -260,9 +343,9 @@
                             necessary information, schedule, and guidelines they need to excel in the upcoming
                             hackathon.
                         </p>
-                        <button class="btn rounded-3 actionBtn mt-4">
+                        <a class="btn rounded-3 actionBtn mt-4">
                             Learn more
-                        </button>
+                        </a>
                         <!-- Latest project left end -->
                     </div>
 
@@ -270,6 +353,40 @@
                     <div class="col-6 d-flex align-items-center justify-content-start position-relative">
                         <img class="homePic" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
                         <!-- Latest project right end -->
+                    </div>
+                    <!-- For Large Screen end -->
+                </div>
+
+                <!-- For smaller screen start -->
+                <div class="row mx-0 d-flex d-lg-none">
+                    <div class="col-12 d-flex flex-column flex-container align-self-start justify-content-center lh-1">
+                        <span class="poppinsFont tertiaryTxt mb-4" style="letter-spacing: 10px; color: #6cc2ff">LATEST
+                            PROJECT</span>
+                        <span class="poppinsFont heading pink">UNBLOKC</span>
+                        <span class="poppinsFont heading pinkStroked">Hackathon</span>
+                    </div>
+                    <div class="row mx-0 my-5">
+                        <div class="col-12 d-flex justify-content-center align-items-center">
+                            <img class="homePic" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
+                        </div>
+                    </div>
+                    <div class="row mx-0">
+                        <div class="col-12 d-flex flex-column flex-container justify-content-start align-items-start">
+                            <span>Role: Front End Developer, UI/UX Designer</span>
+                            <span>Link:&nbsp;<a href="https://hackathon.theblokc.media" title="UNBLOKC Hackathon"
+                                    style="color: #6cc2ff"><em>https://hackathon.theblokc.media</em></a></span>
+                            <p class="mt-4">I had the opportunity to work on this exciting project during my
+                                internship period at The BLOKC. I designed and developed this website aiming to
+                                facilitate the UNBLOKC 2023 hackathon participants. The website serves as a valuable
+                                resource,
+                                providing participants with all the
+                                necessary information, schedule, and guidelines they need to excel in the upcoming
+                                hackathon.
+                            </p>
+                            <a class="btn rounded-3 actionBtn mt-4">
+                                Learn more
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -280,7 +397,7 @@
         <!-- Contact start -->
         <section class="darkSection">
             <div class="container">
-                <div class="row">
+                <div class="row mx-0">
                     <div class="col-12 d-flex justify-content-center">
                         <div class="poppinsFont heading white">
                             Let's
@@ -291,65 +408,65 @@
                     </div>
 
                     <!-- Contact left start -->
-                    <div class="col-4">
-                        <div class="row my-4">
+                    <div class="col-12 col-lg-4">
+                        <div class="row mx-0 my-4 gy-4">
                             <div class="col-12 pink poppinsFont" style="font-weight: 600">
                                 Contact Details
                             </div>
                         </div>
 
-                        <div class="row ps-1">
-                            <div class="col-1 d-flex justify-content-start">
+                        <div class="row mx-0">
+                            <div class="col-2 d-flex justify-content-center">
                                 <i class="fa-solid fa-location-dot contactIcon" style="color: white"></i>
                             </div>
-                            <div class="col-11">
-                                <div class="row">
+                            <div class="col-10">
+                                <div class="row mx-0">
                                     <div class="col-12 lightText tertiaryTxt">
                                         Calamba City, Laguna
                                     </div>
-                                    <div class="col-12 lightText">
+                                    <div class="col-12" style="color: #A0A0A0">
                                         Philippines
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-1 mt-3 d-flex justify-content-start">
+                            <div class="col-2 mt-3 d-flex justify-content-center">
                                 <i class="fa-solid fa-mobile-screen-button contactIcon" style="color: white"></i>
                             </div>
-                            <div class="col-11 mt-3">
-                                <div class="row">
+                            <div class="col-10 mt-3">
+                                <div class="row mx-0">
                                     <div class="col-12 lightText tertiaryTxt">
                                         (+63) 976 045 3722
                                     </div>
-                                    <div class="col-12 lightText">
+                                    <div class="col-12" style="color: #A0A0A0">
                                         Mobile No.
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-1 mt-3 d-flex justify-content-start">
+                            <div class="col-2 mt-3 d-flex justify-content-center">
                                 <i class="fa-solid fa-at contactIcon" style="color: white"></i>
                             </div>
-                            <div class="col-11 mt-3">
-                                <div class="row">
+                            <div class="col-10 mt-3">
+                                <div class="row mx-0">
                                     <div class="col-12 lightText tertiaryTxt">
                                         nclmalcala@gmail.com
                                     </div>
-                                    <div class="col-12 lightText">
+                                    <div class="col-12" style="color: #A0A0A0">
                                         Email
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-1 mt-3 d-flex justify-content-start">
+                            <div class="col-2 mt-3 d-flex justify-content-center">
                                 <i class="fa-solid fa-earth-asia contactIcon" style="color: white"></i>
                             </div>
-                            <div class="col-11 mt-3">
-                                <div class="row">
+                            <div class="col-10 mt-3">
+                                <div class="row mx-0">
                                     <div class="col-12 lightText tertiaryTxt">
                                         nicolealcala.github.io
                                     </div>
-                                    <div class="col-12 lightText">
+                                    <div class="col-12" style="color: #A0A0A0">
                                         Website
                                     </div>
                                 </div>
@@ -359,8 +476,8 @@
                     </div>
 
                     <!-- Contact right start -->
-                    <div class="col-8">
-                        <div class="row my-4">
+                    <div class="col-12 col-lg-8">
+                        <div class="row mx-0 my-4">
                             <div class="col-12 pink poppinsFont" style="font-weight: 600">
                                 Send a Message
                             </div>
@@ -368,22 +485,22 @@
                         <form action="">
                             <div class="row mx-0 d-flex">
 
-                                <div class="col-5">
+                                <div class="col-12 col-md-6 col-lg-5">
                                     <input class="form-control contactMessage" type="text" placeholder="First Name">
                                     <input class="form-control contactMessage" type="text" placeholder="Last Name">
                                     <input class="form-control contactMessage" type="email" placeholder="Email">
                                     <input class="form-control contactMessage" type="tel" placeholder="Contact No.">
                                 </div>
 
-                                <div class="col-7 d-flex flex-column flex-container">
+                                <div class="col-12 col-md-6 col-lg-7 d-flex flex-column flex-container">
                                     <input class="form-control contactMessage" type="text" placeholder="Subject">
-                                    <textarea class="form-control contactMessage" id="" cols="30" rows="7"
+                                    <textarea class="form-control contactMessage" id="contactTxtArea"
                                         placeholder="Message"></textarea>
                                 </div>
                             </div>
                             <div class="row mx-0">
                                 <div class="col-12 d-flex align-items-center justify-content-end">
-                                    <button class="btn actionBtn" type="submit">Send email</button>
+                                    <button class="btn actionBtn rounded-3" type="submit">Send email</button>
                                 </div>
                             </div>
                         </form>
@@ -391,7 +508,7 @@
                     </div>
                 </div>
 
-                <div class="dividerHr" style="background-color: #cdcdcd; height: 1px; width: 100%;" id="homeFooterHr">
+                <div class="dividerHr" style="background-color: #cdcdcd;" id="homeFooterHr">
                 </div>
 
                 <footer class="mt-4">
@@ -416,8 +533,6 @@
         </section>
     </main>
 
-
-
     <!-- BOOTSTRAP -->
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -428,6 +543,7 @@
 
     <!-- Custom Scripts -->
     <script src="index.js"></script>
+    <script src="loader.js"></script>
 </body>
 
 </html>
