@@ -1,0 +1,125 @@
+.poppinsFont {
+  font-family: "Poppins", sans-serif;
+}
+
+.heading {
+  font-size: 98px;
+  font-weight: 700;
+}
+
+.secondaryTxt {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.tertiaryTxt {
+  font-weight: 500;
+}
+
+.pink {
+  color: #FF7CAD;
+}
+
+.blue {
+  color: #9DD6FF;
+}
+
+.white {
+  color: white;
+}
+
+.stroked {
+  color: transparent;
+  -webkit-text-stroke: 2px #303030;
+  -moz-text-stroke: 2px #303030;
+}
+
+.pinkStroked {
+  color: transparent;
+  -webkit-text-stroke: 2px #FF7CAD;
+  -moz-text-stroke: 2px #FF7CAD;
+}
+
+.whiteStroked {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  -moz-text-stroke: 2px white;
+}
+
+.lightText {
+  color: #DDDDDD;
+}
+
+p {
+  line-height: 30px;
+}
+
+section {
+  background-color: transparent;
+  padding: 100px 0px;
+}
+
+.darkSection {
+  background-color: #131313;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #FFDF66;
+  color: #303030;
+  height: 50px;
+  width: 50px;
+  z-index: 10;
+}
+#backToTop .fa-arrow-up {
+  font-size: 20px;
+}
+
+.actionBtn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #9DD6FF;
+  width: 140px;
+}
+
+.actionBtn:hover {
+  outline: 3px solid #9DD6FF;
+  outline-offset: -3px;
+  color: #9DD6FF;
+}
+
+.footerIcon,
+.iconBG {
+  font-size: 40px;
+  color: #DDDDDD;
+  margin: 0px 5px;
+}
+
+.iconBG {
+  width: 40px;
+  height: 40px;
+  background-color: #DDDDDD;
+}
+
+.footerIcon:hover {
+  color: #9DD6FF;
+  transition: 0.2s ease-in;
+}
+
+.iconBG:hover {
+  background-color: #9DD6FF;
+  transition: 0.2s ease-in;
+}
+
+.footerIconBG {
+  font-size: 25px;
+  color: #131313;
+}
+
+.picShadow {
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+}/*# sourceMappingURL=reusables.css.map */

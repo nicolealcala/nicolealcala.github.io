@@ -17,9 +17,11 @@
 
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="reusables.css">
+    <link rel="stylesheet" href="index.css">
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
@@ -95,21 +97,21 @@
     <main>
 
         <!-- Landing start -->
-        <section class="mx-0 pt-0" id="landingPage">
+        <section class="pt-0" id="landingPage">
             <div class="container">
                 <div class="row">
                     <!-- Landing left start -->
                     <div class="col-6 d-flex flex-column justify-content-center align-items-start flex-container">
-                        <span class="poppinsFont pink animate__animated animate__bounce">Designer | Developer</span>
+                        <span class="poppinsFont pink tertiaryTxt">Designer | Developer</span>
                         <div class="row">
-                            <div class="col-6 poppinsFont landingName">
+                            <div class="col-6 poppinsFont heading">
                                 Nicole
                             </div>
-                            <div class="col-6 poppinsFont stroked landingName">
+                            <div class="col-6 poppinsFont stroked heading">
                                 Alcala
                             </div>
                         </div>
-                        <p class="poppinsFont" id="landingSummary">
+                        <p id="landingSummary">
                             Committed to lifelong learning and development, I am eager to learn and be taught and
                             motivated
                             to
@@ -130,22 +132,22 @@
 
                     <!-- Landing right start -->
                     <div class="col-6 position-relative d-flex align-items-center justify-content-center">
-                        <img src="assets/pink.png" alt="pink-bg" class="vectorBg">
-                        <img src="assets/landing_pic.png" alt="landing-pic" class="pic">
+                        <img src="assets/pink.png" alt="pink-bg" id="pinkBg">
+                        <img src="assets/landing_pic.png" alt="landing-pic" class="homePic">
                         <!-- Landing right end -->
                     </div>
                 </div>
-                <div class="landingHr my-0" style="background-color: #303030; height: 1px; width: 100%;"></div>
+                <div class="dividerHr my-0" style="background-color: #303030; height: 1px; width: 100%;"></div>
                 <div class="row">
-                    <div class="col-12 poppinsFont py-4" id="landingWhatIDo">
+                    <div class="col-12 poppinsFont secondaryTxt py-4">
                         What I Do?
                     </div>
                     <div class="col-3">
                         <div class="row">
-                            <div class="col-12 landingSubTexts pb-3">
+                            <div class="col-12 subTxtTitle pb-3">
                                 Responsive Web Applications
                             </div>
-                            <div class="col-12 landingSubDetails">
+                            <div class="col-12 subTxtDetails">
                                 I have experience in developing informational websites, personal websites, dynamic
                                 websites,
                                 and
@@ -156,10 +158,10 @@
 
                     <div class="col-3">
                         <div class="row">
-                            <div class="col-12 landingSubTexts pb-3">
+                            <div class="col-12 subTxtTitle pb-3">
                                 User-centered Web Designs
                             </div>
-                            <div class="col-12 landingSubDetails">
+                            <div class="col-12 subTxtDetails">
                                 I created multiple web designs for various academic and non-academic projects with the
                                 goal of enhancing user experience.
                             </div>
@@ -168,10 +170,10 @@
 
                     <div class="col-3">
                         <div class="row">
-                            <div class="col-12 landingSubTexts pb-3">
+                            <div class="col-12 subTxtTitle pb-3">
                                 Robust Relational Databases
                             </div>
-                            <div class="col-12 landingSubDetails">
+                            <div class="col-12 subTxtDetails">
                                 I developed and managed some robust relational databases for various academic projects.
                             </div>
                         </div>
@@ -179,10 +181,10 @@
 
                     <div class="col-3">
                         <div class="row">
-                            <div class="col-12 landingSubTexts pb-3">
+                            <div class="col-12 subTxtTitle pb-3">
                                 Logo Making
                             </div>
-                            <div class="col-12 landingSubDetails">
+                            <div class="col-12 subTxtDetails">
                                 I have created unique logos for all of the projects I have participated in, with the aim
                                 of
                                 conveying specific impressions and vibes.
@@ -195,22 +197,21 @@
         </section>
 
         <!-- About start -->
-        <section class="mx-0" style="background-color: #131313;">
+        <section class="darkSection">
             <div class="container">
                 <div class="row">
                     <!-- About left start -->
                     <div class="col-6 d-flex align-items-center justify-content-start position-relative">
                         <img class="vectorBg" src="assets/blue.png" alt="blue-bg" id="blueBg">
-                        <img class="pic rounded-4" src="assets/toga_pic.jpg" alt="toga-pic"
-                            style="box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);">
+                        <img class="homePic picShadow rounded-4" src="assets/toga_pic.jpg" alt="toga-pic">
                         <!-- About left end -->
                     </div>
 
                     <!-- About right start -->
                     <div class="col-6 d-flex flex-column justify-content-center align-items-start flex-container">
                         <span class="poppinsFont" id="aboutText">About Me</span>
-                        <span class="poppinsFont pink mt-5">Introduction</span>
-                        <p class="poppinsFont mt-2" id="aboutHighlight">
+                        <span class="poppinsFont pink tertiaryTxt mt-5">Introduction</span>
+                        <p class="poppinsFont secondaryTxt mt-2" id="aboutHighlight">
                             I’m a graduating student with a good foundation in Web Development and UI/UX Design.
                         </p>
                         <p class="lightText my-3">I am pursuing a Bachelor of Science in Information Technology at the
@@ -220,11 +221,11 @@
                             diligent efforts and
                             dedication, I consistently achieved the President's List award every semester from 2019 to
                             2023, maintaining a prominent position within the class. As a result of my hard work, I have
-                            the privilege of being recognized as a <span style="color: #9DD6FF">Magna Cum Laude
+                            the privilege of being recognized as a <span class="blue">Magna Cum Laude
                                 candidate</span> for the Class of 2023.
                         </p>
 
-                        <button class="btn rounded-3 learnMore mt-4">
+                        <button class="btn rounded-3 actionBtn mt-4">
                             Learn more
                         </button>
                         <!-- About right end -->
@@ -235,22 +236,23 @@
         </section>
 
         <!-- Latest project start -->
-        <section class="mx-0">
+        <section>
             <div class="container py-5">
                 <div class="row">
                     <!-- Latest project left start -->
                     <div class="col-6 d-flex flex-column flex-container align-self-start justify-content-center lh-1">
-                        <span class="poppinsFont blue mb-4" style="letter-spacing: 10px;">LATEST PROJECT</span>
-                        <span class="poppinsFont landingName pink">
+                        <span class="poppinsFont tertiaryTxt mb-4" style="letter-spacing: 10px; color: #6cc2ff">LATEST
+                            PROJECT</span>
+                        <span class="poppinsFont heading pink">
                             UNBLOKC
                         </span>
-                        <span class="poppinsFont stroked landingName" style="-webkit-text-stroke: 2px #FF7CAD;
-                        -moz-text-stroke: 2px #FF7CAD;">
+                        <span class="poppinsFont heading pinkStroked">
                             Hackathon
                         </span>
                         <span class="mt-5">Role: Front End Developer, UI/UX Designer</span>
                         <span class="my-2">Link:&nbsp;<a href="https://hackathon.theblokc.media"
-                                style="color: #75C6FF"><em>https://hackathon.theblokc.media</em></a></span>
+                                title="UNBLOKC Hackathon"
+                                style="color: #6cc2ff"><em>https://hackathon.theblokc.media</em></a></span>
                         <p class="my-3">I had the opportunity to work on this exciting project during my
                             internship period at The BLOKC. I designed and developed this website aiming to facilitate
                             the UNBLOKC 2023 hackathon participants. The website serves as a valuable resource,
@@ -258,7 +260,7 @@
                             necessary information, schedule, and guidelines they need to excel in the upcoming
                             hackathon.
                         </p>
-                        <button class="btn rounded-3 learnMore mt-4">
+                        <button class="btn rounded-3 actionBtn mt-4">
                             Learn more
                         </button>
                         <!-- Latest project left end -->
@@ -266,7 +268,7 @@
 
                     <!-- Latest project right start -->
                     <div class="col-6 d-flex align-items-center justify-content-start position-relative">
-                        <img class="pic" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
+                        <img class="homePic" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
                         <!-- Latest project right end -->
                     </div>
                 </div>
@@ -276,15 +278,14 @@
 
 
         <!-- Contact start -->
-        <section class="mx-0" style="background-color: #131313;">
+        <section class="darkSection">
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
-                        <div class="poppinsFont landingName" style="color: white">
+                        <div class="poppinsFont heading white">
                             Let's
                         </div>
-                        <div class="poppinsFont stroked landingName" style="-webkit-text-stroke: 2px white;
-                        -moz-text-stroke: 2px white;">
+                        <div class="poppinsFont heading whiteStroked">
                             Talk
                         </div>
                     </div>
@@ -303,7 +304,7 @@
                             </div>
                             <div class="col-11">
                                 <div class="row">
-                                    <div class="col-12 lightText contactHead">
+                                    <div class="col-12 lightText tertiaryTxt">
                                         Calamba City, Laguna
                                     </div>
                                     <div class="col-12 lightText">
@@ -317,7 +318,7 @@
                             </div>
                             <div class="col-11 mt-3">
                                 <div class="row">
-                                    <div class="col-12 lightText contactHead">
+                                    <div class="col-12 lightText tertiaryTxt">
                                         (+63) 976 045 3722
                                     </div>
                                     <div class="col-12 lightText">
@@ -331,7 +332,7 @@
                             </div>
                             <div class="col-11 mt-3">
                                 <div class="row">
-                                    <div class="col-12 lightText contactHead">
+                                    <div class="col-12 lightText tertiaryTxt">
                                         nclmalcala@gmail.com
                                     </div>
                                     <div class="col-12 lightText">
@@ -345,7 +346,7 @@
                             </div>
                             <div class="col-11 mt-3">
                                 <div class="row">
-                                    <div class="col-12 lightText contactHead">
+                                    <div class="col-12 lightText tertiaryTxt">
                                         nicolealcala.github.io
                                     </div>
                                     <div class="col-12 lightText">
@@ -382,7 +383,7 @@
                             </div>
                             <div class="row mx-0">
                                 <div class="col-12 d-flex align-items-center justify-content-end">
-                                    <button class="btn" type="submit" id="contactSend">Send email</button>
+                                    <button class="btn actionBtn" type="submit">Send email</button>
                                 </div>
                             </div>
                         </form>
@@ -390,7 +391,7 @@
                     </div>
                 </div>
 
-                <div class="landingHr" style="background-color: #cdcdcd; height: 1px; width: 100%;" id="footerHr">
+                <div class="dividerHr" style="background-color: #cdcdcd; height: 1px; width: 100%;" id="homeFooterHr">
                 </div>
 
                 <footer class="mt-4">

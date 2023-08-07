@@ -9,74 +9,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #303030;
-  background-color: #FFFFFC;
+  background-color: #FFFFFA;
   scroll-behavior: smooth;
-}
-
-.pink {
-  color: #FF7CAD;
-  font-weight: 500;
-}
-
-.blue {
-  color: #6cc2ff;
-}
-
-.lightText {
-  color: #dddddd;
-  line-height: 30px;
-}
-
-p {
-  line-height: 30px;
-}
-
-section {
-  padding: 100px 0px;
-}
-
-.learnMore,
-#contactSend {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  padding: 10px 20px;
-  background-color: #9DD6FF;
-  width: 140px;
-}
-
-.learnMore:hover {
-  outline: 3px solid #9DD6FF;
-  outline-offset: -3px;
-  color: #9DD6FF;
-}
-
-#blueBg {
-  right: 70px;
-}
-
-.poppinsFont {
-  font-family: "Poppins", sans-serif;
-}
-
-.stroked {
-  color: transparent;
-  -webkit-text-stroke: 2px #303030;
-  -moz-text-stroke: 2px #303030;
-}
-
-#backToTop {
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  background-color: #FFDF66;
-  color: #303030;
-  height: 50px;
-  width: 50px;
-  z-index: 10;
-}
-#backToTop .fa-arrow-up {
-  font-size: 20px;
 }
 
 nav {
@@ -149,14 +83,8 @@ nav #menuBtn .check-icon:checked + .icon-menu {
   --rotate-bar-three: -45deg;
 }
 
-.landingName,
-#aboutText {
-  font-size: 98px;
-  font-weight: 700;
-}
-
 #landingSummary {
-  width: 490px;
+  width: 470px;
   font-style: italic;
   font-weight: 400;
 }
@@ -199,31 +127,30 @@ nav #menuBtn .check-icon:checked + .icon-menu {
   width: 100%;
 }
 
-.vectorBg {
+#pinkBg,
+#blueBg {
   z-index: 0;
   position: absolute;
   top: auto;
   width: 650px;
 }
 
-.pic {
+#blueBg {
+  right: 70px;
+}
+
+.homePic {
   height: 630px;
   position: relative;
   z-index: 5;
 }
 
-#landingWhatIDo,
-#aboutHighlight {
-  font-weight: 600;
-  font-size: 30px;
-}
-
-.landingSubTexts {
+.subTxtTitle {
   font-size: 20px;
   font-weight: 500;
 }
 
-.landingSubDetails {
+.subTxtDetails {
   width: 300px;
   font-size: 16px;
   font-weight: 400;
@@ -232,11 +159,11 @@ nav #menuBtn .check-icon:checked + .icon-menu {
 #aboutText {
   color: white;
   font-size: 55px;
+  font-weight: 700;
 }
 
 #aboutHighlight {
-  color: #dddddd;
-  font-size: 30px;
+  color: #DDDDDD;
   line-height: 40px;
 }
 
@@ -249,10 +176,6 @@ nav #menuBtn .check-icon:checked + .icon-menu {
 .contactIcon {
   font-size: 25px;
   margin-top: 8px;
-}
-
-.contactHead {
-  font-weight: 500;
 }
 
 .form-control.contactMessage {
@@ -269,34 +192,6 @@ nav #menuBtn .check-icon:checked + .icon-menu {
   color: #aeaeae;
 }
 
-#footerHr {
+#homeFooterHr {
   margin-top: 60px;
-}
-
-.footerIcon,
-.iconBG {
-  font-size: 40px;
-  color: #dddddd;
-  margin: 0px 5px;
-}
-
-.iconBG {
-  width: 40px;
-  height: 40px;
-  background-color: #dddddd;
-}
-
-.footerIcon:hover {
-  color: #FF7CAD;
-  transition: 0.2s ease-in;
-}
-
-.iconBG:hover {
-  background-color: #FF7CAD;
-  transition: 0.2s ease-in;
-}
-
-.footerIconBG {
-  font-size: 25px;
-  color: #131313;
 }/*# sourceMappingURL=index.css.map */
