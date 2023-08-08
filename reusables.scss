@@ -17,6 +17,11 @@ body {
     scroll-behavior: smooth;
 }
 
+::selection {
+    background-color: $pink;
+    color: white;
+}
+
 // Fonts
 .poppinsFont {
     font-family: 'Poppins', sans-serif;
@@ -207,7 +212,7 @@ section {
 
 // Buttons
 #backToTop {
-    display: none;
+    opacity: 0;
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -216,10 +221,16 @@ section {
     height: 50px;
     width: 50px;
     z-index: 10;
+    transition: all 0.3s ease !important;
 
     .fa-arrow-up {
         font-size: 20px;
     }
+}
+
+.backToTopShow {
+    opacity: 1 !important;
+    transition: all 0.3s ease !important;
 }
 
 .actionBtn {
@@ -246,15 +257,18 @@ a {
 .iconBg {
     font-size: 40px;
     margin: 0px 5px;
+    color: $lightTxt;
 }
 
 .iconBg {
     width: 40px;
     height: 40px;
+    background-color: $lightTxt;
 }
 
 .faIcon {
     font-size: 25px;
+    color: $darkTxt;
 }
 
 .footerIcon:hover {
@@ -262,7 +276,7 @@ a {
     transition: 0.2s ease-in;
 }
 
-.iconBG:hover {
+.iconBg:hover {
     background-color: $blue;
     transition: 0.2s ease-in;
 }

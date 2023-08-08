@@ -44,6 +44,14 @@ body {
     font-weight: 700;
 }
 
+#aboutTextStroked {
+    color: transparent;
+    font-size: 55px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px white;
+    -moz-text-stroke: 1px white;
+}
+
 #unblokcPic {
     width: 750px;
     height: auto;

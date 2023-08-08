@@ -10,6 +10,16 @@ body {
   scroll-behavior: smooth;
 }
 
+::-moz-selection {
+  background-color: #FF7CAD;
+  color: white;
+}
+
+::selection {
+  background-color: #FF7CAD;
+  color: white;
+}
+
 .poppinsFont {
   font-family: "Poppins", sans-serif;
 }
@@ -181,7 +191,7 @@ section {
 }
 
 #backToTop {
-  display: none;
+  opacity: 0;
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -190,9 +200,15 @@ section {
   height: 50px;
   width: 50px;
   z-index: 10;
+  transition: all 0.3s ease !important;
 }
 #backToTop .fa-arrow-up {
   font-size: 20px;
+}
+
+.backToTopShow {
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
 }
 
 .actionBtn {
@@ -218,15 +234,18 @@ a {
 .iconBg {
   font-size: 40px;
   margin: 0px 5px;
+  color: #DDDDDD;
 }
 
 .iconBg {
   width: 40px;
   height: 40px;
+  background-color: #DDDDDD;
 }
 
 .faIcon {
   font-size: 25px;
+  color: #303030;
 }
 
 .footerIcon:hover {
@@ -234,7 +253,7 @@ a {
   transition: 0.2s ease-in;
 }
 
-.iconBG:hover {
+.iconBg:hover {
   background-color: #9DD6FF;
   transition: 0.2s ease-in;
 }
