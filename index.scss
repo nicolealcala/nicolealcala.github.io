@@ -11,6 +11,7 @@ html {
 
 body {
     background-color: #FFFFFA;
+    color: $darkTxt;
 }
 
 .bar {
@@ -21,10 +22,6 @@ body {
     width: 470px;
     font-style: italic;
     font-weight: 400;
-}
-
-#landingSocials {
-    width: 360px;
 }
 
 .homeSocials {
@@ -41,74 +38,10 @@ body {
     color: #808080;
 }
 
-#landingDivider {
-    width: 1px;
-    height: 60px;
-    background-color: $darkTxt;
-}
-
-#viewCV {
-    position: relative;
-    font-weight: 500;
-    color: $pink;
-}
-
-#viewCV::after {
-    content: "";
-    /* Create the pseudo-element content */
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0px;
-    height: 3px;
-    background-color: $pink;
-    opacity: 1;
-    transition: width 0.2s;
-}
-
-#viewCV:hover::after {
-    width: 100%;
-}
-
-#pinkBg,
-#blueBg {
-    z-index: 0;
-    position: absolute;
-    top: auto;
-    width: 650px;
-
-}
-
-#blueBg {
-    right: 70px;
-}
-
-.homePic {
-    height: 630px;
-    position: relative;
-    z-index: 5;
-}
-
-.subTxtTitle {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.subTxtDetails {
-    // width: 300px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
 #aboutText {
     color: white;
     font-size: 55px;
     font-weight: 700;
-}
-
-#aboutHighlight {
-    color: $lightTxt;
-    line-height: 40px;
 }
 
 #unblokcPic {
@@ -147,20 +80,6 @@ body {
         width: 480px;
         font-style: italic;
         font-weight: 400;
-    }
-
-    #pinkBg,
-    #blueBg {
-        width: 600px;
-        top: 130px;
-    }
-
-    #blueBg {
-        right: auto;
-    }
-
-    .homePic {
-        height: 550px;
     }
 
     #unblokcPic {

@@ -5,8 +5,65 @@ html {
 
 body {
   background-color: #131313;
+  color: #DDDDDD;
 }
 
 .bar {
   background-color: white;
+}
+
+.skillCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  outline: 2px solid #efefef;
+  outline-offset: -2px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.skillCol a img {
+  width: 100%;
+  height: auto;
+}
+.skillCol #figma {
+  height: 100px;
+  width: auto;
+}
+
+.locked {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.iconLock {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.awardsCard {
+  background-color: #303030;
+  width: 75%;
+  height: auto;
+}
+
+.awardsCard.card-body {
+  background-color: transparent;
+  padding: 50px;
+}
+
+.awardsImg {
+  width: 150px;
+  height: auto;
+  margin: 20px auto;
 }/*# sourceMappingURL=about.css.map */

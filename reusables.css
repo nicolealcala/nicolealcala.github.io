@@ -7,7 +7,6 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  color: #303030;
   scroll-behavior: smooth;
 }
 
@@ -29,12 +28,25 @@ body {
   font-weight: 500;
 }
 
+.subTxtTitle {
+  font-weight: 500;
+}
+
+.subTxtDetails {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 .pink {
   color: #FF7CAD;
 }
 
 .blue {
   color: #9DD6FF;
+}
+
+.yellow {
+  color: #FFDF66;
 }
 
 .white {
@@ -59,8 +71,21 @@ body {
   -moz-text-stroke: 2px white;
 }
 
-.lightText {
+.highlightTxt {
+  line-height: 40px;
+}
+
+.lightTxt {
   color: #DDDDDD;
+}
+
+.darkTxt {
+  color: #505050;
+}
+
+.contactTxt {
+  font-size: 25px;
+  font-weight: 600;
 }
 
 p {
@@ -144,6 +169,10 @@ section {
   background-color: #131313;
 }
 
+.lightSection {
+  background-color: #FFFFFE;
+}
+
 #sectionLoader .container {
   position: absolute;
   top: 50%;
@@ -182,19 +211,22 @@ section {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .footerIcon,
-.iconBG {
+.iconBg {
   font-size: 40px;
-  color: #DDDDDD;
   margin: 0px 5px;
 }
 
-.iconBG {
+.iconBg {
   width: 40px;
   height: 40px;
-  background-color: #DDDDDD;
+}
+
+.faIcon {
+  font-size: 25px;
 }
 
 .footerIcon:hover {
@@ -207,17 +239,89 @@ a {
   transition: 0.2s ease-in;
 }
 
-.footerIconBG {
+.footerIconBg {
   font-size: 25px;
+  font-weight: 600;
   color: #131313;
 }
 
+.bigPics {
+  height: 630px;
+  position: relative;
+  z-index: 5;
+}
+
 .picShadow {
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+
+#pinkBg,
+#blueBg {
+  z-index: 0;
+  position: absolute;
+  top: auto;
+  width: 650px;
+}
+
+#blueBg {
+  right: 60px;
+}
+
+.widIcon {
+  height: 50px;
+  width: auto;
+}
+
+.widBg1,
+.widBg2 {
+  background-color: #222222;
+  height: 100%;
+}
+
+.widBg2 {
+  background-color: #171717;
 }
 
 .dividerHr {
-  height: 1px;
+  height: 2px;
+  width: 100%;
+}
+
+.horizontalDividerLight,
+.horizontalDividerDark {
+  width: 1px;
+  height: 60px;
+  background-color: #DDDDDD;
+}
+
+.horizontalDividerDark {
+  background-color: #303030;
+}
+
+.socials {
+  width: 360px;
+}
+
+.viewCV {
+  position: relative;
+  font-weight: 500;
+  color: #FF7CAD;
+}
+
+.viewCV::after {
+  content: "";
+  /* Create the pseudo-element content */
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0px;
+  height: 3px;
+  background-color: #FF7CAD;
+  opacity: 1;
+  transition: width 0.2s;
+}
+
+.viewCV:hover::after {
   width: 100%;
 }
 
@@ -263,5 +367,16 @@ a {
   }
   p {
     line-height: 25px;
+  }
+  #pinkBg,
+  #blueBg {
+    width: 600px;
+    top: 130px;
+  }
+  #blueBg {
+    right: auto;
+  }
+  .bigPics {
+    height: 550px;
   }
 }/*# sourceMappingURL=reusables.css.map */
