@@ -23,8 +23,9 @@ body {
   outline-offset: -2px;
   border-radius: 10px;
   padding: 20px;
+  cursor: pointer;
 }
-.skillCol a img {
+.skillCol img {
   width: 100%;
   height: auto;
 }
@@ -49,12 +50,11 @@ body {
   height: auto;
   z-index: 10;
   cursor: pointer;
+  transition: all 0.3s ease !important;
 }
 
 .awardsCard {
-  background-color: #303030;
   width: 75%;
-  height: auto;
 }
 
 .awardsCard.card-body {
