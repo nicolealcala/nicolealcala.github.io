@@ -24,20 +24,6 @@ body {
     font-weight: 400;
 }
 
-.homeSocials {
-    color: inherit;
-
-    .svg-inline--fa {
-        height: 20px;
-        width: auto;
-    }
-}
-
-
-.homeSocials:hover {
-    color: #808080;
-}
-
 #aboutText {
     color: white;
     font-size: 55px;
@@ -50,12 +36,6 @@ body {
     font-weight: 700;
     -webkit-text-stroke: 1px white;
     -moz-text-stroke: 1px white;
-}
-
-#unblokcPic {
-    width: 750px;
-    height: auto;
-    right: 40px;
 }
 
 .contactIcon {

@@ -317,6 +317,30 @@ a {
   width: 360px;
 }
 
+.lightSocials,
+.darkSocials {
+  color: inherit;
+}
+.lightSocials .svg-inline--fa,
+.darkSocials .svg-inline--fa {
+  height: 20px;
+  width: auto;
+}
+
+.lightSocials:hover {
+  color: #808080;
+}
+
+.darkSocials:hover {
+  color: #656565;
+}
+
+#unblokcPic {
+  width: 750px;
+  height: auto;
+  right: 40px;
+}
+
 .viewCV {
   position: relative;
   font-weight: 500;
