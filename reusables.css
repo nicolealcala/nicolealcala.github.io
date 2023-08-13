@@ -448,6 +448,10 @@ a {
     height: 18px;
     width: auto;
   }
+  .horizontalDividerLight,
+  .horizontalDividerDark {
+    height: 45px;
+  }
 }
 @media screen and (max-width: 500px) {
   nav {

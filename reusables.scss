@@ -508,6 +508,11 @@ a {
             width: auto;
         }
     }
+
+    .horizontalDividerLight,
+    .horizontalDividerDark {
+        height: 45px;
+    }
 }
 
 @media screen and (max-width: 500px) {
