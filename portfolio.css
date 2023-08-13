@@ -8,6 +8,10 @@ body {
   color: #DDDDDD;
 }
 
+.bar {
+  background-color: white;
+}
+
 .portfolioPic {
   outline: 1px solid white;
   outline-offset: 2px;
