@@ -433,6 +433,10 @@ a {
         line-height: 25px;
     }
 
+    .highlightTxt {
+        line-height: 35px;
+    }
+
     #pinkBg,
     #blueBg {
         width: 530px;
@@ -513,15 +517,15 @@ a {
 
     // Texts and Colors
     .heading {
-        font-size: 40px;
+        font-size: 55px;
     }
 
     .secondaryTxt {
-        font-size: 18px;
+        font-size: 20px;
     }
 
-    p {
-        line-height: 20px;
+    .highlightTxt {
+        line-height: 30px;
     }
 
     .stroked {
@@ -541,17 +545,17 @@ a {
 
     #pinkBg,
     #blueBg {
-        width: 330px;
+        width: 390px;
         top: 130px;
     }
 
     .bigPics {
-        height: 350px;
+        height: 390px;
     }
 
     // Groups/Components
     .socials {
-        width: 230px;
+        width: 290px;
     }
 
     .lightSocials,
@@ -578,5 +582,62 @@ a {
     .faIcon {
         font-size: 16px;
         color: $darkTxt;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        padding: 24px 0px;
+    }
+
+    // Texts and Colors
+    .heading {
+        font-size: 45px;
+    }
+
+    .secondaryTxt {
+        font-size: 18px;
+    }
+
+    .highlightTxt {
+        line-height: 25px;
+    }
+
+    .stroked {
+        -webkit-text-stroke: 1px $darkTxt;
+        -moz-text-stroke: 1px $darkTxt;
+    }
+
+    .pinkStroked {
+        -webkit-text-stroke: 1px #FF7CAD;
+        -moz-text-stroke: 1px #FF7CAD;
+    }
+
+    .whiteStroked {
+        -webkit-text-stroke: 1px white;
+        -moz-text-stroke: 1px white;
+    }
+
+    #pinkBg,
+    #blueBg {
+        max-width: 330px;
+        top: 130px;
+    }
+
+    .bigPics {
+        max-height: 350px;
+    }
+
+    // Groups/Components
+    .socials {
+        width: 290px;
+    }
+
+    .lightSocials,
+    .darkSocials {
+        .svg-inline--fa {
+            height: 15px;
+            width: auto;
+        }
     }
 }
