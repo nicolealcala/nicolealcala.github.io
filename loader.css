@@ -1,3 +1,9 @@
+#sectionLoader {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
 .loader {
   height: 20vh;
   width: 20vh;
