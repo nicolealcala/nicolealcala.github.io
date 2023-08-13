@@ -405,10 +405,6 @@ a {
         font-size: 18px;
     }
 
-    p {
-        line-height: 25px;
-    }
-
     #pinkBg,
     #blueBg {
         width: 600px;
@@ -422,4 +418,92 @@ a {
     .bigPics {
         height: 560px;
     }
+}
+
+@media screen and (max-width: 768px) {
+
+    // Texts and Colors
+    body {
+        font-size: 16px;
+    }
+
+    .heading {
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .secondaryTxt {
+        font-size: 25px;
+    }
+
+    p {
+        line-height: 25px;
+    }
+
+    #pinkBg,
+    #blueBg {
+        width: 530px;
+        top: 130px;
+    }
+
+    .bigPics {
+        height: 530px;
+    }
+
+    // Groups/Components
+    .socials {
+        width: 330px;
+    }
+
+    .footerIcon,
+    .iconBg {
+        font-size: 30px;
+        margin: 0px 4px;
+        color: $lightTxt;
+    }
+
+    .iconBg {
+        width: 30px;
+        height: 30px;
+        background-color: $lightTxt;
+    }
+
+    .faIcon {
+        font-size: 20px;
+        color: $darkTxt;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .secondaryTxt {
+        font-size: 22px;
+    }
+
+    // p {
+    //     line-height: 30px;
+    // }
+
+    #pinkBg,
+    #blueBg {
+        width: 470px;
+        top: 130px;
+    }
+
+    .bigPics {
+        height: 490px;
+    }
+
+    // Groups/Components
+    .socials {
+        width: 330px;
+    }
+
+    .lightSocials,
+    .darkSocials {
+        .svg-inline--fa {
+            height: 18px;
+            width: auto;
+        }
+    }
+
 }

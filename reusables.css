@@ -370,9 +370,6 @@ a {
   .tertiaryTxt {
     font-size: 18px;
   }
-  p {
-    line-height: 25px;
-  }
   #pinkBg,
   #blueBg {
     width: 600px;
@@ -383,5 +380,67 @@ a {
   }
   .bigPics {
     height: 560px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  .heading {
+    font-size: 70px;
+    font-weight: 700;
+  }
+  .secondaryTxt {
+    font-size: 25px;
+  }
+  p {
+    line-height: 25px;
+  }
+  #pinkBg,
+  #blueBg {
+    width: 530px;
+    top: 130px;
+  }
+  .bigPics {
+    height: 530px;
+  }
+  .socials {
+    width: 330px;
+  }
+  .footerIcon,
+  .iconBg {
+    font-size: 30px;
+    margin: 0px 4px;
+    color: #DDDDDD;
+  }
+  .iconBg {
+    width: 30px;
+    height: 30px;
+    background-color: #DDDDDD;
+  }
+  .faIcon {
+    font-size: 20px;
+    color: #303030;
+  }
+}
+@media screen and (max-width: 576px) {
+  .secondaryTxt {
+    font-size: 22px;
+  }
+  #pinkBg,
+  #blueBg {
+    width: 470px;
+    top: 130px;
+  }
+  .bigPics {
+    height: 490px;
+  }
+  .socials {
+    width: 330px;
+  }
+  .lightSocials .svg-inline--fa,
+  .darkSocials .svg-inline--fa {
+    height: 18px;
+    width: auto;
   }
 }/*# sourceMappingURL=reusables.css.map */

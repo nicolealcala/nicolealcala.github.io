@@ -4,9 +4,9 @@ $(document).ready(function () {
     function fetchData() {
 
         setTimeout(function () {
-            loader.fadeOut()
+            loader.fadeOut("fast")
             window.scrollTo(0, 0);
-        }, 3000); // Simulate a 3-second delay
+        }, 500); // Simulate a 3-second delay
     }
     fetchData();
 })
