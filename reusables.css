@@ -448,18 +448,21 @@ a {
 }
 @media screen and (max-width: 500px) {
   .heading {
-    font-size: 55px;
+    font-size: 50px;
   }
   .secondaryTxt {
-    font-size: 20px;
+    font-size: 18px;
+  }
+  p {
+    line-height: 20px;
   }
   #pinkBg,
   #blueBg {
-    width: 420px;
+    width: 330px;
     top: 130px;
   }
   .bigPics {
-    height: 450px;
+    height: 350px;
   }
   .socials {
     width: 290px;
