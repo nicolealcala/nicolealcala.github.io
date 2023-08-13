@@ -1,7 +1,15 @@
 $(document).ready(function () {
     var loader = $("#sectionLoader");
-    $(window).on("load", function () {
-        loader.hide(); // Hide the loader when the page has finished loading
-    });
 
+    function fetchData() {
+        loader.css('display', 'block');
+
+        setTimeout(function () {
+            loader.css('display', 'none');
+            // Display fetched data or perform other actions
+        }, 3000); // Simulate a 3-second delay
+    }
+
+    // Call the fetchData function when the page loads
+    fetchData();
 })
