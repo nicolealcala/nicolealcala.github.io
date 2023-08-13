@@ -494,7 +494,7 @@ a {
     height: 390px;
   }
   .socials {
-    width: 290px;
+    width: 250px;
   }
   .lightSocials .svg-inline--fa,
   .darkSocials .svg-inline--fa {
@@ -549,9 +549,6 @@ a {
   }
   .bigPics {
     max-height: 350px;
-  }
-  .socials {
-    width: 290px;
   }
   .lightSocials .svg-inline--fa,
   .darkSocials .svg-inline--fa {
