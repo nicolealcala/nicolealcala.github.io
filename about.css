@@ -12,36 +12,38 @@ body {
   background-color: white;
 }
 
-.skillCol {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.skillBox {
   position: relative;
-  width: 130px;
+  width: auto;
   height: 130px;
   outline: 2px solid #efefef;
   outline-offset: -2px;
   border-radius: 10px;
   padding: 20px;
   cursor: pointer;
+  transition: transform 0.2s ease;
+  overflow: hidden;
 }
-.skillCol img {
+.skillBox img {
   width: 100%;
   height: auto;
 }
-.skillCol #figma {
-  height: 100px;
-  width: auto;
+.skillBox #figma {
+  width: 70%;
 }
 
 .locked {
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
-  position: absolute;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.skillBox:hover {
+  transform: scale(1.1);
 }
 
 .iconLock {
@@ -66,4 +68,10 @@ body {
   width: 150px;
   height: auto;
   margin: 20px auto;
+}
+
+@media screen and (max-width: 576px) {
+  .skillBox {
+    height: 100px;
+  }
 }/*# sourceMappingURL=about.css.map */
