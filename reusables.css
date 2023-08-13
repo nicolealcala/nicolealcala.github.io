@@ -426,6 +426,9 @@ a {
   body {
     font-size: 16px;
   }
+  section {
+    padding: 80px 0;
+  }
   .secondaryTxt {
     font-size: 22px;
   }
