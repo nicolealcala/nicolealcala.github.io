@@ -447,14 +447,29 @@ a {
   }
 }
 @media screen and (max-width: 500px) {
+  nav {
+    padding: 24px 5px;
+  }
   .heading {
-    font-size: 50px;
+    font-size: 40px;
   }
   .secondaryTxt {
     font-size: 18px;
   }
   p {
     line-height: 20px;
+  }
+  .stroked {
+    -webkit-text-stroke: 1.5px #303030;
+    -moz-text-stroke: 1.5px #303030;
+  }
+  .pinkStroked {
+    -webkit-text-stroke: 1.5px #FF7CAD;
+    -moz-text-stroke: 1.5px #FF7CAD;
+  }
+  .whiteStroked {
+    -webkit-text-stroke: 1.5px white;
+    -moz-text-stroke: 1.5px white;
   }
   #pinkBg,
   #blueBg {
