@@ -98,6 +98,11 @@ body {
         right: auto;
     }
 
+    #aboutText {
+        color: white;
+        font-size: 45px;
+    }
+
     .contactIcon {
         font-size: 25px;
         margin-top: 8px;
@@ -109,6 +114,11 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+    #aboutText {
+        color: white;
+        font-size: 40px;
+    }
+
     #unblokcPic {
         width: 500px;
         height: auto;
@@ -118,7 +128,29 @@ body {
 
 @media screen and (max-width: 500px) {
     #landingSummary {
-        width: 270px;
+        width: 315px;
+    }
+
+    #aboutText {
+        color: white;
+        font-size: 40px;
+    }
+
+    #unblokcPic {
+        width: 400px;
+        height: auto;
+        right: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #landingSummary {
+        width: 315px;
+    }
+
+    #aboutText {
+        color: white;
+        font-size: 35px;
     }
 
     #unblokcPic {
