@@ -68,8 +68,6 @@ body {
 @media screen and (max-width: 992px) {
     #landingSummary {
         width: 480px;
-        font-style: italic;
-        font-weight: 400;
     }
 
     #unblokcPic {
@@ -87,4 +85,35 @@ body {
         height: 150px;
         resize: both;
     }
+}
+
+@media screen and (max-width: 768px) {
+    #landingSummary {
+        width: 430px;
+    }
+
+    #unblokcPic {
+        width: 530px;
+        height: auto;
+        right: auto;
+    }
+
+    .contactIcon {
+        font-size: 25px;
+        margin-top: 8px;
+    }
+
+    .form-control.contactMessage {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #unblokcPic {
+        width: 500px;
+        height: auto;
+        right: auto;
+    }
+
+
 }
