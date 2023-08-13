@@ -104,4 +104,14 @@ body {
     height: auto;
     right: auto;
   }
+}
+@media screen and (max-width: 500px) {
+  #landingSummary {
+    width: 345px;
+  }
+  #unblokcPic {
+    width: 450px;
+    height: auto;
+    right: auto;
+  }
 }/*# sourceMappingURL=index.css.map */

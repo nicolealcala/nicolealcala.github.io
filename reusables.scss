@@ -421,15 +421,8 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-
-    // Texts and Colors
-    body {
-        font-size: 16px;
-    }
-
     .heading {
         font-size: 70px;
-        font-weight: 700;
     }
 
     .secondaryTxt {
@@ -475,13 +468,19 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+
+    // Texts and Colors
+    body {
+        font-size: 16px;
+    }
+
     .secondaryTxt {
         font-size: 22px;
     }
 
-    // p {
-    //     line-height: 30px;
-    // }
+    .tertiaryTxt {
+        font-size: 16px;
+    }
 
     #pinkBg,
     #blueBg {
@@ -505,5 +504,57 @@ a {
             width: auto;
         }
     }
+}
 
+@media screen and (max-width: 500px) {
+
+    // Texts and Colors
+    .heading {
+        font-size: 55px;
+    }
+
+    .secondaryTxt {
+        font-size: 20px;
+    }
+
+    #pinkBg,
+    #blueBg {
+        width: 420px;
+        top: 130px;
+    }
+
+    .bigPics {
+        height: 450px;
+    }
+
+    // Groups/Components
+    .socials {
+        width: 290px;
+    }
+
+    .lightSocials,
+    .darkSocials {
+        .svg-inline--fa {
+            height: 18px;
+            width: auto;
+        }
+    }
+
+    .footerIcon,
+    .iconBg {
+        font-size: 25px;
+        margin: 0px 2px;
+        color: $lightTxt;
+    }
+
+    .iconBg {
+        width: 25px;
+        height: 25px;
+        background-color: $lightTxt;
+    }
+
+    .faIcon {
+        font-size: 16px;
+        color: $darkTxt;
+    }
 }
