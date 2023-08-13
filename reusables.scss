@@ -327,6 +327,12 @@ a {
     height: 100%;
 }
 
+#unblokcPic {
+    width: 750px;
+    height: auto;
+    right: 40px;
+}
+
 // Divider
 .dividerHr {
     height: 2px;
@@ -421,6 +427,12 @@ a {
     .bigPics {
         height: 560px;
     }
+
+    #unblokcPic {
+        width: 650px;
+        height: auto;
+        right: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -448,6 +460,12 @@ a {
 
     .bigPics {
         height: 530px;
+    }
+
+    #unblokcPic {
+        width: 530px;
+        height: auto;
+        right: auto;
     }
 
     // Groups/Components
@@ -501,6 +519,12 @@ a {
 
     .bigPics {
         height: 490px;
+    }
+
+    #unblokcPic {
+        width: 500px;
+        height: auto;
+        right: auto;
     }
 
     // Groups/Components
@@ -568,6 +592,12 @@ a {
 
     .bigPics {
         height: 390px;
+    }
+
+    #unblokcPic {
+        width: 400px;
+        height: auto;
+        right: auto;
     }
 
     // Groups/Components
@@ -643,6 +673,13 @@ a {
 
     .bigPics {
         max-height: 350px;
+    }
+
+
+    #unblokcPic {
+        width: 350px;
+        height: auto;
+        right: auto;
     }
 
     .lightSocials,

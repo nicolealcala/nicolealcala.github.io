@@ -32,12 +32,6 @@ body {
   -moz-text-stroke: 1px white;
 }
 
-#unblokcPic {
-  width: 750px;
-  height: auto;
-  right: 40px;
-}
-
 .contactIcon {
   font-size: 30px;
   margin-top: 8px;
@@ -67,11 +61,6 @@ body {
   #landingSummary {
     width: 480px;
   }
-  #unblokcPic {
-    width: 650px;
-    height: auto;
-    right: auto;
-  }
   .form-control.contactMessage {
     margin-bottom: 14px;
   }
@@ -87,11 +76,6 @@ body {
   }
   #landingSummary {
     width: 430px;
-  }
-  #unblokcPic {
-    width: 530px;
-    height: auto;
-    right: auto;
   }
   #aboutText {
     color: white;
@@ -113,11 +97,6 @@ body {
     color: white;
     font-size: 40px;
   }
-  #unblokcPic {
-    width: 500px;
-    height: auto;
-    right: auto;
-  }
 }
 @media screen and (max-width: 500px) {
   #landingSummary {
@@ -127,11 +106,6 @@ body {
     color: white;
     font-size: 40px;
   }
-  #unblokcPic {
-    width: 400px;
-    height: auto;
-    right: auto;
-  }
 }
 @media screen and (max-width: 400px) {
   #landingSummary {
@@ -140,10 +114,5 @@ body {
   #aboutText {
     color: white;
     font-size: 35px;
-  }
-  #unblokcPic {
-    width: 350px;
-    height: auto;
-    right: auto;
   }
 }/*# sourceMappingURL=index.css.map */
