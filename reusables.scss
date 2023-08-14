@@ -455,6 +455,21 @@ a {
     width: 100%;
 }
 
+.viewExternal {
+    font-weight: 300;
+
+    .svg-inline--fa {
+        height: 12px;
+        width: auto;
+    }
+}
+
+.viewExternal:hover {
+    color: $darkTxt;
+    text-decoration: underline;
+}
+
+
 
 
 @media screen and (max-width: 992px) {

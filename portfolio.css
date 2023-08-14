@@ -33,4 +33,10 @@ body {
 
 .overlay:hover {
   opacity: 1;
+}
+
+.viewDivider {
+  width: 1px;
+  height: 30px;
+  background-color: white;
 }/*# sourceMappingURL=portfolio.css.map */

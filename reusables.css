@@ -428,6 +428,19 @@ a {
   width: 100%;
 }
 
+.viewExternal {
+  font-weight: 300;
+}
+.viewExternal .svg-inline--fa {
+  height: 12px;
+  width: auto;
+}
+
+.viewExternal:hover {
+  color: #303030;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 992px) {
   .heading {
     font-size: 85px;
