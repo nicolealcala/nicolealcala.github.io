@@ -15,6 +15,47 @@ body {
     color: $lightTxt;
 }
 
+.filters {
+    width: 300px;
+
+    ul {
+        position: relative;
+        width: 100%;
+
+        li {
+            padding: 0px 10px;
+            cursor: pointer;
+            position: relative;
+        }
+    }
+}
+
+.projectCol {
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.projectCol.fadeIn {
+    // opacity: 1;
+    transform: translateY(0);
+}
+
+.filters li::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: $pink;
+    transition: width 0.3s ease, bottom 0.3s ease;
+}
+
+.filters li.active::before {
+    width: 100%;
+}
+
 .projectBox {
     position: relative;
 }
