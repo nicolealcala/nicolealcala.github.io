@@ -48,6 +48,11 @@ body {
     font-weight: 500;
 }
 
+#featuredProject {
+    letter-spacing: 10px;
+    color: #6cc2ff;
+}
+
 .subTxtTitle {
     font-weight: 600;
 }
@@ -600,6 +605,10 @@ a {
 
     .tertiaryTxt {
         font-size: 16px;
+    }
+
+    #featuredProject {
+        letter-spacing: 5px;
     }
 
     #pinkBg,
