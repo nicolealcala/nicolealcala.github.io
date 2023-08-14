@@ -15,10 +15,6 @@ body {
     color: $lightTxt;
 }
 
-.bar {
-    background-color: $white;
-}
-
 .skillBox {
     position: relative;
     width: auto;
@@ -81,6 +77,13 @@ body {
 
 @media screen and (max-width: 576px) {
     .skillBox {
-        height: 100px;
+        img {
+            width: 70%;
+            height: auto;
+        }
+
+        #figma {
+            width: 50%;
+        }
     }
 }

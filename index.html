@@ -67,17 +67,19 @@
     <nav>
         <div class="row mx-0">
             <div class="col-6 d-flex align-items-center">
-                <img src="assets/logoLight.png" alt="" width="40px">
-                <a class="navbar-brand poppinsFont ms-2 ms-md-3" href="index.html">clinoae</a>
+                <div class="navbar-brand">
+                    <img src="assets/logolight.png" alt="" width="45px">
+                    <a class="poppinsFont ms-2 ms-md-3" href="index.html">clinoae</a>
+                </div>
             </div>
             <div class="col-6 d-flex align-items-center justify-content-end">
                 <button class="btn d-flex align-items-center" id="menuBtn">
                     <span class="poppinsFont" id="menuText">HOME</span>
                     <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox">
                     <label class="icon-menu ms-3 ms-md-5" for="check-icon">
-                        <div class="bar bar-1"></div>
-                        <div class="bar bar-2"></div>
-                        <div class="bar bar-3"></div>
+                        <div class="bar whiteBg bar-1"></div>
+                        <div class="bar whiteBg bar-2"></div>
+                        <div class="bar whiteBg bar-3"></div>
                     </label>
                 </button>
             </div>
@@ -85,9 +87,29 @@
         <!-- Nav end -->
     </nav>
 
+    <!-- Section Nav start -->
+    <section class="lightSection d-none justify-content-center align-items-center" id="sectionNav">
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100%;">
+            <div class="row mx-0">
+                <div class="col-12 col-lg-4 text-center">
+                    <a class="navTxt poppinsFont heading darkTxt" href="index.html">Home</a>
+                </div>
+
+                <div class="col-12 col-lg-4 text-center">
+                    <a class="navTxt poppinsFont heading stroked" href="about.html">About</a>
+                </div>
+
+                <div class="col-12 col-lg-4 text-center">
+                    <a class="navTxt poppinsFont heading stroked" href="portfolio.html">Projects</a>
+                </div>
+            </div>
+        </div>
+        <!-- Section Nav end -->
+    </section>
+
     <main>
         <!-- Landing start -->
-        <section class="pt-lg-0" id="landingPage">
+        <section class="" id="landingPage">
             <div class="container">
                 <!-- For Large Screen start-->
                 <div class="row mx-0 d-none d-lg-flex">
@@ -266,7 +288,7 @@
                             the privilege of being recognized as a <span class="blue">Magna Cum Laude
                                 candidate</span> for the Class of 2023.
                         </p>
-                        <a class="btn rounded-3 actionBtn mt-4" href="about.html">
+                        <a href="about.html#intro" class="btn rounded-3 actionBtn mt-4">
                             Learn more
                         </a>
                         <!-- About right end -->
@@ -312,7 +334,7 @@
                                 the privilege of being recognized as a <span class="blue">Magna Cum Laude
                                     candidate</span> for the Class of 2023.
                             </p>
-                            <a class="btn rounded-3 actionBtn mt-4" href="about.html">
+                            <a href="about.html#intro" class="btn rounded-3 actionBtn mt-4">
                                 Learn more
                             </a>
                         </div>
@@ -323,14 +345,14 @@
             <!-- About end -->
         </section>
 
-        <!-- Latest project start -->
+        <!-- Featured project start -->
         <section class="mx-0">
             <div class="container">
                 <!-- For Large Screen start -->
                 <div class="row mx-0 d-none d-lg-flex">
-                    <!-- Latest project left start -->
+                    <!-- Featured project left start -->
                     <div class="col-6 d-flex flex-column flex-container align-self-start justify-content-center lh-1">
-                        <span class="poppinsFont tertiaryTxt mb-4" style="letter-spacing: 10px; color: #6cc2ff">LATEST
+                        <span class="poppinsFont tertiaryTxt mb-4" style="letter-spacing: 10px; color: #6cc2ff">FEATURED
                             PROJECT</span>
                         <span class="poppinsFont heading pink">UNBLOKC</span>
                         <span class="poppinsFont heading pinkStroked">Hackathon</span>
@@ -342,16 +364,16 @@
                             necessary information, schedule, and guidelines they need to excel in the upcoming
                             hackathon.
                         </p>
-                        <a href="portfolio.html" class="btn rounded-3 actionBtn mt-4">
+                        <a href="portfolio.html#featured" class="btn rounded-3 actionBtn mt-4">
                             Learn more
                         </a>
-                        <!-- Latest project left end -->
+                        <!-- Featured project left end -->
                     </div>
 
-                    <!-- Latest project right start -->
+                    <!-- Featured project right start -->
                     <div class="col-6 d-flex align-items-center justify-content-start position-relative">
                         <img class="bigPics" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
-                        <!-- Latest project right end -->
+                        <!-- Featured project right end -->
                     </div>
                     <!-- For Large Screen end -->
                 </div>
@@ -380,7 +402,7 @@
                                 necessary information, schedule, and guidelines they need to excel in the upcoming
                                 hackathon.
                             </p>
-                            <a class="btn rounded-3 actionBtn mt-4">
+                            <a href="portfolio.html#featured" class="btn rounded-3 actionBtn mt-4">
                                 Learn more
                             </a>
                         </div>
@@ -545,8 +567,9 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 
     <!-- Custom Scripts -->
-    <script src="index.js"></script>
     <script src="loader.js"></script>
+    <script src="nav.js"></script>
+    <script src="index.js"></script>
     <script src="backtoTop.js"></script>
 </body>
 

@@ -67,25 +67,48 @@
     <nav>
         <div class="row mx-0">
             <div class="col-6 d-flex align-items-center">
-                <img src="assets/logoDark.png" alt="" width="45px">
-                <a class="navbar-brand poppinsFont ms-2 ms-md-3 white" href="index.html">clinoae</a>
+                <div class="navbar-brand">
+                    <img src="assets/logoDark.png" alt="" width="45px">
+                    <a class="poppinsFont ms-2 ms-md-3 white" href="index.html">clinoae</a>
+                </div>
             </div>
             <div class="col-6 d-flex align-items-center justify-content-end">
-                <button class="btn d-flex align-items-center" id="menuBtn">
-                    <span class="poppinsFont white" id="menuText">PROJECTS</span>
+                <button class="btn d-flex align-items-center white" id="menuBtn">
+                    <span class="poppinsFont" id="menuText">PROJECTS</span>
                     <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox">
                     <label class="icon-menu ms-3 ms-md-5" for="check-icon">
-                        <div class="bar bar-1"></div>
-                        <div class="bar bar-2"></div>
-                        <div class="bar bar-3"></div>
+                        <div class="bar whiteBg bar-1"></div>
+                        <div class="bar whiteBg bar-2"></div>
+                        <div class="bar whiteBg bar-3"></div>
                     </label>
                 </button>
             </div>
         </div>
         <!-- Nav end -->
     </nav>
+
+    <!-- Section Nav start -->
+    <section class="lightSection d-none justify-content-center align-items-center" id="sectionNav">
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100%;">
+            <div class="row mx-0">
+                <div class="col-12 col-lg-4 text-center">
+                    <a class="navTxt poppinsFont heading stroked" href="index.html">Home</a>
+                </div>
+
+                <div class="col-12 col-lg-4 text-center">
+                    <a class="navTxt poppinsFont heading stroked" href="about.html">About</a>
+                </div>
+
+                <div class="col-12 col-lg-4 text-center">
+                    <a class="navTxt poppinsFont heading darkTxt" href="portfolio.html">Projects</a>
+                </div>
+            </div>
+        </div>
+        <!-- Section Nav end -->
+    </section>
+
     <main>
-        <section class="mx-0 d-flex align-items-center justify-content-center" style="height: 80vh; width: 100%;">
+        <section class="mx-0 d-flex align-items-center justify-content-center" style="height: 90vh; width: 100%;">
             <div class="container">
                 <div class="col-12 text-center">
                     <span class="poppinsFont heading white">Projects</span>
@@ -111,12 +134,12 @@
             </div>
         </section>
 
-        <!-- Latest project start -->
-        <section class="mx-0 lightSection">
+        <!-- Featured project start -->
+        <section class="mx-0 lightSection" id="featured">
             <div class="container py-5">
                 <!-- For Large Screen start -->
                 <div class="row mx-0 d-none d-lg-flex">
-                    <!-- Latest project left start -->
+                    <!-- Featured project left start -->
                     <div class="col-6 d-flex flex-column flex-container align-self-start justify-content-center lh-1">
                         <span class="poppinsFont tertiaryTxt mb-4" style="letter-spacing: 10px; color: #6cc2ff">FEATURED
                             PROJECT</span>
@@ -134,13 +157,13 @@
                             Visit site
                             <i class="ms-2 fas fa-external-link-alt"></i>
                         </a>
-                        <!-- Latest project left end -->
+                        <!-- Featured project left end -->
                     </div>
 
-                    <!-- Latest project right start -->
+                    <!-- Featured project right start -->
                     <div class="col-6 d-flex align-items-center justify-content-start position-relative">
                         <img class="bigPics" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
-                        <!-- Latest project right end -->
+                        <!-- Featured project right end -->
                     </div>
                     <!-- For Large Screen end -->
                 </div>
@@ -148,7 +171,7 @@
                 <!-- For smaller screen start -->
                 <div class="row mx-0 d-flex d-lg-none">
                     <div class="col-12 d-flex flex-column flex-container align-self-start justify-content-center lh-1">
-                        <span class="poppinsFont tertiaryTxt mb-4" style="letter-spacing: 10px; color: #6cc2ff">LATEST
+                        <span class="poppinsFont tertiaryTxt mb-4" style="letter-spacing: 10px; color: #6cc2ff">FEATURED
                             PROJECT</span>
                         <span class="poppinsFont heading pink">UNBLOKC</span>
                         <span class="poppinsFont heading pinkStroked">Hackathon</span>
@@ -193,28 +216,129 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="design/medeco/mockup.png" class="portfolioPic" alt="">
+                        <div class="projectBox">
+                            <div class="overlay d-flex justify-content-center align-items-center">
+                                <div class="row mx-0">
+                                    <div class="col-12 secondaryTxt text-center">
+                                        Medeco
+                                    </div>
+                                    <div class="col-12 text-center smallTxt">
+                                        Health, Ecommerce
+                                    </div>
+                                    <div
+                                        class="col-12 d-flex justify-content-center align-items-center px-5 text-center mt-3">
+                                        <a href="" target="_blank"><i class="fab fa-figma"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="design/medeco/mockup.png" class="portfolioPic" alt="">
+                        </div>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="design/hackathon/mockup.png" class="portfolioPic" alt="">
+                        <div class="projectBox">
+                            <div class="overlay d-flex justify-content-center align-items-center">
+                                <div class="row mx-0">
+                                    <div class="col-12 secondaryTxt text-center">
+                                        UNBLOKC Hackathon
+                                    </div>
+                                    <div class="col-12 text-center smallTxt">
+                                        Informational Website
+                                    </div>
+                                    <div
+                                        class="col-12 d-flex justify-content-center align-items-center px-5 text-center mt-3">
+                                        <a href="https://hackathon.theblokc.media/" target="_blank"><i
+                                                class="far fa-eye"></i></a>
+                                        <a href="" target="_blank"><i class="fab fa-figma ms-3"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="design/hackathon/mockup.png" class="portfolioPic" alt="">
+                        </div>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="design/kkis/mockup.png" class="portfolioPic" alt="">
+                        <div class="projectBox">
+                            <div class="overlay d-flex justify-content-center align-items-center">
+                                <div class="row mx-0">
+                                    <div class="col-12 secondaryTxt text-center">
+                                        Katipunan ng Kabataan IS
+                                    </div>
+                                    <div class="col-12 text-center smallTxt">
+                                        Data Management
+                                    </div>
+                                    <div
+                                        class="col-12 d-flex justify-content-center align-items-center px-5 text-center mt-3">
+                                        <a href="https://kkinfosystem.000webhostapp.com/" target="_blank"><i
+                                                class="far fa-eye"></i></a>
+                                        <a href="" target="_blank"><i class="fab fa-figma ms-3"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="design/kkis/mockup.png" class="portfolioPic" alt="">
+                        </div>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4">
-                        <img src="design/loungescape/mockup.png" class="portfolioPic" alt="">
+                        <div class="projectBox">
+                            <div class="overlay d-flex justify-content-center align-items-center">
+                                <div class="row mx-0">
+                                    <div class="col-12 secondaryTxt text-center">
+                                        Loungescape
+                                    </div>
+                                    <div class="col-12 text-center smallTxt">
+                                        Entertainment Website (Local)
+                                    </div>
+                                    <div
+                                        class="col-12 d-flex justify-content-center align-items-center px-5 text-center mt-3">
+                                        <a href="" target="_blank"><i class="fab fa-figma"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="design/loungescape/mockup.png" class="portfolioPic" alt="">
+                        </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <img src="design/sws/mockup.png" class="portfolioPic" alt="">
+                    <div class="col-12 col-md-6 col-lg-4 projectBox">
+                        <div class="projectBox">
+                            <div class="overlay d-flex justify-content-center align-items-center">
+                                <div class="row mx-0">
+                                    <div class="col-12 secondaryTxt text-center">
+                                        Strays Worth Saving
+                                    </div>
+                                    <div class="col-12 text-center smallTxt">
+                                        Unofficial Web Design
+                                    </div>
+                                    <div
+                                        class="col-12 d-flex justify-content-center align-items-center px-5 text-center mt-3">
+                                        <a href="" target="_blank"><i class="fab fa-figma"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="design/sws/mockup.png" class="portfolioPic" alt="">
+                        </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <img src="design/medeco/mockup.png" class="portfolioPic" alt="">
-                    </div>
+                    <!-- <div class="col-12 col-md-6 col-lg-4 projectBox">
+                        <div class="projectBox">
+                            <div class="overlay d-flex justify-content-center align-items-center">
+                                <div class="row mx-0">
+                                    <div class="col-12 secondaryTxt text-center">
+                                        Strays Worth Saving
+                                    </div>
+                                    <div class="col-12 text-center smallTxt">
+                                        Unofficial Web Design
+                                    </div>
+                                    <div
+                                        class="col-12 d-flex justify-content-center align-items-center px-5 text-center mt-3">
+                                        <a href="https://kkinfosystem.000webhostapp.com/" target="_blank"><i
+                                                class="far fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="design/medeco/mockup.png" class="portfolioPic" alt="">
+                        </div>
+                    </div> -->
                 </div>
 
                 <div class="dividerHr mt-5" style="background-color: #cdcdcd;">
@@ -262,8 +386,8 @@
 
     <!-- Custom Scripts -->
     <script src="loader.js"></script>
+    <script src="nav.js"></script>
     <script src="backtoTop.js"></script>
-    <script src="loader.js"></script>
 </body>
 
 </html>

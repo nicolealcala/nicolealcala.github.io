@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- Custom Stylesheet -->
-    <!-- <link rel="stylesheet" href="loader.css"> -->
+    <link rel="stylesheet" href="loader.css">
     <link rel="stylesheet" href="reusables.css">
     <link rel="stylesheet" href="about.css">
 
@@ -67,25 +67,49 @@
     <nav>
         <div class="row mx-0">
             <div class="col-6 d-flex align-items-center">
-                <img src="assets/logoDark.png" alt="" width="45px">
-                <a class="navbar-brand poppinsFont ms-2 ms-md-3 white" href="index.html">clinoae</a>
+                <div class="navbar-brand">
+                    <img src="assets/logoDark.png" alt="" width="45px">
+                    <a class="poppinsFont ms-2 ms-md-3 white" href="index.html">clinoae</a>
+                </div>
             </div>
             <div class="col-6 d-flex align-items-center justify-content-end">
-                <button class="btn d-flex align-items-center" id="menuBtn">
-                    <span class="poppinsFont white" id="menuText">ABOUT</span>
+                <button class="btn d-flex align-items-center white" id="menuBtn">
+                    <span class="poppinsFont" id="menuText">ABOUT</span>
                     <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox">
                     <label class="icon-menu ms-3 ms-md-5" for="check-icon">
-                        <div class="bar bar-1"></div>
-                        <div class="bar bar-2"></div>
-                        <div class="bar bar-3"></div>
+                        <div class="bar whiteBg bar-1"></div>
+                        <div class="bar whiteBg bar-2"></div>
+                        <div class="bar whiteBg bar-3"></div>
                     </label>
                 </button>
             </div>
         </div>
         <!-- Nav end -->
     </nav>
+
+    <!-- Section Nav start -->
+    <section class="lightSection d-none justify-content-center align-items-center" id="sectionNav">
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100%;">
+            <div class="row mx-0">
+                <div class="col-12 col-lg-4 text-center">
+                    <a class="navTxt poppinsFont heading stroked" href="index.html">Home</a>
+                </div>
+
+                <div class="col-12 col-lg-4 text-center">
+                    <a class="navTxt poppinsFont heading darkTxt" href="about.html">About</a>
+                </div>
+
+                <div class="col-12 col-lg-4 text-center">
+                    <a class="navTxt poppinsFont heading stroked" href="portfolio.html">Projects</a>
+                </div>
+            </div>
+        </div>
+        <!-- Section Nav end -->
+    </section>
+
+
     <main>
-        <section class="mx-0 d-flex align-items-center justify-content-center" style="height: 80vh; width: 100%;">
+        <section class="mx-0 d-flex align-items-center justify-content-center" style="height: 90vh; width: 100%;">
             <div class="container">
                 <div class="col-12 text-center">
                     <span class="poppinsFont heading white">About</span>
@@ -111,7 +135,7 @@
         </section>
 
         <!-- About start -->
-        <section class="mx-0 lightSection">
+        <section class="mx-0 lightSection" id="intro">
             <div class="container">
                 <!-- For Larger Screen start -->
                 <div class="row mx-0 d-none d-lg-flex">
@@ -282,9 +306,9 @@
                         <span class="poppinsFont secondaryTxt" style="color: #6cc2ff">Skills & Tools
                         </span>
                         <p class="darkTxt my-3">
-                            In the IT landscape, my core interests lie in Programming and Design. Web Development is
-                            where I feel most at ease, having dedicated nearly two years to refining my skills in this
-                            domain. I hace created projects for academic and non-academic purposes, utilizing
+                            In the IT landscape, my core interests lie in Programming and Design. I feel most
+                            comfortable in Web Development, having dedicated nearly two years to refining my skills in
+                            this domain. I hace created projects for academic and non-academic purposes, utilizing
                             foundational tools like <span class="pink">HTML</span>, <span class="pink">CSS/Sass</span>,
                             and <span class="pink">JavaScript/jQuery</span> for
                             front-end, and <span class="pink">PHP</span> and <span class="pink">SQL</span>
@@ -539,9 +563,10 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 
     <!-- Custom Scripts -->
-    <!-- <script src="loader.js"></script> -->
-    <script src="backtoTop.js"></script>
     <script src="loader.js"></script>
+    <script src="nav.js"></script>
+    <script src="backtoTop.js"></script>
+
 </body>
 
 </html>

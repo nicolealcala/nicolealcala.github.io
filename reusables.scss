@@ -69,6 +69,14 @@ body {
     color: white;
 }
 
+.whiteBg {
+    background-color: $white;
+}
+
+.darkBg {
+    background-color: $darkTxt;
+}
+
 .stroked {
     color: transparent;
     -webkit-text-stroke: 2px $darkTxt;
@@ -104,15 +112,22 @@ body {
     font-weight: 600;
 }
 
+.smallTxt {
+    font-size: 15px;
+}
+
 p {
     line-height: 30px;
 }
 
 // Nav
 nav {
-    // position: fixed;
-    // top: 0;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
     padding: 24px;
+    z-index: 20;
+    width: 100%;
 
     .navbar-brand,
     #menuText {
@@ -190,6 +205,27 @@ nav {
     }
 }
 
+.navTxt {
+    position: relative;
+}
+
+.navTxt::after {
+    content: "";
+    /* Create the pseudo-element content */
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0px;
+    height: 5px;
+    background-color: $pink;
+    opacity: 1;
+    transition: width 0.2s;
+}
+
+.navTxt:hover::after {
+    width: 100%;
+}
+
 // Sections
 section {
     background-color: transparent;
@@ -207,6 +243,7 @@ section {
 #sectionLoader {
     width: 100%;
     height: 100%;
+    z-index: 25;
 
     .container {
         position: absolute;
@@ -214,6 +251,12 @@ section {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+}
+
+#sectionNav {
+    width: 100%;
+    height: 100vh;
+    vertical-align: middle;
 }
 
 // Buttons
@@ -397,6 +440,8 @@ a {
 .viewCV:hover::after {
     width: 100%;
 }
+
+
 
 @media screen and (max-width: 992px) {
 
