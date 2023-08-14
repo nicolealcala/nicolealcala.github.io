@@ -17,6 +17,11 @@ body {
     scroll-behavior: smooth;
 }
 
+#logo {
+    width: 45px;
+    height: auto;
+}
+
 ::selection {
     background-color: $pink;
     color: white;
@@ -538,10 +543,17 @@ a {
 }
 
 @media screen and (max-width: 576px) {
-
-    // Texts and Colors
     body {
         font-size: 16px;
+    }
+
+    nav {
+        padding: 24px 5px;
+    }
+
+    #logo {
+        width: 30px;
+        height: auto;
     }
 
     section {
@@ -597,9 +609,6 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-    nav {
-        padding: 24px 5px;
-    }
 
     // Texts and Colors
     .heading {

@@ -10,6 +10,11 @@ body {
   scroll-behavior: smooth;
 }
 
+#logo {
+  width: 45px;
+  height: auto;
+}
+
 ::-moz-selection {
   background-color: #FF7CAD;
   color: white;
@@ -489,6 +494,13 @@ a {
   body {
     font-size: 16px;
   }
+  nav {
+    padding: 24px 5px;
+  }
+  #logo {
+    width: 30px;
+    height: auto;
+  }
   section {
     padding: 80px 0;
   }
@@ -529,9 +541,6 @@ a {
   }
 }
 @media screen and (max-width: 500px) {
-  nav {
-    padding: 24px 5px;
-  }
   .heading {
     font-size: 55px;
   }
