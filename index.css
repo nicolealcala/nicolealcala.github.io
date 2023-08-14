@@ -58,6 +58,9 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  #landingPage {
+    padding-top: 150px;
+  }
   #landingSummary {
     width: 480px;
   }
@@ -72,7 +75,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   #landingPage {
-    padding: 70px 0px;
+    padding-top: 120px;
   }
   #landingSummary {
     width: 430px;
@@ -91,7 +94,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   #landingPage {
-    padding: 50px 0px;
+    padding-top: 100px;
   }
   #aboutText {
     color: white;

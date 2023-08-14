@@ -127,8 +127,8 @@ p {
 
 // Nav
 nav {
-    // position: fixed;
-    // top: 0;
+    position: absolute;
+    top: 0;
     background-color: transparent;
     padding: 24px;
     z-index: 20;
@@ -235,6 +235,7 @@ nav {
 section {
     background-color: transparent;
     padding: 100px 0px;
+    z-index: 15
 }
 
 .darkSection {
