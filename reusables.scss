@@ -210,6 +210,14 @@ nav {
     }
 }
 
+#navBg {
+    position: absolute;
+    top: auto;
+    width: auto;
+    height: 500px;
+    opacity: 0.4;
+}
+
 .navTxt {
     position: relative;
 }
@@ -487,6 +495,11 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+    #navBg {
+        height: 500px;
+        width: auto;
+    }
+
     .heading {
         font-size: 70px;
     }
@@ -550,6 +563,11 @@ a {
 
     nav {
         padding: 24px 5px;
+    }
+
+    #navBg {
+        height: 400px;
+        width: auto;
     }
 
     #logo {
@@ -690,6 +708,11 @@ a {
 @media screen and (max-width: 400px) {
     nav {
         padding: 24px 0px;
+    }
+
+    #navBg {
+        height: 200px;
+        width: auto;
     }
 
     // Texts and Colors
