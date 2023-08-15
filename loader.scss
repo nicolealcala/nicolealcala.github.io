@@ -11,7 +11,7 @@
 }
 
 #liquid {
-    animation: changeColor 2s infinite linear;
+    animation: changeColor 2s infinite linear !important;
 }
 
 @keyframes changeColor {
