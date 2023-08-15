@@ -10,24 +10,30 @@
 }
 
 #liquid {
-  animation: changeColor 2s infinite linear !important;
+  animation: moveLiquid 2s linear infinite !important;
   animation-delay: 0s !important;
 }
 
-@keyframes changeColor {
-  25% {
+@keyframes moveLiquid {
+  0% {
+    cx: 119;
+    cy: 74;
     fill: #FF7CAD;
   }
-  35% {
+  33% {
+    cx: 157;
+    cy: 141;
     fill: #FFDF66;
   }
-  60% {
-    fill: #FFDF66;
-  }
-  75% {
+  66% {
+    cx: 79;
+    cy: 141;
     fill: #9DD6FF;
   }
-  100% {
-    fill: #9DD6FF;
+  99% {
+    cx: 119;
+    cy: 74;
+    fill: #FF7CAD;
   }
-}/*# sourceMappingURL=loader.css.map */
+}
+/* Apply the animation to the liquid circle *//*# sourceMappingURL=loader.css.map */
