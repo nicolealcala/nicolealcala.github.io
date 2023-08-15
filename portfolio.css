@@ -9,7 +9,7 @@ body {
 }
 
 .filters {
-  max-width: 300px;
+  max-width: 350px;
 }
 .filters ul {
   position: relative;
@@ -17,6 +17,7 @@ body {
 }
 .filters ul li {
   padding: 0px 10px;
+  margin: 0px 10px 0px 0px;
   cursor: pointer;
   position: relative;
 }
