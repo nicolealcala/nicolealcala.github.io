@@ -230,7 +230,7 @@ nav #menuBtn .check-icon:checked + .icon-menu {
 section {
   background-color: transparent;
   padding: 100px 0px;
-  z-index: 15;
+  z-index: 0;
 }
 
 .darkSection {
