@@ -10,7 +10,7 @@
 }
 
 #liquid {
-  animation: moveLiquid 2s linear infinite !important;
+  animation: moveLiquid 1.5s linear infinite !important;
   animation-delay: 0s !important;
 }
 
