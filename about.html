@@ -2,570 +2,570 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
 
-    <!-- ICON -->
-    <link rel="icon" href="assets/titleLogo.png" type="image/png">
+  <!-- ICON -->
+  <link rel="icon" href="assets/titleLogo.png" type="image/png">
 
-    <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 
-    <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="loader.css">
-    <link rel="stylesheet" href="reusables.css">
-    <link rel="stylesheet" href="about.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="loader.css">
+  <link rel="stylesheet" href="reusables.css">
+  <link rel="stylesheet" href="about.css">
 
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
 
-    <!-- Loader start -->
-    <section class="darkSection" style="width: 100%; height: 100vh" id="sectionLoader">
-        <div class="container d-flex align-items-center justify-content-center">
-            <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="loader">
-                <defs>
-                    <path id="move-path"
-                        d="M102.546 83.5C109.859 70.8333 128.141 70.8333 135.454 83.5L157.971 122.5C165.284 135.167 156.143 151 141.517 151H96.4833C81.8571 151 72.7158 135.167 80.0289 122.5L102.546 83.5Z"
-                        fill="#FF7CAD"></path>
-                    <filter id="goo">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
-                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -32">
-                        </feColorMatrix>
-                    </filter>
-                </defs>
-                <g filter="url(#goo)">
-                    <circle cx="119" cy="74" r="20" stroke="#FF7CAD " stroke-width="8"></circle>
-                    <circle cx="79" cy="141" r="20" stroke="#9DD6FF" stroke-width="8"></circle>
-                    <circle cx="157" cy="141" r="20" stroke="#FFDF66" stroke-width="8"></circle>
-                    <circle id="liquid" cx="119" cy="74" r="14" fill="#FF7CAD">
-                    </circle>
-                </g>
-            </svg>
+  <!-- Loader start -->
+  <section class="darkSection" style="width: 100%; height: 100vh" id="sectionLoader">
+    <div class="container d-flex align-items-center justify-content-center">
+      <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="loader">
+        <defs>
+          <path id="move-path"
+            d="M102.546 83.5C109.859 70.8333 128.141 70.8333 135.454 83.5L157.971 122.5C165.284 135.167 156.143 151 141.517 151H96.4833C81.8571 151 72.7158 135.167 80.0289 122.5L102.546 83.5Z"
+            fill="#FF7CAD"></path>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -32">
+            </feColorMatrix>
+          </filter>
+        </defs>
+        <g filter="url(#goo)">
+          <circle cx="119" cy="74" r="20" stroke="#FF7CAD " stroke-width="8"></circle>
+          <circle cx="79" cy="141" r="20" stroke="#9DD6FF" stroke-width="8"></circle>
+          <circle cx="157" cy="141" r="20" stroke="#FFDF66" stroke-width="8"></circle>
+          <circle id="liquid" cx="119" cy="74" r="14" fill="#FF7CAD">
+          </circle>
+        </g>
+      </svg>
+    </div>
+    <!-- Loader end -->
+  </section>
+
+  <!-- Back to Top start -->
+  <button class="btn rounded-pill d-flex align-items-center justify-content-center" id="backToTop"><i
+      class="fas fa-arrow-up"></i></button>
+
+  <!-- Nav start -->
+  <nav>
+    <div class="row mx-0">
+      <div class="col-6 d-flex align-items-center">
+        <div class="navbar-brand">
+
+          <a class="poppinsFont white" href="index.html"><img class="me-2 me-md-3" src="assets/logoDark.png" alt=""
+              id="logo"><span class="d-none d-md-inline">clinoae</span></a>
         </div>
-        <!-- Loader end -->
+      </div>
+      <div class="col-6 d-flex align-items-center justify-content-end">
+        <button class="btn d-flex align-items-center white" id="menuBtn">
+          <span class="poppinsFont" id="menuText">ABOUT</span>
+          <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox" disabled>
+          <label class="icon-menu ms-3 ms-md-5" for="check-icon">
+            <div class="bar whiteBg bar-1"></div>
+            <div class="bar whiteBg bar-2"></div>
+            <div class="bar whiteBg bar-3"></div>
+          </label>
+        </button>
+      </div>
+    </div>
+    <!-- Nav end -->
+  </nav>
+
+  <!-- Section Nav start -->
+  <section class="lightSection d-none justify-content-center align-items-center" id="sectionNav">
+    <div class="container d-flex align-items-center" style="height: 100%;">
+      <div class="row mx-0 d-flex justify-content-center align-items-center position-relative" style="width: 100%;">
+        <img src="assets/navBg.png" alt="" id="navBg">
+        <div class="col-12 col-lg-4 text-center text-lg-start">
+          <a class="navTxt poppinsFont heading stroked" href="index.html">Home</a>
+        </div>
+
+        <div class="col-12 col-lg-4 text-center text-lg-start">
+          <a class="navTxt poppinsFont heading" href="about.html">About</a>
+        </div>
+
+        <div class="col-12 col-lg-4  text-center text-lg-start">
+          <a class="navTxt poppinsFont heading stroked" href="portfolio.html">Projects</a>
+        </div>
+      </div>
+    </div>
+    <!-- Section Nav end -->
+  </section>
+
+
+  <main>
+    <section class="mx-0 d-flex align-items-center justify-content-center" style="height: 90vh; width: 100%;">
+      <div class="container">
+        <div class="col-12 text-center">
+          <span class="poppinsFont heading white">About</span>
+          <span class="poppinsFont heading whiteStroked">Me</span>
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-between align-items-center socials">
+            <a href="https://www.facebook.com/nicole.alcala.m/" target="_blank" class="darkSocials"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nicolealcalq/" target="_blank" class="darkSocials"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nicolealcala" target="_blank" class="darkSocials"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/nicolealcala" target="_blank" class="darkSocials"><i
+                class="fa-brands fa-github"></i></a>
+            <div class="horizontalDividerLight"></div>
+            <a class="poppinsFont viewCV"
+              href="https://drive.google.com/file/d/11wfVpWtXNiUOVix08vVT0tIRB3F1VOGR/view?usp=sharing"
+              target="_blank">View CV <i class="fa-solid fa-angles-right"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Back to Top start -->
-    <button class="btn rounded-pill d-flex align-items-center justify-content-center" id="backToTop"><i
-            class="fas fa-arrow-up"></i></button>
+    <!-- About start -->
+    <section class="mx-0 lightSection" id="intro">
+      <div class="container">
+        <!-- For Larger Screen start -->
+        <div class="row mx-0 d-none d-lg-flex" data-aos="fade-up" data-aos-delay="100">
+          <!-- About left start -->
+          <div class="col-6 d-flex align-items-center justify-content-start position-relative">
+            <img src="assets/yellow.png" alt="blue-bg" id="blueBg">
+            <img class="bigPics picShadow rounded-4" src="assets/toga_pic.jpg" alt="toga-pic">
+            <!-- About left end -->
+          </div>
 
-    <!-- Nav start -->
-    <nav>
-        <div class="row mx-0">
-            <div class="col-6 d-flex align-items-center">
-                <div class="navbar-brand">
+          <!-- About right start -->
+          <div class="col-6 d-flex flex-column justify-content-center align-items-start flex-container">
+            <span class="poppinsFont tertiaryTxt" style="color: #6cc2ff">Introduction</span>
+            <p class="poppinsFont secondaryTxt mt-2 darkTxt highlightTxt">
+              I’m a graduating student with a good foundation in Web Development and UI/UX Design.
+            </p>
+            <p class="darkTxt my-3">I am pursuing a Bachelor of Science in Information Technology at the
+              Polytechnic University of the Philippines - Sto. Tomas.</p>
+            <p class="darkTxt my-3">I initially chose this degree program for practical reasons, setting
+              aside my passion for Science, specifically Biology. But to my
+              surprise, I found myself enjoying this field even more than I had anticipated.
+            </p>
+            <p class="darkTxt mt-3">I started on
+              this degree with no prior programming knowledge. It wasn't until my second year that I
+              discovered a genuine interest in the field. Through
+              diligent efforts and dedication, I consistently achieved the President's List award every
+              semester from 2019 to 2023, maintaining a prominent position within the class. As a result
+              of my hard work, I have
+              the privilege of being recognized as a <span class="pink">Magna Cum Laude candidate</span>
+              for the Class of 2023.</p>
+            <!-- About right end -->
+          </div>
 
-                    <a class="poppinsFont white" href="index.html"><img class="me-2 me-md-3" src="assets/logoDark.png"
-                            alt="" id="logo"><span class="d-none d-md-inline">clinoae</span></a>
-                </div>
-            </div>
-            <div class="col-6 d-flex align-items-center justify-content-end">
-                <button class="btn d-flex align-items-center white" id="menuBtn">
-                    <span class="poppinsFont" id="menuText">ABOUT</span>
-                    <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox" disabled>
-                    <label class="icon-menu ms-3 ms-md-5" for="check-icon">
-                        <div class="bar whiteBg bar-1"></div>
-                        <div class="bar whiteBg bar-2"></div>
-                        <div class="bar whiteBg bar-3"></div>
-                    </label>
-                </button>
-            </div>
+          <!-- For Larger Screen end -->
         </div>
-        <!-- Nav end -->
-    </nav>
 
-    <!-- Section Nav start -->
-    <section class="lightSection d-none justify-content-center align-items-center" id="sectionNav">
-        <div class="container d-flex align-items-center" style="height: 100%;">
-            <div class="row mx-0 d-flex justify-content-center align-items-center position-relative"
-                style="width: 100%;">
-                <img src="assets/navBg.png" alt="" id="navBg">
-                <div class="col-12 col-lg-4 text-center text-lg-start">
-                    <a class="navTxt poppinsFont heading stroked" href="index.html">Home</a>
-                </div>
+        <!-- For smaller screen start -->
+        <div class="row mx-0 p-0 d-block d-lg-none">
+          <!-- About left start -->
+          <div class="col-12 poppinsFont blue tertiaryTxt mt-3" data-aos="fade-up" data-aos-delay="100">
+            Introduction
+            <p class="poppinsFont secondaryTxt mt-2 darkTxt highlightTxt">
+              I’m a graduating student with a good foundation in Web Development and UI/UX Design.
+            </p>
+          </div>
 
-                <div class="col-12 col-lg-4 text-center text-lg-start">
-                    <a class="navTxt poppinsFont heading" href="about.html">About</a>
-                </div>
-
-                <div class="col-12 col-lg-4  text-center text-lg-start">
-                    <a class="navTxt poppinsFont heading stroked" href="portfolio.html">Projects</a>
-                </div>
+          <div class="row mx-0 my-5" data-aos="fade-up">
+            <div class="col-12 d-flex align-items-center justify-content-center position-relative">
+              <img src="assets/pink.png" alt="blue-bg" id="blueBg">
+              <img class="bigPics picShadow rounded-4" src="assets/toga_pic.jpg" alt="toga-pic">
+              <!-- About left end -->
             </div>
+          </div>
+
+          <div class="row mx-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12">
+              <p class="darkTxt my-3">I am pursuing a Bachelor of Science in Information Technology at
+                the
+                Polytechnic University of the Philippines - Sto. Tomas.</p>
+              <p class="darkTxt my-3">I initially chose this degree program for practical reasons, but
+                to my
+                surprise, I found myself enjoying this field even more than I had anticipated. Through
+                diligent efforts and
+                dedication, I consistently achieved the President's List award every semester from 2019
+                to
+                2023, maintaining a prominent position within the class. As a result of my hard work, I
+                have
+                the privilege of being recognized as a <span class="blue">Magna Cum Laude
+                  candidate</span> for the Class of 2023.
+              </p>
+            </div>
+          </div>
+          <!-- For smaller screen end -->
         </div>
-        <!-- Section Nav end -->
+      </div>
+      <!-- About end -->
     </section>
 
-
-    <main>
-        <section class="mx-0 d-flex align-items-center justify-content-center" style="height: 90vh; width: 100%;">
-            <div class="container">
-                <div class="col-12 text-center">
-                    <span class="poppinsFont heading white">About</span>
-                    <span class="poppinsFont heading whiteStroked">Me</span>
-                </div>
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <div class="d-flex justify-content-between align-items-center socials">
-                        <a href="https://www.facebook.com/nicole.alcala.m/" target="_blank" class="darkSocials"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/nicolealcalq/" target="_blank" class="darkSocials"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/nicolealcala" target="_blank" class="darkSocials"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/nicolealcala" target="_blank" class="darkSocials"><i
-                                class="fa-brands fa-github"></i></a>
-                        <div class="horizontalDividerLight"></div>
-                        <a class="poppinsFont viewCV"
-                            href="https://drive.google.com/file/d/11wfVpWtXNiUOVix08vVT0tIRB3F1VOGR/view?usp=sharing"
-                            target="_blank">View CV <i class="fa-solid fa-angles-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About start -->
-        <section class="mx-0 lightSection" id="intro">
-            <div class="container">
-                <!-- For Larger Screen start -->
-                <div class="row mx-0 d-none d-lg-flex">
-                    <!-- About left start -->
-                    <div class="col-6 d-flex align-items-center justify-content-start position-relative">
-                        <img src="assets/yellow.png" alt="blue-bg" id="blueBg">
-                        <img class="bigPics picShadow rounded-4" src="assets/toga_pic.jpg" alt="toga-pic">
-                        <!-- About left end -->
-                    </div>
-
-                    <!-- About right start -->
-                    <div class="col-6 d-flex flex-column justify-content-center align-items-start flex-container">
-                        <span class="poppinsFont tertiaryTxt" style="color: #6cc2ff">Introduction</span>
-                        <p class="poppinsFont secondaryTxt mt-2 darkTxt highlightTxt">
-                            I’m a graduating student with a good foundation in Web Development and UI/UX Design.
-                        </p>
-                        <p class="darkTxt my-3">I am pursuing a Bachelor of Science in Information Technology at the
-                            Polytechnic University of the Philippines - Sto. Tomas.</p>
-                        <p class="darkTxt my-3">I initially chose this degree program for practical reasons, setting
-                            aside my passion for Science, specifically Biology. But to my
-                            surprise, I found myself enjoying this field even more than I had anticipated.
-                        </p>
-                        <p class="darkTxt mt-3">I started on
-                            this degree with no prior programming knowledge. It wasn't until my second year that I
-                            discovered a genuine interest in the field. Through
-                            diligent efforts and dedication, I consistently achieved the President's List award every
-                            semester from 2019 to 2023, maintaining a prominent position within the class. As a result
-                            of my hard work, I have
-                            the privilege of being recognized as a <span class="pink">Magna Cum Laude candidate</span>
-                            for the Class of 2023.</p>
-                        <!-- About right end -->
-                    </div>
-
-                    <!-- For Larger Screen end -->
-                </div>
-
-                <!-- For smaller screen start -->
-                <div class="row mx-0 p-0 d-block d-lg-none">
-                    <!-- About left start -->
-                    <div class="col-12 poppinsFont blue tertiaryTxt mt-3">
-                        Introduction
-                        <p class="poppinsFont secondaryTxt mt-2 darkTxt highlightTxt">
-                            I’m a graduating student with a good foundation in Web Development and UI/UX Design.
-                        </p>
-                    </div>
-
-                    <div class="row mx-0 my-5">
-                        <div class="col-12 d-flex align-items-center justify-content-center position-relative">
-                            <img src="assets/pink.png" alt="blue-bg" id="blueBg">
-                            <img class="bigPics picShadow rounded-4" src="assets/toga_pic.jpg" alt="toga-pic">
-                            <!-- About left end -->
-                        </div>
-                    </div>
-
-                    <div class="row mx-0">
-                        <div class="col-12">
-                            <p class="darkTxt my-3">I am pursuing a Bachelor of Science in Information Technology at
-                                the
-                                Polytechnic University of the Philippines - Sto. Tomas.</p>
-                            <p class="darkTxt my-3">I initially chose this degree program for practical reasons, but
-                                to my
-                                surprise, I found myself enjoying this field even more than I had anticipated. Through
-                                diligent efforts and
-                                dedication, I consistently achieved the President's List award every semester from 2019
-                                to
-                                2023, maintaining a prominent position within the class. As a result of my hard work, I
-                                have
-                                the privilege of being recognized as a <span class="blue">Magna Cum Laude
-                                    candidate</span> for the Class of 2023.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- For smaller screen end -->
-                </div>
-            </div>
-            <!-- About end -->
-        </section>
-
-        <!-- What I do start -->
-        <section class="mx-0">
-            <div class="container">
-                <div class="row mx-0 gy-4">
-                    <div class="col-12 poppinsFont pink secondaryTxt">
-                        What I Do
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card midBg">
-                            <div class="card-body py-5 rounded-3 lightTxt">
-                                <div class="row mx-0">
-                                    <img class="widIcon mb-4" src="assets/widResponsive.png" alt="">
-                                    <div class="col-12 subTxtTitle pb-2">
-                                        Responsive Web Applications
-                                    </div>
-                                    <div class="col-12 subTxtDetails">
-                                        I have experience developing informational websites, personal websites, dynamic
-                                        websites,
-                                        and
-                                        information systems.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card midBg">
-                            <div class="card-body py-5 rounded-3 lightTxt">
-                                <div class="row mx-0">
-                                    <img class="widIcon mb-4" src="assets/widDesign.png" alt="">
-                                    <div class="col-12 subTxtTitle pb-2">
-                                        User-centered Web Designs
-                                    </div>
-                                    <div class="col-12 subTxtDetails">
-                                        I created web designs for various academic and non-academic projects
-                                        with
-                                        the
-                                        goal of enhancing user experience.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card midBg">
-                            <div class="card-body py-5 rounded-3 lightTxt">
-                                <div class="row mx-0">
-                                    <img class="widIcon mb-4" src="assets/widDb.png" alt="">
-                                    <div class="col-12 subTxtTitle pb-2">
-                                        Robust Relational Databases
-                                    </div>
-                                    <div class="col-12 subTxtDetails">
-                                        I developed and managed some robust relational databases for academic
-                                        projects.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card midBg">
-                            <div class="card-body py-5 rounded-3 lightTxt">
-                                <div class="row mx-0">
-                                    <img class="widIcon mb-4" src="assets/widLogo.png" alt="">
-                                    <div class="col-12 subTxtTitle pb-2">
-                                        Logo Making
-                                    </div>
-                                    <div class="col-12 subTxtDetails">
-                                        I have designed logos for my projects, each
-                                        tailored to convey unique impressions and vibes.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- What I do end -->
-        </section>
-
-        <!-- Skills start -->
-        <section class="mx-0 lightSection">
-            <div class="container">
+    <!-- What I do start -->
+    <section class="mx-0">
+      <div class="container">
+        <div class="row mx-0 gy-4">
+          <div class="col-12 poppinsFont pink secondaryTxt" data-aos="fade-up" data-aos-delay="100">
+            What I Do
+          </div>
+          <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card midBg">
+              <div class="card-body py-5 rounded-3 lightTxt">
                 <div class="row mx-0">
-                    <!-- Skills Left start -->
-                    <div
-                        class="col-12 col-lg-6 d-flex flex-column flex-container justify-content-start align-items-start pe-lg-5">
-                        <span class="poppinsFont secondaryTxt" style="color: #6cc2ff">Skills & Tools
-                        </span>
-                        <p class="darkTxt my-3">
-                            In the IT field, my core interests lie in Programming and Design. I feel most
-                            comfortable in Web Development, having dedicated nearly two years to refining my skills in
-                            this domain. I have created projects for academic and non-academic purposes, utilizing
-                            foundational tools like <span class="pink">HTML</span>, <span class="pink">CSS/Sass</span>,
-                            and <span class="pink">JavaScript/jQuery</span> for
-                            front-end; and <span class="pink">PHP</span> and <span class="pink">SQL</span>
-                            for back-end development.
-                        </p>
-                        <p class="darkTxt my-3">Currently, I'm deepening my expertise by studying <span
-                                class="pink">node.js</span> and <span class="pink">react.js</span>,
-                            aiming to round out
-                            my skill set and enhance my proficiency. Furthermore, I'm enthusiastic about the idea of
-                            exploring new programming fields, be it app development, artificial intelligence, or other
-                            emerging practices.</p>
-                        <p class="darkTxt my-3">
-                            My ultimate goal is to contribute innovative and impactful solutions, powered by my passion
-                            and commitment to continuous growth.
-                        </p>
-                        <!-- Skills left end -->
-                    </div>
-
-                    <!-- Skills right start -->
-                    <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center poppinsFont">
-                        <div class="row m-0 gy-4">
-                            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                                <a href="https://sass-lang.com/" target="_blank"
-                                    class="skillBox d-flex justify-content-center align-items-center">
-                                    <img src="https://sass-lang.com/assets/img/logos/logo.svg" alt="Sass">
-                                </a>
-                            </div>
-
-                            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                                <a href="https://www.php.net/" target="_blank"
-                                    class="skillBox d-flex justify-content-center align-items-center"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
-                                        alt="PHP"></a>
-                            </div>
-
-                            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                                <a href="https://jquery.com/" target="_blank"
-                                    class="skillBox d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/JQuery-Logo.svg/2560px-JQuery-Logo.svg.png"
-                                        alt="JQuery"></a>
-                            </div>
-
-                            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                                <a href="https://getbootstrap.com/" target="_blank"
-                                    class="skillBox d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
-                                        alt="Bootstrap"></a>
-                            </div>
-
-                            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                                <a href="https://www.phpmyadmin.net/" target="_blank"
-                                    class="skillBox d-flex justify-content-center align-items-center"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/PhpMyAdmin_logo.svg/1200px-PhpMyAdmin_logo.svg.png"
-                                        alt="phpMyAdmin"></a>
-                            </div>
-
-                            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                                <a href="https://www.apachefriends.org/" target="_blank"
-                                    class="skillBox d-flex justify-content-center align-items-center"><img
-                                        src="https://www.apachefriends.org/images/xampp-logo-ac950edf.svg"
-                                        alt="XAMPP"></a>
-                            </div>
-
-                            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                                <a href="https://developer.chrome.com/docs/devtools/" target="_blank"
-                                    class="skillBox d-flex justify-content-center align-items-center"><img
-                                        src="assets/skillDevTools.png" alt="Chrome DevTools"></a>
-                            </div>
-
-                            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                                <a href="https://developer.chrome.com/docs/devtools/" target="_blank"
-                                    class="skillBox d-flex justify-content-center align-items-center"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
-                                        alt="Github"></a>
-                            </div>
-
-                            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                                <a href="https://adobexdplatform.com/" target="_blank"
-                                    class="skillBox d-flex justify-content-center align-items-center"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png"
-                                        alt="Adobe XD"></a>
-                            </div>
-
-                            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                                <a href="https://www.figma.com/" target="_blank"
-                                    class="skillBox d-flex justify-content-center align-items-center"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png"
-                                        alt="Figma" id="figma"></a>
-                            </div>
-
-                            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                                <a href="https://nodejs.org/en/" target="_blank"
-                                    class="skillBox d-flex justify-content-center align-items-center">
-                                    <div class="locked"></div>
-                                    <svg fill="#f5f5f5" class="iconLock" version="1.1" id="Layer_1"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        viewBox="0 0 330 330" xml:space="preserve" stroke="#f5f5f5">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <g id="XMLID_509_">
-                                                <path id="XMLID_510_"
-                                                    d="M65,330h200c8.284,0,15-6.716,15-15V145c0-8.284-6.716-15-15-15h-15V85c0-46.869-38.131-85-85-85 S80,38.131,80,85v45H65c-8.284,0-15,6.716-15,15v170C50,323.284,56.716,330,65,330z M180,234.986V255c0,8.284-6.716,15-15,15 s-15-6.716-15-15v-20.014c-6.068-4.565-10-11.824-10-19.986c0-13.785,11.215-25,25-25s25,11.215,25,25 C190,223.162,186.068,230.421,180,234.986z M110,85c0-30.327,24.673-55,55-55s55,24.673,55,55v45H110V85z">
-                                                </path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
-                                        alt="Node JS">
-                                </a>
-                            </div>
-
-                            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-                                <a href="https://react.dev/" target="_blank"
-                                    class="skillBox d-flex justify-content-center align-items-center">
-                                    <div class="locked"></div>
-                                    <svg fill="#f5f5f5" class="iconLock" version="1.1" id="Layer_1"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        viewBox="0 0 330 330" xml:space="preserve" stroke="#f5f5f5">
-                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <g id="XMLID_509_">
-                                                <path id="XMLID_510_"
-                                                    d="M65,330h200c8.284,0,15-6.716,15-15V145c0-8.284-6.716-15-15-15h-15V85c0-46.869-38.131-85-85-85 S80,38.131,80,85v45H65c-8.284,0-15,6.716-15,15v170C50,323.284,56.716,330,65,330z M180,234.986V255c0,8.284-6.716,15-15,15 s-15-6.716-15-15v-20.014c-6.068-4.565-10-11.824-10-19.986c0-13.785,11.215-25,25-25s25,11.215,25,25 C190,223.162,186.068,230.421,180,234.986z M110,85c0-30.327,24.673-55,55-55s55,24.673,55,55v45H110V85z">
-                                                </path>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-                                        alt="React JS">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Skills right end -->
+                  <img class="widIcon mb-4" src="assets/widResponsive.png" alt="">
+                  <div class="col-12 subTxtTitle pb-2">
+                    Responsive Web Applications
+                  </div>
+                  <div class="col-12 subTxtDetails">
+                    I have experience developing informational websites, personal websites, dynamic
+                    websites,
+                    and
+                    information systems.
+                  </div>
                 </div>
+              </div>
             </div>
-            <!-- Skills end -->
-        </section>
+          </div>
 
-        <!-- Awards start -->
-        <section class="mx-0">
-            <div class="container">
-                <div class="row mx-0 gy-4 pb-5">
-                    <div class="col-12 poppinsFont pink secondaryTxt">
-                        Awards & Recognition
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-center justify-content-center">
-                        <div class="row mx-0 awardsCard midBg rounded-3 p-4">
-                            <div class="col-12 text-center">
-                                <img class="awardsImg" src="https://www.sei.dost.gov.ph/images/seilogopng.png"
-                                    alt="DOST Logo">
-                            </div>
-                            <div class="col-12 tertiaryTxt lightTxt text-center mb-2">
-                                S&T Undergraduate Scholarship RA 7687
-                            </div>
-                            <div class="col-12 text-center my-1" style="color: #aeaeae">
-                                DOST-SEI Philippines
-                            </div>
-                            <div class="col-12 text-center" style="color: #aeaeae">
-                                <em>2019 - Present</em>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-center justify-content-center">
-                        <div class="row mx-0 awardsCard midBg rounded-3 p-3">
-                            <div class="col-12 text-center">
-                                <img class="awardsImg"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Polytechnic_University_of_the_Philippines.svg/1200px-Polytechnic_University_of_the_Philippines.svg.png"
-                                    alt="PUP Logo">
-                            </div>
-                            <div class="col-12 tertiaryTxt lightTxt text-center my-1">
-                                President's List, 8 semesters
-                            </div>
-                            <div class="col-12 text-center my-1" style="color: #aeaeae">
-                                Polytechnic University of the Philippines - Sto. Tomas
-                            </div>
-                            <div class="col-12 text-center" style="color: #aeaeae">
-                                <em>2019 - Present</em>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-center justify-content-center">
-                        <div class="row mx-0 awardsCard midBg rounded-3 p-4">
-                            <div class="col-12 text-center">
-                                <img class="awardsImg rounded-pill"
-                                    src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/327357470_547593207306461_8036171130064418128_n.png?_nc_cat=111&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeHXRAo7vWicJ_kflJ7HObqGjENx2HC3KOeMQ3HYcLco57dHYcF7tJmkT1tpnDuPI1WccW6zvFh2gyI0qahCugbN&_nc_ohc=DRqCSSjVnt8AX8ZTX9l&_nc_ht=scontent.fmnl30-2.fna&oh=00_AfC2V27i0LfodTkKQaFoZPcdOEVhuFfU3tBeXXKl6cJnKQ&oe=64DDE26E"
-                                    alt="SJC Logo">
-                            </div>
-                            <div class="col-12 text-center my-1">
-                                <span class="tertiaryTxt lightTxt text-center mb-2">With High Honors, Batch '19 Top
-                                    3</span>
-                            </div>
-                            <div class="col-12 text-center my-1" style="color: #aeaeae">
-                                <span">St. John Colleges</span>
-                            </div>
-                            <div class="col-12 text-center" style="color: #aeaeae">
-                                <em>March 2019</em>
-                            </div>
-                        </div>
-                    </div>
+          <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card midBg">
+              <div class="card-body py-5 rounded-3 lightTxt">
+                <div class="row mx-0">
+                  <img class="widIcon mb-4" src="assets/widDesign.png" alt="">
+                  <div class="col-12 subTxtTitle pb-2">
+                    User-centered Web Designs
+                  </div>
+                  <div class="col-12 subTxtDetails">
+                    I created web designs for various academic and non-academic projects
+                    with
+                    the
+                    goal of enhancing user experience.
+                  </div>
                 </div>
-
-                <div class="dividerHr mt-5" style="background-color: #cdcdcd;">
-                </div>
-
-                <footer class="row mt-1 d-flex gy-3">
-                    <div
-                        class="col-12 col-md-6 d-flex  justify-content-center justify-content-md-start align-items-center">
-                        <span class="poppinsFont pink me-2 me-sm-3" style="font-weight: 500">Follow Me:</span>
-                        <a href="https://www.facebook.com/nicole.alcala.m/"
-                            class="d-flex justify-content-center align-items-center" target="_blank"><i
-                                class="fab fa-facebook footerIcon"></i></a>
-                        <a href="https://www.instagram.com/nicolealcalq/" target="_blank">
-                            <div class="iconBg rounded-pill d-flex justify-content-center align-items-center"><i
-                                    class="fab fa-instagram faIcon"></i></div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nicolealcala" target="_blank">
-                            <div class="iconBg rounded-pill d-flex justify-content-center align-items-center"><i
-                                    class="fab fa-linkedin-in faIcon"></i></div>
-                        </a>
-                        <a href="https://github.com/nicolealcala"
-                            class="d-flex justify-content-center align-items-center" target="_blank"><i
-                                class="fab fa-github footerIcon"></i></a>
-                    </div>
-
-                    <div
-                        class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
-                        <a class="poppinsFont viewCV" href="mailto:nclmalcala@gmail.com" target="_blank">Send a Message
-                            <i class="fa-solid fa-angles-right"></i></a>
-                    </div>
-                </footer>
-
+              </div>
             </div>
-            <!-- Awards end -->
+          </div>
 
-        </section>
+          <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card midBg">
+              <div class="card-body py-5 rounded-3 lightTxt">
+                <div class="row mx-0">
+                  <img class="widIcon mb-4" src="assets/widDb.png" alt="">
+                  <div class="col-12 subTxtTitle pb-2">
+                    Robust Relational Databases
+                  </div>
+                  <div class="col-12 subTxtDetails">
+                    I developed and managed some robust relational databases for academic
+                    projects.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    </main>
-    <!-- BOOTSTRAP -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+          <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card midBg">
+              <div class="card-body py-5 rounded-3 lightTxt">
+                <div class="row mx-0">
+                  <img class="widIcon mb-4" src="assets/widLogo.png" alt="">
+                  <div class="col-12 subTxtTitle pb-2">
+                    Logo Making
+                  </div>
+                  <div class="col-12 subTxtDetails">
+                    I have designed logos for my projects, each
+                    tailored to convey unique impressions and vibes.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- What I do end -->
+    </section>
 
-    <!-- FONTAWESOME -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <!-- Skills start -->
+    <section class="mx-0 lightSection">
+      <div class="container">
+        <div class="row mx-0">
+          <!-- Skills Left start -->
+          <div class="col-12 col-lg-6 d-flex flex-column flex-container justify-content-start align-items-start pe-lg-5"
+            data-aos="fade-up" data-aos-delay="100">
+            <span class="poppinsFont secondaryTxt" style="color: #6cc2ff">Skills
+              & Tools
+            </span>
+            <p class="darkTxt my-3">
+              In the IT field, my core interests lie in Programming and Design. I feel most
+              comfortable in Web Development, having dedicated nearly two years to refining my skills in
+              this domain. I have created projects for academic and non-academic purposes, utilizing
+              foundational tools like <span class="pink">HTML</span>, <span class="pink">CSS/Sass</span>,
+              and <span class="pink">JavaScript/jQuery</span> for
+              front-end; and <span class="pink">PHP</span> and <span class="pink">SQL</span>
+              for back-end development.
+            </p>
+            <p class="darkTxt my-3">Currently, I'm deepening my expertise by
+              studying <span class="pink">node.js</span>
+              and <span class="pink">react.js</span>,
+              aiming to round out
+              my skill set and enhance my proficiency. Furthermore, I'm enthusiastic about the idea of
+              exploring new programming fields, be it app development, artificial intelligence, or other
+              emerging practices.</p>
+            <p class="darkTxt my-3">
+              My ultimate goal is to contribute innovative and impactful solutions, powered by my passion
+              and commitment to continuous growth.
+            </p>
+            <!-- Skills left end -->
+          </div>
 
-    <!-- Custom Scripts -->
-    <script src="loader.js"></script>
-    <script src="nav.js"></script>
-    <script src="backtoTop.js"></script>
+          <!-- Skills right start -->
+          <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center poppinsFont" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="row m-0 gy-4">
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <a href="https://sass-lang.com/" target="_blank"
+                  class="skillBox d-flex justify-content-center align-items-center">
+                  <img src="https://sass-lang.com/assets/img/logos/logo.svg" alt="Sass">
+                </a>
+              </div>
+
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <a href="https://www.php.net/" target="_blank"
+                  class="skillBox d-flex justify-content-center align-items-center"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+                    alt="PHP"></a>
+              </div>
+
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <a href="https://jquery.com/" target="_blank"
+                  class="skillBox d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/JQuery-Logo.svg/2560px-JQuery-Logo.svg.png"
+                    alt="JQuery"></a>
+              </div>
+
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <a href="https://getbootstrap.com/" target="_blank"
+                  class="skillBox d-flex justify-content-center align-items-center d-flex justify-content-center align-items-center"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
+                    alt="Bootstrap"></a>
+              </div>
+
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <a href="https://www.phpmyadmin.net/" target="_blank"
+                  class="skillBox d-flex justify-content-center align-items-center"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/PhpMyAdmin_logo.svg/1200px-PhpMyAdmin_logo.svg.png"
+                    alt="phpMyAdmin"></a>
+              </div>
+
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <a href="https://www.apachefriends.org/" target="_blank"
+                  class="skillBox d-flex justify-content-center align-items-center"><img
+                    src="https://www.apachefriends.org/images/xampp-logo-ac950edf.svg" alt="XAMPP"></a>
+              </div>
+
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <a href="https://developer.chrome.com/docs/devtools/" target="_blank"
+                  class="skillBox d-flex justify-content-center align-items-center"><img src="assets/skillDevTools.png"
+                    alt="Chrome DevTools"></a>
+              </div>
+
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <a href="https://developer.chrome.com/docs/devtools/" target="_blank"
+                  class="skillBox d-flex justify-content-center align-items-center"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
+                    alt="Github"></a>
+              </div>
+
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <a href="https://adobexdplatform.com/" target="_blank"
+                  class="skillBox d-flex justify-content-center align-items-center"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1200px-Adobe_XD_CC_icon.svg.png"
+                    alt="Adobe XD"></a>
+              </div>
+
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <a href="https://www.figma.com/" target="_blank"
+                  class="skillBox d-flex justify-content-center align-items-center"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png"
+                    alt="Figma" id="figma"></a>
+              </div>
+
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <a href="https://nodejs.org/en/" target="_blank"
+                  class="skillBox d-flex justify-content-center align-items-center">
+                  <div class="locked"></div>
+                  <svg fill="#f5f5f5" class="iconLock" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve"
+                    stroke="#f5f5f5">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                    </g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g id="XMLID_509_">
+                        <path id="XMLID_510_"
+                          d="M65,330h200c8.284,0,15-6.716,15-15V145c0-8.284-6.716-15-15-15h-15V85c0-46.869-38.131-85-85-85 S80,38.131,80,85v45H65c-8.284,0-15,6.716-15,15v170C50,323.284,56.716,330,65,330z M180,234.986V255c0,8.284-6.716,15-15,15 s-15-6.716-15-15v-20.014c-6.068-4.565-10-11.824-10-19.986c0-13.785,11.215-25,25-25s25,11.215,25,25 C190,223.162,186.068,230.421,180,234.986z M110,85c0-30.327,24.673-55,55-55s55,24.673,55,55v45H110V85z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
+                    alt="Node JS">
+                </a>
+              </div>
+
+              <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
+                <a href="https://react.dev/" target="_blank"
+                  class="skillBox d-flex justify-content-center align-items-center">
+                  <div class="locked"></div>
+                  <svg fill="#f5f5f5" class="iconLock" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve"
+                    stroke="#f5f5f5">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                    </g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g id="XMLID_509_">
+                        <path id="XMLID_510_"
+                          d="M65,330h200c8.284,0,15-6.716,15-15V145c0-8.284-6.716-15-15-15h-15V85c0-46.869-38.131-85-85-85 S80,38.131,80,85v45H65c-8.284,0-15,6.716-15,15v170C50,323.284,56.716,330,65,330z M180,234.986V255c0,8.284-6.716,15-15,15 s-15-6.716-15-15v-20.014c-6.068-4.565-10-11.824-10-19.986c0-13.785,11.215-25,25-25s25,11.215,25,25 C190,223.162,186.068,230.421,180,234.986z M110,85c0-30.327,24.673-55,55-55s55,24.673,55,55v45H110V85z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                    alt="React JS">
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Skills right end -->
+        </div>
+      </div>
+      <!-- Skills end -->
+    </section>
+
+    <!-- Awards start -->
+    <section class="mx-0">
+      <div class="container">
+        <div class="row mx-0 gy-4 pb-5">
+          <div class="col-12 poppinsFont pink secondaryTxt" data-aos="fade-up" data-aos-delay="100">
+            Awards & Recognition
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-center justify-content-center" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="row mx-0 awardsCard midBg rounded-3 p-4">
+              <div class="col-12 text-center">
+                <img class="awardsImg" src="https://www.sei.dost.gov.ph/images/seilogopng.png" alt="DOST Logo">
+              </div>
+              <div class="col-12 tertiaryTxt lightTxt text-center mb-2">
+                S&T Undergraduate Scholarship RA 7687
+              </div>
+              <div class="col-12 text-center my-1" style="color: #aeaeae">
+                DOST-SEI Philippines
+              </div>
+              <div class="col-12 text-center" style="color: #aeaeae">
+                <em>2019 - Present</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-center justify-content-center" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="row mx-0 awardsCard midBg rounded-3 p-3">
+              <div class="col-12 text-center">
+                <img class="awardsImg"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Polytechnic_University_of_the_Philippines.svg/1200px-Polytechnic_University_of_the_Philippines.svg.png"
+                  alt="PUP Logo">
+              </div>
+              <div class="col-12 tertiaryTxt lightTxt text-center my-1">
+                President's List, 8 semesters
+              </div>
+              <div class="col-12 text-center my-1" style="color: #aeaeae">
+                Polytechnic University of the Philippines - Sto. Tomas
+              </div>
+              <div class="col-12 text-center" style="color: #aeaeae">
+                <em>2019 - Present</em>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-center justify-content-center" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="row mx-0 awardsCard midBg rounded-3 p-4">
+              <div class="col-12 text-center">
+                <img class="awardsImg rounded-pill"
+                  src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/327357470_547593207306461_8036171130064418128_n.png?_nc_cat=111&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeHXRAo7vWicJ_kflJ7HObqGjENx2HC3KOeMQ3HYcLco57dHYcF7tJmkT1tpnDuPI1WccW6zvFh2gyI0qahCugbN&_nc_ohc=DRqCSSjVnt8AX8ZTX9l&_nc_ht=scontent.fmnl30-2.fna&oh=00_AfC2V27i0LfodTkKQaFoZPcdOEVhuFfU3tBeXXKl6cJnKQ&oe=64DDE26E"
+                  alt="SJC Logo">
+              </div>
+              <div class="col-12 text-center my-1">
+                <span class="tertiaryTxt lightTxt text-center mb-2">With High Honors, Batch '19 Top
+                  3</span>
+              </div>
+              <div class="col-12 text-center my-1" style="color: #aeaeae">
+                <span">St. John Colleges</span>
+              </div>
+              <div class="col-12 text-center" style="color: #aeaeae">
+                <em>March 2019</em>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dividerHr mt-5" style="background-color: #cdcdcd;">
+        </div>
+
+        <footer class="row mt-1 d-flex gy-3">
+          <div class="col-12 col-md-6 d-flex  justify-content-center justify-content-md-start align-items-center">
+            <span class="poppinsFont pink me-2 me-sm-3" style="font-weight: 500">Follow Me:</span>
+            <a href="https://www.facebook.com/nicole.alcala.m/" class="d-flex justify-content-center align-items-center"
+              target="_blank"><i class="fab fa-facebook footerIcon"></i></a>
+            <a href="https://www.instagram.com/nicolealcalq/" target="_blank">
+              <div class="iconBg rounded-pill d-flex justify-content-center align-items-center"><i
+                  class="fab fa-instagram faIcon"></i></div>
+            </a>
+            <a href="https://www.linkedin.com/in/nicolealcala" target="_blank">
+              <div class="iconBg rounded-pill d-flex justify-content-center align-items-center"><i
+                  class="fab fa-linkedin-in faIcon"></i></div>
+            </a>
+            <a href="https://github.com/nicolealcala" class="d-flex justify-content-center align-items-center"
+              target="_blank"><i class="fab fa-github footerIcon"></i></a>
+          </div>
+
+          <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+            <a class="poppinsFont viewCV" href="mailto:nclmalcala@gmail.com" target="_blank">Send a Message
+              <i class="fa-solid fa-angles-right"></i></a>
+          </div>
+        </footer>
+
+      </div>
+      <!-- Awards end -->
+
+    </section>
+
+  </main>
+  <!-- BOOTSTRAP -->
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- FONTAWESOME -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="loader.js"></script>
+  <script src="nav.js"></script>
+  <script src="backtoTop.js"></script>
 
 </body>
 

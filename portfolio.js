@@ -23,13 +23,13 @@ $(document).ready(function () {
 
     $('#uiFilter').click(function () {
         if ($(this).hasClass('active')) {
-            $('.projectCol').not('.ui').hide();
-            $('.ui').show();
+            $('.projectCol').not('.developing').hide();
+            $('.developing').show();
         } else {
             $('li').not(this).removeClass('active');
             $(this).toggleClass('active');
-            $('.projectCol').not('.ui').hide();
-            $('.ui').show();
+            $('.projectCol').not('.developing').hide();
+            $('.developing').show();
         }
     })
 })

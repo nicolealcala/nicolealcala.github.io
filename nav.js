@@ -10,5 +10,7 @@ $(document).ready(function () {
         $(".bar").toggleClass('whiteBg, darkBg');
     });
 
+    AOS.init();
+
 
 });

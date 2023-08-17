@@ -23,8 +23,9 @@
     <link rel="stylesheet" href="reusables.css">
     <link rel="stylesheet" href="portfolio.css">
 
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -138,7 +139,7 @@
         <section class="mx-0 lightSection" id="featured">
             <div class="container py-5">
                 <!-- For Large Screen start -->
-                <div class="row mx-0 d-none d-lg-flex">
+                <div class="row mx-0 d-none d-lg-flex" data-aos="fade-up" data-aos-delay="100">
                     <!-- Featured project left start -->
                     <div class="col-6 d-flex flex-column flex-container align-self-start justify-content-center lh-1">
                         <span class="poppinsFont tertiaryTxt mb-4" id="featuredProject">FEATURED
@@ -170,18 +171,19 @@
 
                 <!-- For smaller screen start -->
                 <div class="row mx-0 d-flex d-lg-none">
-                    <div class="col-12 d-flex flex-column flex-container align-self-start justify-content-center lh-1">
+                    <div class="col-12 d-flex flex-column flex-container align-self-start justify-content-center lh-1"
+                        data-aos="fade-up" data-aos-delay="100">
                         <span class="poppinsFont tertiaryTxt mb-4" id="featuredProject">FEATURED
                             PROJECT</span>
                         <span class="poppinsFont heading pink">UNBLOKC</span>
                         <span class="poppinsFont heading pinkStroked">Hackathon</span>
                     </div>
-                    <div class="row mx-0 my-5">
+                    <div class="row mx-0 my-5" data-aos="fade-up">
                         <div class="col-12 d-flex justify-content-center align-items-center">
                             <img class="bigPics" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
                         </div>
                     </div>
-                    <div class="row mx-0">
+                    <div class="row mx-0" data-aos="fade-up" data-aos-delay="100">
                         <div class="col-12 d-flex flex-column flex-container justify-content-start align-items-start">
                             <span class="darkTxt">Role: Front End Developer, UI/UX Designer</span>
                             <p class="mt-4 darkTxt">I had the opportunity to work on this exciting project during my
@@ -192,8 +194,10 @@
                                 necessary information, schedule, and guidelines they need to excel in the upcoming
                                 hackathon.
                             </p>
-                            <a class="btn rounded-3 actionBtn mt-4">
-                                Learn more
+                            <a href="https://hackathon.theblokc.media" target="_blank"
+                                class="btn rounded-3 actionBtn mt-4">
+                                Visit site
+                                <i class="ms-2 fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
@@ -206,20 +210,21 @@
         <section class="mx-0">
             <div class="container">
                 <div class="row mx-0 gy-4 pb-5">
-                    <div class="col-12 poppinsFont pink secondaryTxt">
+                    <div class="col-12 poppinsFont pink secondaryTxt" data-aos="fade-up" data-aos-delay="100">
                         Projects Gallery
                     </div>
-                    <div class="col-12 d-flex justify-content-start justify-content-lg-end">
+                    <div class="col-12 d-flex justify-content-start justify-content-lg-end" data-aos="fade-up"
+                        data-aos-delay="100">
                         <div class="filters d-flex justify-content-center align-items-center">
                             <ul class="d-flex list-unstyled justify-content-between align-items-center my-0">
                                 <li class="active" id="allFilter">All</li>
                                 <li id="deployedFilter">Deployed</li>
-                                <li id="uiFilter">UI Design</li>
+                                <li id="uiFilter">Developing</li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 projectCol deployed">
+                    <div class="col-12 col-md-6 col-lg-4 projectCol deployed" data-aos="fade-up" data-aos-delay="100">
                         <div class="projectBox">
                             <div class="overlay d-flex justify-content-center align-items-center">
                                 <div class="row mx-0 white">
@@ -247,7 +252,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 projectCol ui">
+                    <div class="col-12 col-md-6 col-lg-4 projectCol developing" data-aos="fade-up" data-aos-delay="100">
                         <div class="projectBox">
                             <div class="overlay d-flex justify-content-center align-items-center">
                                 <div class="row mx-0 white">
@@ -270,7 +275,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 projectCol deployed">
+                    <div class="col-12 col-md-6 col-lg-4 projectCol deployed" data-aos="fade-up" data-aos-delay="100">
                         <div class="projectBox">
                             <div class="overlay d-flex justify-content-center align-items-center">
                                 <div class="row mx-0 white">
@@ -298,7 +303,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 projectCol deployed">
+                    <div class="col-12 col-md-6 col-lg-4 projectCol deployed" data-aos="fade-up" data-aos-delay="100">
                         <div class="projectBox">
                             <div class="overlay d-flex justify-content-center align-items-center">
                                 <div class="row mx-0 white">
@@ -326,7 +331,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 projectCol ui">
+                    <div class="col-12 col-md-6 col-lg-4 projectCol developing" data-aos="fade-up" data-aos-delay="100">
                         <div class="projectBox">
                             <div class="overlay d-flex justify-content-center align-items-center">
                                 <div class="row mx-0 white">
@@ -349,7 +354,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 projectCol ui">
+                    <div class="col-12 col-md-6 col-lg-4 projectCol developing" data-aos="fade-up" data-aos-delay="100">
                         <div class="projectBox">
                             <div class="overlay d-flex justify-content-center align-items-center">
                                 <div class="row mx-0 white">
