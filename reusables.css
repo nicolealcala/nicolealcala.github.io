@@ -335,7 +335,8 @@ a {
 }
 
 .bigPics {
-  height: 630px;
+  max-width: 95%;
+  height: auto;
   position: relative;
   z-index: 5;
 }
@@ -349,11 +350,12 @@ a {
   z-index: 0;
   position: absolute;
   top: auto;
-  width: 650px;
+  max-width: 100%;
+  height: auto;
 }
 
 #blueBg {
-  right: 60px;
+  right: 15px;
 }
 
 .widIcon {
@@ -364,12 +366,6 @@ a {
 .midBg {
   background-color: #222222;
   height: 100%;
-}
-
-#unblokcPic {
-  width: 750px;
-  height: auto;
-  right: 40px;
 }
 
 .dividerHr {
@@ -458,20 +454,7 @@ a {
   .tertiaryTxt {
     font-size: 18px;
   }
-  #pinkBg,
   #blueBg {
-    width: 600px;
-    top: 130px;
-  }
-  #blueBg {
-    right: auto;
-  }
-  .bigPics {
-    height: 560px;
-  }
-  #unblokcPic {
-    width: 650px;
-    height: auto;
     right: auto;
   }
 }
@@ -491,19 +474,6 @@ a {
   }
   .highlightTxt {
     line-height: 35px;
-  }
-  #pinkBg,
-  #blueBg {
-    width: 530px;
-    top: 130px;
-  }
-  .bigPics {
-    height: 530px;
-  }
-  #unblokcPic {
-    width: 530px;
-    height: auto;
-    right: auto;
   }
   .socials {
     width: 330px;
@@ -551,19 +521,6 @@ a {
   #featuredProject {
     letter-spacing: 5px;
   }
-  #pinkBg,
-  #blueBg {
-    width: 470px;
-    top: 130px;
-  }
-  .bigPics {
-    height: 490px;
-  }
-  #unblokcPic {
-    width: 500px;
-    height: auto;
-    right: auto;
-  }
   .socials {
     width: 330px;
   }
@@ -602,19 +559,6 @@ a {
   .whiteStroked {
     -webkit-text-stroke: 1.5px white;
     -moz-text-stroke: 1.5px white;
-  }
-  #pinkBg,
-  #blueBg {
-    width: 390px;
-    top: 130px;
-  }
-  .bigPics {
-    height: 390px;
-  }
-  #unblokcPic {
-    width: 400px;
-    height: auto;
-    right: auto;
   }
   .socials {
     width: 250px;
@@ -668,19 +612,6 @@ a {
   .whiteStroked {
     -webkit-text-stroke: 1px white;
     -moz-text-stroke: 1px white;
-  }
-  #pinkBg,
-  #blueBg {
-    max-width: 330px;
-    top: 130px;
-  }
-  .bigPics {
-    max-height: 350px;
-  }
-  #unblokcPic {
-    width: 350px;
-    height: auto;
-    right: auto;
   }
   .lightSocials .svg-inline--fa,
   .darkSocials .svg-inline--fa {

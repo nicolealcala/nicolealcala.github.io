@@ -12,6 +12,11 @@ body {
   background-color: #303030;
 }
 
+#landingPic {
+  max-width: 100%;
+  height: auto;
+}
+
 #landingSummary {
   width: 470px;
   font-style: italic;
