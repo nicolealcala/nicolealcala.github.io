@@ -31,5 +31,5 @@ $(document).ready(function () {
             $('.projectCol').not('.developing').hide();
             $('.developing').show();
         }
-    })
+    });
 })
