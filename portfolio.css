@@ -75,7 +75,15 @@ body {
 }
 
 .viewDivider {
-  width: 1px;
-  height: 30px;
+  width: 1px !important;
+  height: 25px;
   background-color: white;
+}
+
+a:not(.darkSocials, .fSocials) .svg-inline--fa:hover {
+  color: #303030;
+}
+
+ul {
+  list-style-type: none;
 }/*# sourceMappingURL=portfolio.css.map */

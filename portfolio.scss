@@ -85,7 +85,17 @@ body {
 }
 
 .viewDivider {
-    width: 1px;
-    height: 30px;
+    width: 1px !important;
+    height: 25px;
     background-color: white;
+}
+
+a:not(.darkSocials, .fSocials) {
+    .svg-inline--fa:hover {
+        color: $darkTxt;
+    }
+}
+
+ul {
+    list-style-type: none;
 }

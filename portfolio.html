@@ -2,429 +2,466 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
 
-    <!-- ICON -->
-    <link rel="icon" href="assets/titleLogo.png" type="image/png">
+  <!-- ICON -->
+  <link rel="icon" href="assets/titleLogo.png" type="image/png">
 
-    <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 
-    <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="loader.css">
-    <link rel="stylesheet" href="reusables.css">
-    <link rel="stylesheet" href="portfolio.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="loader.css">
+  <link rel="stylesheet" href="reusables.css">
+  <link rel="stylesheet" href="portfolio.css">
 
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
 
-    <!-- Loader start -->
-    <section class="darkSection" id="sectionLoader">
-        <div class="container d-flex align-items-center justify-content-center">
-            <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="loader">
-                <defs>
-                    <path id="move-path"
-                        d="M102.546 83.5C109.859 70.8333 128.141 70.8333 135.454 83.5L157.971 122.5C165.284 135.167 156.143 151 141.517 151H96.4833C81.8571 151 72.7158 135.167 80.0289 122.5L102.546 83.5Z"
-                        fill="#FF7CAD"></path>
-                    <filter id="goo">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
-                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -32">
-                        </feColorMatrix>
-                    </filter>
-                </defs>
-                <g filter="url(#goo)">
-                    <circle cx="119" cy="74" r="20" stroke="#FF7CAD " stroke-width="8"></circle>
-                    <circle cx="79" cy="141" r="20" stroke="#9DD6FF" stroke-width="8"></circle>
-                    <circle cx="157" cy="141" r="20" stroke="#FFDF66" stroke-width="8"></circle>
-                    <circle id="liquid" cx="119" cy="74" r="14" fill="#FF7CAD">
+  <!-- Loader start -->
+  <section class="darkSection" id="sectionLoader">
+    <div class="container d-flex align-items-center justify-content-center">
+      <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="loader">
+        <defs>
+          <path id="move-path"
+            d="M102.546 83.5C109.859 70.8333 128.141 70.8333 135.454 83.5L157.971 122.5C165.284 135.167 156.143 151 141.517 151H96.4833C81.8571 151 72.7158 135.167 80.0289 122.5L102.546 83.5Z"
+            fill="#FF7CAD"></path>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -32">
+            </feColorMatrix>
+          </filter>
+        </defs>
+        <g filter="url(#goo)">
+          <circle cx="119" cy="74" r="20" stroke="#FF7CAD " stroke-width="8"></circle>
+          <circle cx="79" cy="141" r="20" stroke="#9DD6FF" stroke-width="8"></circle>
+          <circle cx="157" cy="141" r="20" stroke="#FFDF66" stroke-width="8"></circle>
+          <circle id="liquid" cx="119" cy="74" r="14" fill="#FF7CAD">
 
-                    </circle>
-                </g>
-            </svg>
+          </circle>
+        </g>
+      </svg>
+    </div>
+    <!-- Loader end -->
+  </section>
+
+  <!-- Back to Top start -->
+  <button class="btn rounded-pill d-flex align-items-center justify-content-center" id="backToTop"><i
+      class="fas fa-arrow-up"></i></button>
+
+  <!-- Nav start -->
+  <nav>
+    <div class="row mx-0">
+      <div class="col-6 d-flex align-items-center">
+        <div class="navbar-brand">
+          <a class="poppinsFont white" href="index.html"><img class="me-2 me-md-3" src="assets/logoDark.png" alt=""
+              id="logo"><span class="d-none d-md-inline">clinoae</span></a>
         </div>
-        <!-- Loader end -->
+      </div>
+      <div class="col-6 d-flex align-items-center justify-content-end">
+        <button class="btn d-flex align-items-center white" id="menuBtn">
+          <span class="poppinsFont" id="menuText">PROJECTS</span>
+          <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox" disabled>
+          <label class="icon-menu ms-3 ms-md-5" for="check-icon">
+            <div class="bar whiteBg bar-1"></div>
+            <div class="bar whiteBg bar-2"></div>
+            <div class="bar whiteBg bar-3"></div>
+          </label>
+        </button>
+      </div>
+    </div>
+    <!-- Nav end -->
+  </nav>
+
+  <!-- Section Nav start -->
+  <section class="lightSection d-none justify-content-center align-items-center" id="sectionNav">
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100%;">
+      <div class="row mx-0 d-flex justify-content-center align-items-center position-relative" style="width: 100%;">
+        <img src="assets/navBg.png" alt="" id="navBg">
+        <div class="col-12 col-lg-4 text-center text-lg-start">
+          <a class="navTxt poppinsFont heading stroked" href="index.html">Home</a>
+        </div>
+
+        <div class="col-12 col-lg-4 text-center text-lg-start">
+          <a class="navTxt poppinsFont heading stroked" href="about.html">About</a>
+        </div>
+
+        <div class="col-12 col-lg-4 text-center text-lg-start">
+          <a class="navTxt poppinsFont heading" href="portfolio.html">Projects</a>
+        </div>
+      </div>
+    </div>
+    <!-- Section Nav end -->
+  </section>
+
+  <main>
+    <section class="mx-0 d-flex align-items-center justify-content-center" style="height: 90vh; width: 100%;">
+      <div class="container">
+        <div class="col-12 text-center">
+          <span class="poppinsFont heading white">Projects</span>
+          <span class="poppinsFont heading whiteStroked">Portfolio</span>
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-between align-items-center socials">
+            <a href="https://www.facebook.com/nicole.alcala.m/" target="_blank" class="darkSocials"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nicolealcalq/" target="_blank" class="darkSocials"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nicolealcala" target="_blank" class="darkSocials"><i
+                class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/nicolealcala" target="_blank" class="darkSocials"><i
+                class="fa-brands fa-github"></i></a>
+            <div class="horizontalDividerLight"></div>
+            <a class="poppinsFont viewCV"
+              href="https://drive.google.com/file/d/11wfVpWtXNiUOVix08vVT0tIRB3F1VOGR/view?usp=sharing"
+              target="_blank">View CV
+              <i class="fa-solid fa-angles-right"></i></a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Back to Top start -->
-    <button class="btn rounded-pill d-flex align-items-center justify-content-center" id="backToTop"><i
-            class="fas fa-arrow-up"></i></button>
+    <!-- Featured project start -->
+    <section class="mx-0 lightSection" id="featured">
+      <div class="container py-5">
+        <!-- For Large Screen start -->
+        <div class="row mx-0 d-none d-lg-flex" data-aos="fade-up" data-aos-delay="100">
+          <!-- Featured project left start -->
+          <div class="col-6 d-flex flex-column flex-container align-self-start justify-content-center lh-1 pe-4"
+            style="text-align: justify;">
+            <span class="poppinsFont tertiaryTxt mb-4" id="featuredProject">FEATURED
+              PROJECT</span>
+            <span class="poppinsFont heading pink">UNBLOKC</span>
+            <span class="poppinsFont heading pinkStroked">Hackathon</span>
+            <span class="mt-5 darkTxt">Role: <em>Front End Developer, UI/UX Designer</em></span>
+            <p class="mt-4 mb-3 pe-3 darkTxt">I had the opportunity to work on this
+              exciting
+              project during my
+              internship period at The BLOKC. I designed and developed this website aiming to facilitate
+              the UNBLOKC 2023 hackathon participants. The website serves as a valuable resource,
+              providing participants with all the
+              necessary information, schedule, and guidelines they need to excel in the
+              hackathon.
+            </p>
+            <a href="https://hackathon.theblokc.media" target="_blank" class="btn rounded-3 actionBtn mt-4">
+              Visit site
+              <i class="ms-2 fas fa-external-link-alt"></i>
+            </a>
+            <!-- Featured project left end -->
+          </div>
 
-    <!-- Nav start -->
-    <nav>
-        <div class="row mx-0">
-            <div class="col-6 d-flex align-items-center">
-                <div class="navbar-brand">
-                    <a class="poppinsFont white" href="index.html"><img class="me-2 me-md-3" src="assets/logoDark.png"
-                            alt="" id="logo"><span class="d-none d-md-inline">clinoae</span></a>
-                </div>
-            </div>
-            <div class="col-6 d-flex align-items-center justify-content-end">
-                <button class="btn d-flex align-items-center white" id="menuBtn">
-                    <span class="poppinsFont" id="menuText">PROJECTS</span>
-                    <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox" disabled>
-                    <label class="icon-menu ms-3 ms-md-5" for="check-icon">
-                        <div class="bar whiteBg bar-1"></div>
-                        <div class="bar whiteBg bar-2"></div>
-                        <div class="bar whiteBg bar-3"></div>
-                    </label>
-                </button>
-            </div>
+          <!-- Featured project right start -->
+          <div class="col-6 d-flex align-items-center justify-content-start position-relative">
+            <img class="bigPics" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
+            <!-- Featured project right end -->
+          </div>
+          <!-- For Large Screen end -->
         </div>
-        <!-- Nav end -->
-    </nav>
 
-    <!-- Section Nav start -->
-    <section class="lightSection d-none justify-content-center align-items-center" id="sectionNav">
-        <div class="container d-flex justify-content-center align-items-center" style="height: 100%;">
-            <div class="row mx-0 d-flex justify-content-center align-items-center position-relative"
-                style="width: 100%;">
-                <img src="assets/navBg.png" alt="" id="navBg">
-                <div class="col-12 col-lg-4 text-center text-lg-start">
-                    <a class="navTxt poppinsFont heading stroked" href="index.html">Home</a>
-                </div>
-
-                <div class="col-12 col-lg-4 text-center text-lg-start">
-                    <a class="navTxt poppinsFont heading stroked" href="about.html">About</a>
-                </div>
-
-                <div class="col-12 col-lg-4 text-center text-lg-start">
-                    <a class="navTxt poppinsFont heading" href="portfolio.html">Projects</a>
-                </div>
+        <!-- For smaller screen start -->
+        <div class="row mx-0 d-flex d-lg-none">
+          <div class="col-12 d-flex flex-column flex-container align-self-start justify-content-center lh-1"
+            data-aos="fade-up" data-aos-delay="100">
+            <span class="poppinsFont tertiaryTxt mb-4" id="featuredProject">FEATURED
+              PROJECT</span>
+            <span class="poppinsFont heading pink">UNBLOKC</span>
+            <span class="poppinsFont heading pinkStroked">Hackathon</span>
+          </div>
+          <div class="row mx-0 my-5" data-aos="fade-up">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <img class="bigPics" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
             </div>
+          </div>
+          <div class="row mx-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12 d-flex flex-column flex-container justify-content-start align-items-start">
+              <span class="darkTxt">Role: Front End Developer, UI/UX Designer</span>
+              <p class="mt-4 darkTxt" style="text-align: justify">I had the opportunity to work on this exciting
+                project during my
+                internship period at The BLOKC. I designed and developed this website aiming to
+                facilitate the UNBLOKC 2023 hackathon participants. The website serves as a valuable
+                resource,
+                providing participants with all the
+                necessary information, schedule, and guidelines they need to excel in the
+                hackathon.
+              </p>
+              <a href="https://hackathon.theblokc.media" target="_blank" class="btn rounded-3 actionBtn mt-4">
+                Visit site
+                <i class="ms-2 fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <!-- Section Nav end -->
+      </div>
+      <!-- Featured project end -->
     </section>
 
-    <main>
-        <section class="mx-0 d-flex align-items-center justify-content-center" style="height: 90vh; width: 100%;">
-            <div class="container">
-                <div class="col-12 text-center">
-                    <span class="poppinsFont heading white">Projects</span>
-                    <span class="poppinsFont heading whiteStroked">Portfolio</span>
-                </div>
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <div class="d-flex justify-content-between align-items-center socials">
-                        <a href="https://www.facebook.com/nicole.alcala.m/" target="_blank" class="darkSocials"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/nicolealcalq/" target="_blank" class="darkSocials"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/nicolealcala" target="_blank" class="darkSocials"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/nicolealcala" target="_blank" class="darkSocials"><i
-                                class="fa-brands fa-github"></i></a>
-                        <div class="horizontalDividerLight"></div>
-                        <a class="poppinsFont viewCV"
-                            href="https://drive.google.com/file/d/11wfVpWtXNiUOVix08vVT0tIRB3F1VOGR/view?usp=sharing"
-                            target="_blank">View CV
-                            <i class="fa-solid fa-angles-right"></i></a>
-                    </div>
-                </div>
+    <!-- Projects Portfolio start-->
+    <section class="mx-0">
+      <div class="container">
+        <div class="row mx-0 gy-4 pb-5">
+          <div class="col-12 poppinsFont pink secondaryTxt" data-aos="fade-up" data-aos-delay="100">
+            Projects Gallery
+          </div>
+          <div class="col-12 d-flex justify-content-start justify-content-lg-end" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="filters d-flex justify-content-center align-items-center">
+              <ul class="d-flex list-unstyled justify-content-between align-items-center my-0">
+                <li class="active" id="allFilter">All</li>
+                <li id="deployedFilter">Deployed</li>
+                <li id="uiFilter">Developing</li>
+              </ul>
             </div>
-        </section>
+          </div>
 
-        <!-- Featured project start -->
-        <section class="mx-0 lightSection" id="featured">
-            <div class="container py-5">
-                <!-- For Large Screen start -->
-                <div class="row mx-0 d-none d-lg-flex" data-aos="fade-up" data-aos-delay="100">
-                    <!-- Featured project left start -->
-                    <div class="col-6 d-flex flex-column flex-container align-self-start justify-content-center lh-1">
-                        <span class="poppinsFont tertiaryTxt mb-4" id="featuredProject">FEATURED
-                            PROJECT</span>
-                        <span class="poppinsFont heading pink">UNBLOKC</span>
-                        <span class="poppinsFont heading pinkStroked">Hackathon</span>
-                        <span class="mt-5 darkTxt">Role: <em>Front End Developer, UI/UX Designer</em></span>
-                        <p class="mt-4 mb-3 darkTxt">I had the opportunity to work on this exciting project during my
-                            internship period at The BLOKC. I designed and developed this website aiming to facilitate
-                            the UNBLOKC 2023 hackathon participants. The website serves as a valuable resource,
-                            providing participants with all the
-                            necessary information, schedule, and guidelines they need to excel in the upcoming
-                            hackathon.
-                        </p>
-                        <a href="https://hackathon.theblokc.media" target="_blank" class="btn rounded-3 actionBtn mt-4">
-                            Visit site
-                            <i class="ms-2 fas fa-external-link-alt"></i>
-                        </a>
-                        <!-- Featured project left end -->
+          <div class="col-12 col-md-6 col-lg-4 projectCol deployed" data-aos="fade-up" data-aos-delay="100">
+            <div class="projectBox">
+              <div class="overlay d-flex justify-content-center align-items-center">
+                <div class="row mx-0 white">
+                  <div class="col-12 secondaryTxt text-center">
+                    Nicole Alcala
+                  </div>
+                  <div class="col-12 text-center">
+                    Portfolio Website
+                  </div>
+                  <div class="col-12 align-items-center text-center mt-3">
+                    <div class="d-flex justify-content-center align-content-center smallTxt">
+                      <ul class="d-flex justify-content-evenly align-items-center p-0 w-100">
+                        <li class="text-center mx-0">HTML</li>
+                        <li class="viewDivider"></li>
+                        <li class="text-center">CSS/Sass</li>
+                        <li class="viewDivider"></li>
+                        <li class="text-center">Bootstrap</li>
+                        <li class="viewDivider"></li>
+                        <li class="text-center">JavaScript/jQuery</li>
+                      </ul>
                     </div>
+                    <div class="d-flex justify-content-center align-content-center mt-2">
+                      <a href="https://nicolealcala.github.io/" target="_blank"
+                        class="mx-2 d-flex justify-content-center align-items-center"><i
+                          class="fa-regular fa-eye"></i></a>
 
-                    <!-- Featured project right start -->
-                    <div class="col-6 d-flex align-items-center justify-content-start position-relative">
-                        <img class="bigPics" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
-                        <!-- Featured project right end -->
+                      <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2273&mode=design"
+                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
+                          class="fa-brands fa-figma"></i></a>
                     </div>
-                    <!-- For Large Screen end -->
+                  </div>
                 </div>
-
-                <!-- For smaller screen start -->
-                <div class="row mx-0 d-flex d-lg-none">
-                    <div class="col-12 d-flex flex-column flex-container align-self-start justify-content-center lh-1"
-                        data-aos="fade-up" data-aos-delay="100">
-                        <span class="poppinsFont tertiaryTxt mb-4" id="featuredProject">FEATURED
-                            PROJECT</span>
-                        <span class="poppinsFont heading pink">UNBLOKC</span>
-                        <span class="poppinsFont heading pinkStroked">Hackathon</span>
-                    </div>
-                    <div class="row mx-0 my-5" data-aos="fade-up">
-                        <div class="col-12 d-flex justify-content-center align-items-center">
-                            <img class="bigPics" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
-                        </div>
-                    </div>
-                    <div class="row mx-0" data-aos="fade-up" data-aos-delay="100">
-                        <div class="col-12 d-flex flex-column flex-container justify-content-start align-items-start">
-                            <span class="darkTxt">Role: Front End Developer, UI/UX Designer</span>
-                            <p class="mt-4 darkTxt">I had the opportunity to work on this exciting project during my
-                                internship period at The BLOKC. I designed and developed this website aiming to
-                                facilitate the UNBLOKC 2023 hackathon participants. The website serves as a valuable
-                                resource,
-                                providing participants with all the
-                                necessary information, schedule, and guidelines they need to excel in the upcoming
-                                hackathon.
-                            </p>
-                            <a href="https://hackathon.theblokc.media" target="_blank"
-                                class="btn rounded-3 actionBtn mt-4">
-                                Visit site
-                                <i class="ms-2 fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <img src="design/portfolio/mockup.png" class="portfolioPic" alt="">
             </div>
-            <!-- Featured project end -->
-        </section>
+          </div>
 
-        <!-- Projects Portfolio start-->
-        <section class="mx-0">
-            <div class="container">
-                <div class="row mx-0 gy-4 pb-5">
-                    <div class="col-12 poppinsFont pink secondaryTxt" data-aos="fade-up" data-aos-delay="100">
-                        Projects Gallery
+          <div class="col-12 col-md-6 col-lg-4 projectCol developing" data-aos="fade-up" data-aos-delay="100">
+            <div class="projectBox">
+              <div class="overlay d-flex justify-content-center align-items-center">
+                <div class="row mx-0 white">
+                  <div class="col-12 secondaryTxt text-center">
+                    Medeco
+                  </div>
+                  <div class="col-12 text-center">
+                    Health, Ecommerce
+                  </div>
+                  <div class="col-12 align-items-center text-center mt-3">
+                    <div class="d-flex justify-content-center align-content-center mt-2">
+                      <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=0-1&mode=design"
+                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
+                          class="fa-brands fa-figma"></i></a>
                     </div>
-                    <div class="col-12 d-flex justify-content-start justify-content-lg-end" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <div class="filters d-flex justify-content-center align-items-center">
-                            <ul class="d-flex list-unstyled justify-content-between align-items-center my-0">
-                                <li class="active" id="allFilter">All</li>
-                                <li id="deployedFilter">Deployed</li>
-                                <li id="uiFilter">Developing</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 projectCol deployed" data-aos="fade-up" data-aos-delay="100">
-                        <div class="projectBox">
-                            <div class="overlay d-flex justify-content-center align-items-center">
-                                <div class="row mx-0 white">
-                                    <div class="col-12 secondaryTxt text-center">
-                                        Nicole Alcala
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        Portfolio Website
-                                    </div>
-                                    <div
-                                        class="col-12 d-flex justify-content-center align-items-center text-center mt-3 smallTxt">
-                                        <a href="https://nicolealcala.github.io/" target="_blank"
-                                            class="mx-1 viewExternal d-flex justify-content-center align-items-center">View
-                                            Site<i class="ms-1 fas fa-external-link-alt"></i></a>
-                                        <div class="viewDivider mx-1"></div>
-                                        <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2273&mode=design"
-                                            target="_blank"
-                                            class="mx-1 viewExternal d-flex justify-content-center align-items-center">View
-                                            in Figma<i
-                                                class="ms-1 fas fa-external-link d-flex justify-content-center align-items-center-alt"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="design/portfolio/mockup.png" class="portfolioPic" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 projectCol developing" data-aos="fade-up" data-aos-delay="100">
-                        <div class="projectBox">
-                            <div class="overlay d-flex justify-content-center align-items-center">
-                                <div class="row mx-0 white">
-                                    <div class="col-12 secondaryTxt text-center">
-                                        Medeco
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        Health, Ecommerce
-                                    </div>
-                                    <div
-                                        class="col-12 d-flex justify-content-center align-items-center text-center mt-3 smallTxt">
-                                        <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=0-1&mode=design"
-                                            target="_blank"
-                                            class="mx-1 viewExternal d-flex justify-content-center align-items-center">View
-                                            in Figma<i class="ms-1 fas fa-external-link-alt"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="design/medeco/mockup.png" class="portfolioPic" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 projectCol deployed" data-aos="fade-up" data-aos-delay="100">
-                        <div class="projectBox">
-                            <div class="overlay d-flex justify-content-center align-items-center">
-                                <div class="row mx-0 white">
-                                    <div class="col-12 secondaryTxt text-center">
-                                        UNBLOKC Hackathon
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        Informational Website
-                                    </div>
-                                    <div
-                                        class="col-12 d-flex justify-content-center align-items-center text-center mt-3 smallTxt">
-                                        <a href="https://hackathon.theblokc.media/" target="_blank"
-                                            class="mx-1 viewExternal d-flex justify-content-center align-items-center">View
-                                            Site<i class="ms-1 fas fa-external-link-alt"></i></a>
-                                        <div class="viewDivider mx-1"></div>
-                                        <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2271&mode=design"
-                                            target="_blank"
-                                            class="mx-1 viewExternal d-flex justify-content-center align-items-center">View
-                                            in Figma<i
-                                                class="ms-1 fas fa-external-link d-flex justify-content-center align-items-center-alt"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="design/hackathon/mockup.png" class="portfolioPic" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 projectCol deployed" data-aos="fade-up" data-aos-delay="100">
-                        <div class="projectBox">
-                            <div class="overlay d-flex justify-content-center align-items-center">
-                                <div class="row mx-0 white">
-                                    <div class="col-12 secondaryTxt text-center">
-                                        Katipunan ng Kabataan IS
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        Capstone Project | Data Management
-                                    </div>
-                                    <div
-                                        class="col-12 d-flex justify-content-center align-items-center text-center mt-3 smallTxt">
-                                        <a href="https://kkinfosystem.000webhostapp.com/" target="_blank"
-                                            class="mx-1 viewExternal d-flex justify-content-center align-items-center">View
-                                            Site<i class="ms-1 fas fa-external-link-alt"></i></a>
-                                        <div class="viewDivider mx-1"></div>
-                                        <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=1-1292&mode=design"
-                                            target="_blank"
-                                            class="mx-1 viewExternal d-flex justify-content-center align-items-center">View
-                                            in Figma<i
-                                                class="ms-1 fas fa-external-link d-flex justify-content-center align-items-center-alt"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="design/kkis/mockup.png" class="portfolioPic" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 projectCol developing" data-aos="fade-up" data-aos-delay="100">
-                        <div class="projectBox">
-                            <div class="overlay d-flex justify-content-center align-items-center">
-                                <div class="row mx-0 white">
-                                    <div class="col-12 secondaryTxt text-center">
-                                        Loungescape
-                                    </div>
-                                    <div class="col-12 text-center ">
-                                        Entertainment Website (Local)
-                                    </div>
-                                    <div
-                                        class="col-12 d-flex justify-content-center align-items-center text-center mt-3 smallTxt">
-                                        <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2274&mode=design"
-                                            target="_blank"
-                                            class="mx-1 viewExternal d-flex justify-content-center align-items-center">View
-                                            in Figma<i class="ms-1 fas fa-external-link-alt"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="design/loungescape/mockup.png" class="portfolioPic" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 projectCol developing" data-aos="fade-up" data-aos-delay="100">
-                        <div class="projectBox">
-                            <div class="overlay d-flex justify-content-center align-items-center">
-                                <div class="row mx-0 white">
-                                    <div class="col-12 secondaryTxt text-center">
-                                        Strays Worth Saving
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        Unofficial Web Design
-                                    </div>
-                                    <div
-                                        class="col-12 d-flex justify-content-center align-items-center text-center mt-3 smallTxt">
-                                        <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2272&mode=design"
-                                            target="_blank"
-                                            class="mx-1 viewExternal d-flex justify-content-center align-items-center">View
-                                            in Figma<i class="ms-1 fas fa-external-link-alt"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="design/sws/mockup.png" class="portfolioPic" alt="">
-                        </div>
-                    </div>
+                  </div>
                 </div>
-
-                <div class="dividerHr mt-5" style="background-color: #cdcdcd;">
-                </div>
-
-                <footer class="row mt-1 d-flex gy-3">
-                    <div
-                        class="col-12 col-md-6 d-flex  justify-content-center justify-content-md-start align-items-center">
-                        <span class="poppinsFont pink me-2 me-sm-3" style="font-weight: 500">Follow Me:</span>
-                        <a href="https://www.facebook.com/nicole.alcala.m/"
-                            class="d-flex justify-content-center align-items-center" target="_blank"><i
-                                class="fab fa-facebook footerIcon"></i></a>
-                        <a href="https://www.instagram.com/nicolealcalq/" target="_blank">
-                            <div class="iconBg rounded-pill d-flex justify-content-center align-items-center"><i
-                                    class="fab fa-instagram faIcon"></i></div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nicolealcala" target="_blank">
-                            <div class="iconBg rounded-pill d-flex justify-content-center align-items-center"><i
-                                    class="fab fa-linkedin-in faIcon"></i></div>
-                        </a>
-                        <a href="https://github.com/nicolealcala"
-                            class="d-flex justify-content-center align-items-center" target="_blank"><i
-                                class="fab fa-github footerIcon"></i></a>
-                    </div>
-
-                    <div
-                        class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
-                        <a class="poppinsFont viewCV" href="mailto:nclmalcala@gmail.com" target="_blank">Send a Message
-                            <i class="fa-solid fa-angles-right"></i></a>
-                    </div>
-                </footer>
+              </div>
+              <img src="design/medeco/mockup.png" class="portfolioPic" alt="">
             </div>
-            <!-- Projects Portfolio end -->
-        </section>
+          </div>
 
-    </main>
-    <!-- BOOTSTRAP -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+          <div class="col-12 col-md-6 col-lg-4 projectCol deployed" data-aos="fade-up" data-aos-delay="100">
+            <div class="projectBox">
+              <div class="overlay d-flex justify-content-center align-items-center">
+                <div class="row mx-0 white">
+                  <div class="col-12 secondaryTxt text-center">
+                    UNBLOKC Hackathon
+                  </div>
+                  <div class="col-12 text-center">
+                    Informational Website
+                  </div>
+                  <div class="col-12 align-items-center text-center mt-3">
+                    <div class="d-flex justify-content-center align-content-center smallTxt">
+                      <ul class="d-flex justify-content-evenly align-items-center p-0 w-100">
+                        <li class="text-center mx-0">HTML</li>
+                        <li class="viewDivider"></li>
+                        <li class="text-center">CSS/Sass</li>
+                        <li class="viewDivider"></li>
+                        <li class="text-center">Bootstrap</li>
+                        <li class="viewDivider"></li>
+                        <li class="text-center">JavaScript/jQuery</li>
+                      </ul>
+                    </div>
+                    <div class="d-flex justify-content-center align-content-center mt-2">
+                      <a href="https://hackathon.theblokc.media/" target="_blank"
+                        class="mx-2 d-flex justify-content-center align-items-center"><i
+                          class="fa-regular fa-eye"></i></a>
 
-    <!-- FONTAWESOME -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+                      <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2271&mode=design"
+                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
+                          class="fa-brands fa-figma"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="design/hackathon/mockup.png" class="portfolioPic" alt="">
+            </div>
+          </div>
 
-    <!-- Custom Scripts -->
-    <script src="loader.js"></script>
-    <script src="nav.js"></script>
-    <script src="portfolio.js"></script>
-    <script src="backtoTop.js"></script>
+          <div class="col-12 col-md-6 col-lg-4 projectCol deployed" data-aos="fade-up" data-aos-delay="100">
+            <div class="projectBox">
+              <div class="overlay d-flex justify-content-center align-items-center">
+                <div class="row mx-0 white">
+                  <div class="col-12 secondaryTxt text-center">
+                    Katipunan ng Kabataan IS
+                  </div>
+                  <div class="col-12 text-center">
+                    Capstone Project | Data Management
+                  </div>
+                  <div class="col-12 align-items-center text-center mt-3">
+                    <div class="d-flex justify-content-center align-content-center smallTxt">
+                      <ul class="d-flex justify-content-evenly align-items-center p-0 w-100">
+                        <li class="text-center mx-0">PHP</li>
+                        <li class="viewDivider"></li>
+                        <li class="text-center">CSS/Sass</li>
+                        <li class="viewDivider"></li>
+                        <li class="text-center">Bootstrap</li>
+                        <li class="viewDivider"></li>
+                        <li class="text-center">JavaScript/jQuery</li>
+                        <li class="viewDivider"></li>
+                        <li class="text-center">SQL</li>
+                      </ul>
+                    </div>
+                    <div class="d-flex justify-content-center align-content-center mt-2">
+                      <a href="https://kkinfosystem.000webhostapp.com/" target="_blank"
+                        class="mx-2 d-flex justify-content-center align-items-center"><i
+                          class="fa-regular fa-eye"></i></a>
+
+                      <a href="https://github.com/nicolealcala/KKIS" target="_blank"
+                        class="mx-2 d-flex justify-content-center align-items-center"><i
+                          class="fa-brands fa-github"></i></a>
+
+                      <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=1-1292&mode=design"
+                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
+                          class="fa-brands fa-figma"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="design/kkis/mockup.png" class="portfolioPic" alt="">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 projectCol developing" data-aos="fade-up" data-aos-delay="100">
+            <div class="projectBox">
+              <div class="overlay d-flex justify-content-center align-items-center">
+                <div class="row mx-0 white">
+                  <div class="col-12 secondaryTxt text-center">
+                    Loungescape
+                  </div>
+                  <div class="col-12 text-center ">
+                    Entertainment Website (Local)
+                  </div>
+                  <div class="col-12 align-items-center text-center mt-3">
+                    <div class="d-flex justify-content-center align-content-center mt-2">
+                      <a href="https://github.com/markprongoso/LoungEscape" target="_blank"
+                        class="mx-2 d-flex justify-content-center align-items-center"><i
+                          class="fa-brands fa-github"></i></a>
+
+                      <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2274&mode=design"
+                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
+                          class="fa-brands fa-figma"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="design/loungescape/mockup.png" class="portfolioPic" alt="">
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 projectCol developing" data-aos="fade-up" data-aos-delay="100">
+            <div class="projectBox">
+              <div class="overlay d-flex justify-content-center align-items-center">
+                <div class="row mx-0 white">
+                  <div class="col-12 secondaryTxt text-center">
+                    Strays Worth Saving
+                  </div>
+                  <div class="col-12 text-center">
+                    Unofficial Web Design
+                  </div>
+                  <div class="col-12 align-items-center text-center mt-3">
+                    <div class="d-flex justify-content-center align-content-center mt-2">
+                      <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2272&mode=design"
+                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
+                          class="fa-brands fa-figma"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="design/sws/mockup.png" class="portfolioPic" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="dividerHr mt-5" style="background-color: #cdcdcd;">
+        </div>
+
+        <footer class="row mt-1 d-flex gy-3">
+          <div class="col-12 col-md-6 d-flex  justify-content-center justify-content-md-start align-items-center">
+            <span class="poppinsFont pink me-2 me-sm-3" style="font-weight: 500">Follow Me:</span>
+            <a href="https://www.facebook.com/nicole.alcala.m/"
+              class="d-flex justify-content-center align-items-center fSocials" target="_blank"><i
+                class="fab fa-facebook footerIcon"></i></a>
+            <a href="https://www.instagram.com/nicolealcalq/" target="_blank">
+              <div class="iconBg rounded-pill d-flex justify-content-center align-items-center"><i
+                  class="fab fa-instagram faIcon"></i></div>
+            </a>
+            <a href="https://www.linkedin.com/in/nicolealcala" target="_blank">
+              <div class="iconBg rounded-pill d-flex justify-content-center align-items-center"><i
+                  class="fab fa-linkedin-in faIcon"></i></div>
+            </a>
+            <a href="https://github.com/nicolealcala" class="d-flex justify-content-center align-items-center fSocials"
+              target="_blank"><i class="fab fa-github footerIcon"></i></a>
+          </div>
+
+          <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+            <a class="poppinsFont viewCV" href="mailto:nclmalcala@gmail.com" target="_blank">Send a Message
+              <i class="fa-solid fa-angles-right"></i></a>
+          </div>
+        </footer>
+      </div>
+      <!-- Projects Portfolio end -->
+    </section>
+
+  </main>
+  <!-- BOOTSTRAP -->
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- FONTAWESOME -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="loader.js"></script>
+  <script src="nav.js"></script>
+  <script src="portfolio.js"></script>
+  <script src="backtoTop.js"></script>
 </body>
 
 </html>
