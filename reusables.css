@@ -203,7 +203,7 @@ nav #menuBtn .check-icon:checked + .icon-menu {
   top: auto;
   width: auto;
   height: 500px;
-  opacity: 0.4;
+  opacity: 0.9;
 }
 
 .navTxt {
@@ -218,7 +218,7 @@ nav #menuBtn .check-icon:checked + .icon-menu {
   bottom: -5px;
   width: 0px;
   height: 5px;
-  background-color: #FF7CAD;
+  background-color: #303030;
   opacity: 1;
   transition: width 0.2s;
 }

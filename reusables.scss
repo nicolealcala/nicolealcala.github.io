@@ -220,7 +220,7 @@ nav {
     top: auto;
     width: auto;
     height: 500px;
-    opacity: 0.4;
+    opacity: 0.9;
 }
 
 .navTxt {
@@ -235,7 +235,7 @@ nav {
     bottom: -5px;
     width: 0px;
     height: 5px;
-    background-color: $pink;
+    background-color: $darkTxt;
     opacity: 1;
     transition: width 0.2s;
 }
