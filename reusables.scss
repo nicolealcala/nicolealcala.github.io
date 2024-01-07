@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
 $pink: #FF7CAD;
 $blue: #9DD6FF;
 $darkTxt: #303030;
-$lightTxt: #DDDDDD;
+$lightTxt: #DEDEDE;
 $white: white;
 $yellow: #FFDF66;
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     scroll-behavior: smooth;
     background-color: #FFFFFE;
 }
@@ -59,8 +61,6 @@ body {
 }
 
 .subTxtDetails {
-    // width: 300px;
-    font-size: 16px;
     font-weight: 400;
 }
 
@@ -226,6 +226,8 @@ nav {
 
 .navTxt {
     position: relative;
+    font-size: 75px;
+    font-weight: 700;
 }
 
 .navTxt::after {
@@ -290,7 +292,7 @@ section {
     color: $darkTxt;
     height: 50px;
     width: 50px;
-    z-index: 10;
+    z-index: 3;
     transition: all 0.3s ease !important;
 
     .fa-arrow-up {
@@ -680,7 +682,7 @@ a {
 
     // Texts and Colors
     .heading {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .secondaryTxt {
@@ -712,5 +714,10 @@ a {
             height: 15px;
             width: auto;
         }
+    }
+
+    #featuredProject {
+        letter-spacing: 2px;
+        margin-bottom: 10px;
     }
 }

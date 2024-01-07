@@ -9,9 +9,6 @@
   <!-- ICON -->
   <link rel="icon" href="assets/titleLogo.png " type="image/png">
 
-  <!-- Jquery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 
@@ -26,10 +23,13 @@
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
-
   <!-- Loader start -->
   <section class="darkSection" id="sectionLoader">
     <div class="container d-flex align-items-center justify-content-center">
@@ -64,7 +64,7 @@
     <div class="row mx-0">
       <div class="col-6 d-flex align-items-center">
         <div class="navbar-brand">
-          <a class="poppinsFont" href="index.html"><img class="ms-2" src="assets/logo.png" alt="" id="logo"></a>
+          <a class="poppinsFont" href="index.html"><img class="ms-2" src="assets/lightBgLogo.png" alt="" id="logo"></a>
         </div>
       </div>
       <div class="col-6 d-flex align-items-center justify-content-end">
@@ -87,20 +87,14 @@
     <div class="container d-flex align-items-center" style="height: 100%;">
       <div class="row mx-0 d-flex justify-content-center align-items-center position-relative" style="width: 100%;">
         <img src="assets/navBg.png" alt="" id="navBg">
-        <div class="col-12 col-lg-4 text-center text-lg-start">
+        <div class="col-12 text-center text-lg-start d-flex flex-column justify-content-center align-items-center">
           <a class="navTxt poppinsFont heading" href="index.html">Home</a>
-        </div>
-
-        <div class="col-12 col-lg-4 text-center text-lg-start">
           <a class="navTxt poppinsFont heading stroked" href="about.html">About</a>
-        </div>
-
-        <div class="col-12 col-lg-4 text-center text-lg-start">
           <a class="navTxt poppinsFont heading stroked" href="portfolio.html">Projects</a>
+          <a class="navTxt poppinsFont heading stroked" href="contact.html">Contact</a>
         </div>
       </div>
-    </div>
-    <!-- Section Nav end -->
+      <!-- Section Nav end -->
   </section>
 
   <main>
@@ -261,8 +255,7 @@
     <section class="mx-0 darkSection">
       <div class="container">
         <!-- For Larger Screen start -->
-        <div class="row mx-0 d-none d-lg-flex ps-4" data-aos="fade-up" data-aos-delay="100"
-          style="text-align: justify;">
+        <div class="row mx-0 d-none d-lg-flex ps-4" data-aos="fade-up" data-aos-delay="100">
           <!-- About left start -->
           <div class="col-6 d-flex align-items-center justify-content-start position-relative">
             <img src="assets/blue.png" alt="blue-bg" id="blueBg" class="img-fluid">
@@ -284,9 +277,8 @@
               surprise, I found myself enjoying this field even more than I had anticipated. Through
               diligent efforts and
               dedication, I consistently achieved the President's List award every semester from 2019 to
-              2023, maintaining a prominent position within the class. As a result of my hard work, I graduated as a
-              <span class="blue">Magna Cum Laude</span> for the Class of 2023
-              with a GWA of <span class="blue">1.22059</span>.
+              2023, maintaining a prominent position within the class. As a result of my hard work, I graduated <span
+                class="blue">magna cum laude</span> with the Class of 2023.
             </p>
             <a href="about.html#intro" class="btn rounded-3 actionBtn mt-4">
               Learn more
@@ -298,19 +290,19 @@
         </div>
 
         <!-- For smaller screen start -->
-        <div class="row mx-0 p-0 d-block d-lg-none" style="text-align: justify;">
+        <div class="row mx-0 p-0 d-block d-lg-none" data-aos="fade-up" data-aos-delay="100">
           <!-- About left start -->
-          <div class="col-12 poppinsFont" id="aboutText" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12 poppinsFont" id="aboutText">
             About Me
           </div>
-          <div class="col-12 poppinsFont pink tertiaryTxt mt-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12 poppinsFont pink tertiaryTxt mt-3">
             Introduction
             <p class="poppinsFont secondaryTxt mt-2 highlightTxt" style="color: #DDDDDD">
               I am a fresh graduate with good foundation in Web Development, RDBMS, and UI/UX Design.
             </p>
           </div>
 
-          <div class="row mx-0 my-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="row mx-0 my-5">
             <div class="col-12 d-flex align-items-center justify-content-center position-relative">
               <img src="assets/blue.png" alt="blue-bg" id="blueBg" class="img-fluid">
               <img class="img-fluid  bigPics picShadow rounded-4" src="assets/toga_pic.jpg" alt="toga-pic">
@@ -319,7 +311,7 @@
           </div>
 
           <div class="row mx-0">
-            <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12">
               <p class="lightTxt my-3">I graduated with a degree in Bachelor of Science in Information Technology from
                 the
                 Polytechnic University of the Philippines - Sto. Tomas.</p>
@@ -329,9 +321,8 @@
                 diligent efforts and
                 dedication, I consistently achieved the President's List award every semester from 2019
                 to
-                2023, maintaining a prominent position within the class. As a result of my hard work, I graduated as a
-                <span class="blue">Magna Cum Laude</span> from the Class of 2023 with a GWA of <span
-                  class="blue">1.22059</span>.
+                2023, maintaining a prominent position within the class. As a result of my hard work, I graduated
+                <span class="blue">magna cum laude</span> with the Class of 2023.
               </p>
               <a href="about.html#intro" class="btn rounded-3 actionBtn mt-4">
                 Learn more
@@ -350,8 +341,7 @@
         <!-- For Large Screen start -->
         <div class="row mx-0 d-none d-lg-flex" data-aos="fade-up" data-aos-delay="100">
           <!-- Featured project left start -->
-          <div class="col-6 d-flex flex-column flex-container align-self-start justify-content-center lh-1 p-4"
-            style="text-align: justify">
+          <div class="col-6 d-flex flex-column flex-container align-self-start justify-content-center lh-1 p-4">
             <span class="poppinsFont tertiaryTxt mb-4" id="featuredProject">FEATURED
               PROJECT</span>
             <span class="poppinsFont heading pink">UNBLOKC</span>
@@ -379,20 +369,19 @@
         </div>
 
         <!-- For smaller screen start -->
-        <div class="row mx-0 d-flex d-lg-none">
-          <div class="col-12 d-flex flex-column flex-container align-self-start justify-content-center lh-1"
-            data-aos="fade-up" data-aos-delay="100">
-            <span class="poppinsFont tertiaryTxt mb-4" id="featuredProject">LATEST
+        <div class="row mx-0 d-flex d-lg-none" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12 d-flex flex-column flex-container align-self-start justify-content-center lh-1">
+            <span class="poppinsFont tertiaryTxt mb-3 mb-md-4" id="featuredProject">FEATURED
               PROJECT</span>
             <span class="poppinsFont heading pink">UNBLOKC</span>
             <span class="poppinsFont heading pinkStroked">Hackathon</span>
           </div>
-          <div class="row mx-0 my-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="row mx-0 my-5">
             <div class="col-12 d-flex justify-content-center align-items-center">
               <img class="img-fluid  bigPics" src="assets/unblokc.jpg" alt="unblokc-pic" id="unblokcPic">
             </div>
           </div>
-          <div class="row mx-0" data-aos="fade-up" data-aos-delay="100" style="text-align: justify">
+          <div class="row mx-0">
             <div class="col-12 d-flex flex-column flex-container justify-content-start align-items-start">
               <span>Role: Front End Developer, UI/UX Designer</span>
               <p class="mt-4">I had the opportunity to work on this exciting project during my
@@ -410,115 +399,223 @@
           </div>
         </div>
       </div>
-      <!-- Latest project end -->
+      <!-- Featured project end -->
     </section>
 
-
-    <!-- Contact start -->
     <section class="mx-0 darkSection">
       <div class="container">
-        <div class="row mx-0">
-          <div class="col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="poppinsFont heading white">
-              Let's
+        <!-- For Large Screen start -->
+        <div class="row mx-0 mb-5 d-none d-lg-flex justify-content-center align-items-center" data-aos="fade-up"
+          data-aos-delay="100">
+          <!-- Feedback left start -->
+          <div class="col-12 col-lg-5">
+            <div class="mt-5">
+              <p class="poppinsFont lightTxt heading mb-1" style="font-size: 25px;">
+                <span class="pink">Excellence</span> is a continuous journey,
+              </p>
+              <p class="subTxtDetails lightTxt" style="width: 85%;">
+                and your <span class="blue">feedback</span> is the fuel that keeps me striving for it. It empowers me to
+                embrace challenges, learn from experiences, and continuously
+                raise the bar.
+              </p>
             </div>
-            <div class="poppinsFont heading whiteStroked">
-              Talk
-            </div>
+            <!-- Feedback left end -->
           </div>
 
-          <!-- Contact left start -->
-          <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="row mx-0 my-4">
-              <div class="col-12 pink tertiaryTxt poppinsFont" style="font-weight: 600">
-                Contact Details
-              </div>
+          <!-- Feedback right start -->
+          <div class="col-12 col-lg-7 position-relative">
+            <img src="assets/feedbackElement.png" id="quoteImg" alt="Quote">
+            <!-- Slick Carousel -->
+            <div class="feedbackSlider1">
+              <!-- Slick Slide 1 -->
+              <dv class="card bg-transparent border-0">
+                <div class="card-body d-flex justify-content-center align-items-center feedbackCard">
+                  <img src="assets/feedbackCJ.jpg" class="feedbackImg me-2 rounded-3" alt="Sir CJ">
+                  <div class="feedbackContent ms-3">
+                    <p class="feedbackTxt poppinsFont lightTxt">Nicole will never settle for less. She embodies what a
+                      PUPian is: with
+                      high
+                      standard. She has a professional aptitude and she is a great asset to any organization that she
+                      is,
+                      or
+                      will be, a part of.</p>
+                    <p class="feedbackDetails mb-0">
+                      <span class="feedbackFrom blue">CJ De Claro</span>
+                      <br>
+                      <span class="lightTxt subTxtDetails">Software Engineer, Instructor</span>
+                    </p>
+                  </div>
+                </div>
+              </dv>
+
+              <!-- Slick Slide 2 -->
+              <dv class="card bg-transparent border-0">
+                <div class="card-body d-flex justify-content-center align-items-center feedbackCard">
+                  <img src="assets/feedbackJM.jpg" class="feedbackImg me-2 rounded-3" alt="JM">
+                  <div class="feedbackContent ms-3">
+                    <p class="feedbackTxt poppinsFont lightTxt subTxtDetails">I've had the privilege of working with
+                      Nicole for
+                      several years. Her dedication to work is exceptional. We
+                      were frequently worked together throughout our time at the university and even served as
+                      fellow interns at The BLOKC. Her high standards, as a developer or designer, are evident in the
+                      quality of her work. She never settles for mediocre results, always striving for the best.</p>
+                    <p class="feedbackDetails mb-0">
+                      <span class="feedbackFrom blue">JM Morano</span>
+                      <br>
+                      <span class="lightTxt subTxtDetails">Colleague, PUP</span>
+                    </p>
+                  </div>
+                </div>
+              </dv>
+
+              <!-- Slick Slide 3 -->
+              <dv class="card bg-transparent border-0">
+                <div class="card-body d-flex justify-content-center align-items-center feedbackCard">
+                  <img
+                    src="https://img.freepik.com/free-psd/3d-illustration-person_23-2149436182.jpg?w=740&t=st=1702349028~exp=1702349628~hmac=a3a48a643b5170461be4d44296197bdc56cd9f235493b379dac73970e65b2e23"
+                    class="feedbackImg me-2 rounded-3" alt="Pat">
+                  <div class="feedbackContent ms-3">
+                    <p class="feedbackTxt poppinsFont lightTxt subTxtDetails">I have worked with Nicole on several
+                      projects, and her
+                      work ethic is
+                      noteworthy. Her attention to detail, ability to collaborate well, and passion for learning led us
+                      to
+                      successful completion of projects. With that, Nicole's reliability will surely make meaningful
+                      contributions in her professional endeavors.</p>
+                    <p class="feedbackDetails mb-0">
+                      <span class="feedbackFrom blue">Pat Abrigo</span>
+                      <br>
+                      <span class="lightTxt subTxtDetails">UI/UX Designer, GoCommerce</span>
+                    </p>
+                  </div>
+                </div>
+              </dv>
+
+              <!-- Slick Slide 4 -->
+              <dv class="card bg-transparent border-0">
+                <div class="card-body d-flex justify-content-center align-items-center feedbackCard">
+                  <img
+                    src="https://img.freepik.com/free-psd/3d-illustration-person-with-pink-hair_23-2149436186.jpg?w=740&t=st=1702348865~exp=1702349465~hmac=04115f219442b59c24dfc298bd33972f819e01e51bd0b228baf79861dc08d77f"
+                    class="feedbackImg me-2 rounded-3" alt="Pat">
+                  <div class="feedbackContent ms-3">
+                    <p class="feedbackTxt poppinsFont lightTxt subTxtDetails">
+                      Nicole is an exceptionally talented individual,
+                      proficient in coding and adept at UI/UX design. Her keen intuition allows her to take initiative
+                      and solve problems independently, showcasing her cool, self-reliant approach. </p>
+                    <p class="feedbackDetails mb-0">
+                      <span class="feedbackFrom blue">Danna</span>
+                      <br>
+                      <span class="lightTxt subTxtDetails">Junior Creative, My Busybee Inc.</span>
+                    </p>
+                  </div>
+                </div>
+              </dv>
             </div>
-
-            <div class="row mx-0">
-              <div class="col-1 col-md-2 d-flex justify-content-center">
-                <i class="fa-solid fa-location-dot contactIcon" style="color: white"></i>
-              </div>
-              <div class="col-11 col-md-10">
-                <div class="row mx-0">
-                  <div class="col-12 lightTxt tertiaryTxt">
-                    Calamba City, Laguna
-                  </div>
-                  <div class="col-12" style="color: #A0A0A0">
-                    Philippines
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-1 col-md-2 mt-3 d-flex justify-content-center">
-                <i class="fa-solid fa-at contactIcon" style="color: white"></i>
-              </div>
-              <div class="col-11 col-md-10 mt-3">
-                <div class="row mx-0">
-                  <div class="col-12 lightTxt tertiaryTxt">
-                    nclmalcala@gmail.com
-                  </div>
-                  <div class="col-12" style="color: #A0A0A0">
-                    Email
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-1 col-md-2 mt-3 d-flex justify-content-center">
-                <i class="fa-solid fa-earth-asia contactIcon" style="color: white"></i>
-              </div>
-              <div class="col-11 col-md-10 mt-3">
-                <div class="row mx-0">
-                  <div class="col-12 lightTxt tertiaryTxt">
-                    nicolealcala.github.io
-                  </div>
-                  <div class="col-12" style="color: #A0A0A0">
-                    Website
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Contact left end -->
+            <!-- Indicator1 -->
+            <div class="d-flex justify-content-end align-items-center mx-0" id="indicatorBtn1"></div>
+            <!-- Feedback right end -->
           </div>
-
-          <!-- Contact right start -->
-          <div class="col-12 col-lg-8" data-aos="fade-up" data-aos-delay="100">
-            <div class="row mx-0 my-4">
-              <div class="col-12 pink tertiaryTxt poppinsFont" style="font-weight: 600">
-                Send a Message
-              </div>
-            </div>
-            <form action="">
-              <div class="row mx-0 d-flex">
-
-                <div class="col-12 col-md-6 col-lg-5">
-                  <input class="form-control contactMessage" type="text" placeholder="First Name" disabled>
-                  <input class="form-control contactMessage" type="text" placeholder="Last Name" disabled>
-                  <input class="form-control contactMessage" type="email" placeholder="Email" disabled>
-                  <input class="form-control contactMessage" type="tel" placeholder="Contact No." disabled>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-7 d-flex flex-column flex-container">
-                  <input class="form-control contactMessage" type="text" placeholder="Subject" disabled>
-                  <textarea class="form-control contactMessage" id="contactTxtArea" disabled
-                    placeholder="Message (temporarily disabled due to hosting purposes)"></textarea>
-                </div>
-              </div>
-              <div class="row mx-0">
-                <div class="col-12 d-flex align-items-center justify-content-end">
-                  <a href="mailto:nclmalcala@gmail.com" class=" btn actionBtn rounded-3" type="submit">Send email</a>
-                </div>
-              </div>
-            </form>
-            <!-- Contact right end -->
-          </div>
+          <!-- For Large screen end -->
         </div>
 
-        <div class="dividerHr mt-5" style="background-color: #cdcdcd;">
+        <!-- For smaller screen -->
+        <div class="row mx-0 d-flex d-lg-none position-relative justify-content-center aling-items-end"
+          data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/feedbackElement.png" id="quoteImg" alt="Quote">
+          <div class="feedbackSlider2">
+            <!-- Slick Slide 1 -->
+            <div class="card bg-transparent border-0">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center feedbackCard">
+                <p class="feedbackTxt poppinsFont poppinsFont lightTxt text-center d-flex align-items-center">Nicole
+                  will never settle for less. She embodies what a
+                  PUPian is: with high standard. She has a professional aptitude and she is a great asset to any
+                  organization that she is, or will be, a part of.</p>
+                <div class="feedbackContent d-flex flex-column justify-content-center align-items-center">
+                  <img src="assets/feedbackCJ.jpg" class="feedbackImg me-2 rounded-pill" alt="Sir CJ">
+                  <p class="feedbackDetails mb-0 mt-3 text-center">
+                    <span class="feedbackFrom blue">CJ De Claro</span>
+                    <br>
+                    <span class="lightTxt subTxtDetails">Software Engineer, Instructor</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slick Slide 2 -->
+            <div class="card bg-transparent border-0">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center feedbackCard">
+                <p class="feedbackTxt poppinsFont poppinsFont lightTxt text-center d-flex align-items-center">I've had
+                  the privilege of working
+                  with
+                  Nicole for
+                  several years. Her dedication to work is exceptional. We
+                  were frequently worked together throughout our time at the university and even served as
+                  fellow interns at The BLOKC. Her high standards, as a developer or designer, are evident in the
+                  quality of her work. She never settles for mediocre results, always striving for the best.</p>
+                <div class="feedbackContent d-flex flex-column justify-content-center align-items-center">
+                  <img src="assets/feedbackJM.jpg" class="feedbackImg me-2 rounded-pill" alt="JM Morano">
+                  <p class="feedbackDetails mb-0 mt-3 text-center">
+                    <span class="feedbackFrom blue">JM Morano</span>
+                    <br>
+                    <span class="lightTxt subTxtDetails">Colleague, PUP</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slick Slide 3 -->
+            <div class="card bg-transparent border-0">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center feedbackCard">
+                <p class="feedbackTxt poppinsFont poppinsFont lightTxt text-center d-flex align-items-center">I have
+                  worked with Nicole on several
+                  projects, and her
+                  work ethic is
+                  noteworthy. Her attention to detail, ability to collaborate well, and passion for learning led us
+                  to
+                  successful completion of projects. With that, Nicole's reliability will surely make meaningful
+                  contributions in her professional endeavors.</p>
+                <div class="feedbackContent d-flex flex-column justify-content-center align-items-center">
+                  <img
+                    src="https://img.freepik.com/free-psd/3d-illustration-person-with-pink-hair_23-2149436186.jpg?w=740&t=st=1702348865~exp=1702349465~hmac=04115f219442b59c24dfc298bd33972f819e01e51bd0b228baf79861dc08d77f"
+                    class="feedbackImg me-2 rounded-pill" alt="Pat Abrigo">
+                  <p class="feedbackDetails mb-0 mt-3 text-center">
+                    <span class="feedbackFrom blue">Danna</span>
+                    <br>
+                    <span class="lightTxt subTxtDetails">Junior Creative, My BusyBee Inc.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slick Slide 3 -->
+            <div class="card bg-transparent border-0">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center feedbackCard">
+                <p class="feedbackTxt poppinsFont poppinsFont lightTxt text-center d-flex align-items-center">Nicole is
+                  an exceptionally talented individual,
+                  proficient in coding and adept at UI/UX design. Her keen intuition allows her to take initiative
+                  and solve problems independently, showcasing her cool, self-reliant approach.</p>
+                <div class="feedbackContent d-flex flex-column justify-content-center align-items-center">
+                  <img
+                    src="https://img.freepik.com/free-psd/3d-illustration-person_23-2149436182.jpg?w=740&t=st=1702349028~exp=1702349628~hmac=a3a48a643b5170461be4d44296197bdc56cd9f235493b379dac73970e65b2e23"
+                    class="feedbackImg me-2 rounded-pill" alt="Pat Abrigo">
+                  <p class="feedbackDetails mb-0 mt-3 text-center">
+                    <span class="feedbackFrom blue">Pat Abrigo</span>
+                    <br>
+                    <span class="lightTxt subTxtDetails">UI/UX Designer, GoCommerce</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Indicator2 -->
+          <div class="d-flex justify-content-center align-items-center mx-0" id="indicatorBtn2"></div>
+          <!-- For smaller screen end -->
         </div>
 
-        <footer class="row mt-1 d-flex gy-3">
-          <div class="col-12 d-flex justify-content-start align-items-center">
+        <div class=" dividerHr mt-5" style="background-color: #cdcdcd;"></div>
+
+        <footer class="row mt-1 d-flex gy-3 mx-0">
+          <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start align-items-center">
             <span class="poppinsFont pink me-2 me-sm-3" style="font-weight: 500">Follow Me:</span>
             <a href="https://www.facebook.com/nicole.alcala.m/" class="d-flex justify-content-center align-items-center"
               target="_blank"><i class="fab fa-facebook footerIcon"></i></a>
@@ -533,11 +630,16 @@
             <a href="https://github.com/nicolealcala" class="d-flex justify-content-center align-items-center"
               target="_blank"><i class="fab fa-github footerIcon"></i></a>
           </div>
+          <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+            <a class="poppinsFont viewCV" href="contact.html">Send a Message
+              <i class="fa-solid fa-angles-right"></i></a>
+          </div>
         </footer>
-      </div>
-      <!-- Contact end -->
     </section>
   </main>
+
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
   <!-- BOOTSTRAP -->
   <script type="text/javascript"
@@ -545,6 +647,9 @@
 
   <!-- FONTAWESOME -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+  <!-- Slick Carousel -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <!-- Custom Scripts -->
   <script src="loader.js"></script>
