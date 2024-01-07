@@ -204,7 +204,7 @@ nav #menuBtn .check-icon:checked + .icon-menu {
   top: auto;
   width: auto;
   height: 500px;
-  opacity: 0.9;
+  opacity: 0.75;
 }
 
 .navTxt {
