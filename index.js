@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    $('.feedbackSlider1').slick({
+    $('#feedbackSlider1').slick({
         slidesToShow: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         infinite: true,
         cssEase: 'ease-in',
@@ -14,9 +14,9 @@ $(document).ready(function () {
     $('#nextBtn1').appendTo("#indicatorBtn1");
 
 
-    $('.feedbackSlider2').slick({
+    $('#feedbackSlider2').slick({
         slidesToShow: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         infinite: true,
         cssEase: 'ease-in',

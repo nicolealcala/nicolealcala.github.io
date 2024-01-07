@@ -35,6 +35,10 @@ body {
   -moz-text-stroke: 1px white;
 }
 
+.feedbackSlider {
+  display: block;
+}
+
 #quoteImg {
   position: absolute;
   top: 0;
@@ -99,19 +103,16 @@ body {
     width: 480px;
   }
   #quoteImg {
-    position: absolute;
-    top: 0;
-    left: auto;
-    right: auto;
-    opacity: 0.7;
-    height: 100px;
-    width: auto;
+    margin: auto;
+    right: 0;
+    left: 0;
+    height: 120px;
   }
   .feedbackCard {
     height: auto;
   }
   .feedbackCard .feedbackTxt {
-    height: 300px;
+    height: 270px;
     font-style: italic;
   }
   .feedbackCard .feedbackContent {
@@ -170,7 +171,6 @@ body {
     height: auto;
   }
   .feedbackCard .feedbackTxt {
-    height: 35 0px;
     font-size: 16px;
     font-style: italic;
   }

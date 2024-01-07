@@ -1,204 +1,202 @@
-$pink: #FF7CAD;
-$blue: #9DD6FF;
+$pink: #ff7cad;
+$blue: #9dd6ff;
 $darkTxt: #303030;
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    color: $darkTxt;
+  color: $darkTxt;
 }
 
 .bar {
-    background-color: $darkTxt;
+  background-color: $darkTxt;
 }
 
 #landingPic {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 #landingSummary {
-    width: 470px;
-    font-style: italic;
-    font-weight: 400;
+  width: 470px;
+  font-style: italic;
+  font-weight: 400;
 }
 
 #aboutText {
-    color: white;
-    font-size: 55px;
-    font-weight: 700;
+  color: white;
+  font-size: 55px;
+  font-weight: 700;
 }
 
 #aboutTextStroked {
-    color: transparent;
-    font-size: 55px;
-    font-weight: 700;
-    -webkit-text-stroke: 1px white;
-    -moz-text-stroke: 1px white;
+  color: transparent;
+  font-size: 55px;
+  font-weight: 700;
+  -webkit-text-stroke: 1px white;
+  -moz-text-stroke: 1px white;
 }
 
+.feedbackSlider {
+    display: block;
+}
 #quoteImg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 0.7;
-    height: 100px;
-    width: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.7;
+  height: 100px;
+  width: auto;
 }
 
 .feedbackImg {
-    width: 180px;
-    height: 220px;
-    object-fit: cover;
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
 }
 
 .feedbackCard {
-    height: 300px;
-    padding: 5px;
+  height: 300px;
+  padding: 5px;
 
-    .feedbackContent {
-        max-width: 100%;
-        height: 200px;
-        position: relative;
+  .feedbackContent {
+    max-width: 100%;
+    height: 200px;
+    position: relative;
 
-        .feedbackTxt {
-            font-style: italic;
-            line-height: normal;
-        }
-
-        p {
-            line-height: 25px;
-        }
-
-        .feedbackDetails {
-            position: absolute;
-            bottom: 0;
-
-            .feedbackFrom {
-                font-weight: 500;
-            }
-        }
+    .feedbackTxt {
+      font-style: italic;
+      line-height: normal;
     }
+
+    p {
+      line-height: 25px;
+    }
+
+    .feedbackDetails {
+      position: absolute;
+      bottom: 0;
+
+      .feedbackFrom {
+        font-weight: 500;
+      }
+    }
+  }
 }
 
 .slickBtn {
-    width: 40px;
-    height: 40px;
-    background-color: #222;
+  width: 40px;
+  height: 40px;
+  background-color: #222;
 
-    .fa-chevron-left,
-    .fa-chevron-right {
-        color: #909090;
-    }
+  .fa-chevron-left,
+  .fa-chevron-right {
+    color: #909090;
+  }
 }
 
 #indicatorBtn1 {
-    position: absolute;
-    bottom: 40px;
-    right: 15px;
+  position: absolute;
+  bottom: 40px;
+  right: 15px;
 }
 
 @media screen and (max-width: 992px) {
-    #landingPage {
-        padding-top: 150px;
+  #landingPage {
+    padding-top: 150px;
+  }
+
+  #landingSummary {
+    width: 480px;
+  }
+
+  #quoteImg {
+    margin: auto;
+    right: 0;
+    left: 0;
+    height: 120px;
+  }
+
+  .feedbackCard {
+    height: auto;
+
+    .feedbackTxt {
+      height: 270px;
+      font-style: italic;
     }
 
-    #landingSummary {
-        width: 480px;
-    }
+    .feedbackContent {
+      height: auto;
 
-    #quoteImg {
-        position: absolute;
-        top: 0;
-        left: auto;
-        right: auto;
-        opacity: 0.7;
-        height: 100px;
-        width: auto;
-    }
+      .feedbackImg {
+        max-width: 50px;
+        height: 50px;
+        object-fit: cover;
+      }
 
-    .feedbackCard {
-        height: auto;
-
-        .feedbackTxt {
-            height: 300px;
-            font-style: italic;
-        }
-
-        .feedbackContent {
-            height: auto;
-
-            .feedbackImg {
-                max-width: 50px;
-                height: 50px;
-                object-fit: cover;
-            }
-
-            .feedbackDetails {
-                position: relative;
-            }
-        }
-    }
-
-    #indicatorBtn2 {
+      .feedbackDetails {
         position: relative;
-        margin-top: 20px;
+      }
     }
+  }
+
+  #indicatorBtn2 {
+    position: relative;
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    #landingPage {
-        padding-top: 120px;
-    }
+  #landingPage {
+    padding-top: 120px;
+  }
 
-    #landingSummary {
-        width: 430px;
-    }
+  #landingSummary {
+    width: 430px;
+  }
 
-    #aboutText {
-        color: white;
-        font-size: 45px;
-    }
+  #aboutText {
+    color: white;
+    font-size: 45px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    #aboutText {
-        color: white;
-        font-size: 40px;
-    }
+  #aboutText {
+    color: white;
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    #landingSummary {
-        width: 340px;
-    }
+  #landingSummary {
+    width: 340px;
+  }
 
-    #aboutText {
-        color: white;
-        font-size: 40px;
-    }
+  #aboutText {
+    color: white;
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    #landingSummary {
-        width: 250px;
-    }
+  #landingSummary {
+    width: 250px;
+  }
 
-    #aboutText {
-        color: white;
-        font-size: 35px;
-    }
+  #aboutText {
+    color: white;
+    font-size: 35px;
+  }
 
-    .feedbackCard {
-        height: auto;
+  .feedbackCard {
+    height: auto;
 
-        .feedbackTxt {
-            height: 35
-            0px;
-            font-size: 16px;
-            font-style: italic;
-        }
+    .feedbackTxt {
+      font-size: 16px;
+      font-style: italic;
     }
+  }
 }

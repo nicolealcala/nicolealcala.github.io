@@ -426,7 +426,7 @@
           <div class="col-12 col-lg-7 position-relative">
             <img src="assets/feedbackElement.png" id="quoteImg" alt="Quote">
             <!-- Slick Carousel -->
-            <div class="feedbackSlider1">
+            <div class="feedbackSlider" id="feedbackSlider1">
               <!-- Slick Slide 1 -->
               <dv class="card bg-transparent border-0">
                 <div class="card-body d-flex justify-content-center align-items-center feedbackCard">
@@ -462,7 +462,7 @@
                     <p class="feedbackDetails mb-0">
                       <span class="feedbackFrom blue">JM Morano</span>
                       <br>
-                      <span class="lightTxt subTxtDetails">Colleague, PUP</span>
+                      <span class="lightTxt subTxtDetails">Graphic Artist</span>
                     </p>
                   </div>
                 </div>
@@ -519,94 +519,101 @@
         </div>
 
         <!-- For smaller screen -->
-        <div class="row mx-0 d-flex d-lg-none position-relative justify-content-center aling-items-end"
-          data-aos="fade-up" data-aos-delay="100">
-          <img src="assets/feedbackElement.png" id="quoteImg" alt="Quote">
-          <div class="feedbackSlider2">
-            <!-- Slick Slide 1 -->
-            <div class="card bg-transparent border-0">
-              <div class="card-body d-flex flex-column justify-content-center align-items-center feedbackCard">
-                <p class="feedbackTxt poppinsFont poppinsFont lightTxt text-center d-flex align-items-center">Nicole
-                  will never settle for less. She embodies what a
-                  PUPian is: with high standard. She has a professional aptitude and she is a great asset to any
-                  organization that she is, or will be, a part of.</p>
-                <div class="feedbackContent d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/feedbackCJ.jpg" class="feedbackImg me-2 rounded-pill" alt="Sir CJ">
-                  <p class="feedbackDetails mb-0 mt-3 text-center">
-                    <span class="feedbackFrom blue">CJ De Claro</span>
-                    <br>
-                    <span class="lightTxt subTxtDetails">Software Engineer, Instructor</span>
-                  </p>
+        <div class="row mx-0 gy-4 d-flex d-lg-none justify-content-center align-items-end" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12">
+            <p class="subTxtDetails lightTxt text-center">
+              <span class="pink">Excellence</span> is a continuous journey, and your <span class="blue">feedback</span> is the fuel that keeps me striving for it.
+          </div>
+          
+          <div class="col-12 position-relative">
+            <img src="assets/feedbackElement.png" id="quoteImg" alt="Quote">
+            <div class="feedbackSlider" id="feedbackSlider2">
+              <!-- Slick Slide 1 -->
+              <div class="card bg-transparent border-0">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center feedbackCard">
+                  <p class="feedbackTxt poppinsFont poppinsFont lightTxt text-center d-flex align-items-center">Nicole
+                    will never settle for less. She embodies what a
+                    PUPian is: with high standard. She has a professional aptitude and she is a great asset to any
+                    organization that she is, or will be, a part of.</p>
+                  <div class="feedbackContent d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets/feedbackCJ.jpg" class="feedbackImg me-2 rounded-pill" alt="Sir CJ">
+                    <p class="feedbackDetails mb-0 mt-3 text-center">
+                      <span class="feedbackFrom blue">CJ De Claro</span>
+                      <br>
+                      <span class="lightTxt subTxtDetails">Software Engineer, Instructor</span>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <!-- Slick Slide 2 -->
-            <div class="card bg-transparent border-0">
-              <div class="card-body d-flex flex-column justify-content-center align-items-center feedbackCard">
-                <p class="feedbackTxt poppinsFont poppinsFont lightTxt text-center d-flex align-items-center">I've had
-                  the privilege of working
-                  with
-                  Nicole for
-                  several years. Her dedication to work is exceptional. We
-                  were frequently worked together throughout our time at the university and even served as
-                  fellow interns at The BLOKC. Her high standards, as a developer or designer, are evident in the
-                  quality of her work. She never settles for mediocre results, always striving for the best.</p>
-                <div class="feedbackContent d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/feedbackJM.jpg" class="feedbackImg me-2 rounded-pill" alt="JM Morano">
-                  <p class="feedbackDetails mb-0 mt-3 text-center">
-                    <span class="feedbackFrom blue">JM Morano</span>
-                    <br>
-                    <span class="lightTxt subTxtDetails">Colleague, PUP</span>
-                  </p>
+  
+              <!-- Slick Slide 2 -->
+              <div class="card bg-transparent border-0">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center feedbackCard">
+                  <p class="feedbackTxt poppinsFont poppinsFont lightTxt text-center d-flex align-items-center">I've had
+                    the privilege of working
+                    with
+                    Nicole for
+                    several years. Her dedication to work is exceptional. We
+                    were frequently worked together throughout our time at the university and even served as
+                    fellow interns at The BLOKC. Her high standards, as a developer or designer, are evident in the
+                    quality of her work. She never settles for mediocre results, always striving for the best.</p>
+                  <div class="feedbackContent d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets/feedbackJM.jpg" class="feedbackImg me-2 rounded-pill" alt="JM Morano">
+                    <p class="feedbackDetails mb-0 mt-3 text-center">
+                      <span class="feedbackFrom blue">JM Morano</span>
+                      <br>
+                      <span class="lightTxt subTxtDetails">Graphic Artist</span>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <!-- Slick Slide 3 -->
-            <div class="card bg-transparent border-0">
-              <div class="card-body d-flex flex-column justify-content-center align-items-center feedbackCard">
-                <p class="feedbackTxt poppinsFont poppinsFont lightTxt text-center d-flex align-items-center">I have
-                  worked with Nicole on several
-                  projects, and her
-                  work ethic is
-                  noteworthy. Her attention to detail, ability to collaborate well, and passion for learning led us
-                  to
-                  successful completion of projects. With that, Nicole's reliability will surely make meaningful
-                  contributions in her professional endeavors.</p>
-                <div class="feedbackContent d-flex flex-column justify-content-center align-items-center">
-                  <img
-                    src="https://img.freepik.com/free-psd/3d-illustration-person-with-pink-hair_23-2149436186.jpg?w=740&t=st=1702348865~exp=1702349465~hmac=04115f219442b59c24dfc298bd33972f819e01e51bd0b228baf79861dc08d77f"
-                    class="feedbackImg me-2 rounded-pill" alt="Pat Abrigo">
-                  <p class="feedbackDetails mb-0 mt-3 text-center">
-                    <span class="feedbackFrom blue">Danna</span>
-                    <br>
-                    <span class="lightTxt subTxtDetails">Junior Creative, My BusyBee Inc.</span>
-                  </p>
+  
+              <!-- Slick Slide 3 -->
+              <div class="card bg-transparent border-0">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center feedbackCard">
+                  <p class="feedbackTxt poppinsFont poppinsFont lightTxt text-center d-flex align-items-center">I have
+                    worked with Nicole on several
+                    projects, and her
+                    work ethic is
+                    noteworthy. Her attention to detail, ability to collaborate well, and passion for learning led us
+                    to
+                    successful completion of projects. With that, Nicole's reliability will surely make meaningful
+                    contributions in her professional endeavors.</p>
+                  <div class="feedbackContent d-flex flex-column justify-content-center align-items-center">
+                    <img
+                      src="https://img.freepik.com/free-psd/3d-illustration-person-with-pink-hair_23-2149436186.jpg?w=740&t=st=1702348865~exp=1702349465~hmac=04115f219442b59c24dfc298bd33972f819e01e51bd0b228baf79861dc08d77f"
+                      class="feedbackImg me-2 rounded-pill" alt="Pat Abrigo">
+                    <p class="feedbackDetails mb-0 mt-3 text-center">
+                      <span class="feedbackFrom blue">Danna</span>
+                      <br>
+                      <span class="lightTxt subTxtDetails">Junior Creative, My BusyBee Inc.</span>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <!-- Slick Slide 3 -->
-            <div class="card bg-transparent border-0">
-              <div class="card-body d-flex flex-column justify-content-center align-items-center feedbackCard">
-                <p class="feedbackTxt poppinsFont poppinsFont lightTxt text-center d-flex align-items-center">Nicole is
-                  an exceptionally talented individual,
-                  proficient in coding and adept at UI/UX design. Her keen intuition allows her to take initiative
-                  and solve problems independently, showcasing her cool, self-reliant approach.</p>
-                <div class="feedbackContent d-flex flex-column justify-content-center align-items-center">
-                  <img
-                    src="https://img.freepik.com/free-psd/3d-illustration-person_23-2149436182.jpg?w=740&t=st=1702349028~exp=1702349628~hmac=a3a48a643b5170461be4d44296197bdc56cd9f235493b379dac73970e65b2e23"
-                    class="feedbackImg me-2 rounded-pill" alt="Pat Abrigo">
-                  <p class="feedbackDetails mb-0 mt-3 text-center">
-                    <span class="feedbackFrom blue">Pat Abrigo</span>
-                    <br>
-                    <span class="lightTxt subTxtDetails">UI/UX Designer, GoCommerce</span>
-                  </p>
+  
+              <!-- Slick Slide 4 -->
+              <div class="card bg-transparent border-0">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center feedbackCard">
+                  <p class="feedbackTxt poppinsFont poppinsFont lightTxt text-center d-flex align-items-center">Nicole is
+                    an exceptionally talented individual,
+                    proficient in coding and adept at UI/UX design. Her keen intuition allows her to take initiative
+                    and solve problems independently, showcasing her cool, self-reliant approach.</p>
+                  <div class="feedbackContent d-flex flex-column justify-content-center align-items-center">
+                    <img
+                      src="https://img.freepik.com/free-psd/3d-illustration-person_23-2149436182.jpg?w=740&t=st=1702349028~exp=1702349628~hmac=a3a48a643b5170461be4d44296197bdc56cd9f235493b379dac73970e65b2e23"
+                      class="feedbackImg me-2 rounded-pill" alt="Pat Abrigo">
+                    <p class="feedbackDetails mb-0 mt-3 text-center">
+                      <span class="feedbackFrom blue">Pat Abrigo</span>
+                      <br>
+                      <span class="lightTxt subTxtDetails">UI/UX Designer, GoCommerce</span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          
           <!-- Indicator2 -->
           <div class="d-flex justify-content-center align-items-center mx-0" id="indicatorBtn2"></div>
           <!-- For smaller screen end -->
