@@ -1,0 +1,44 @@
+.contactIcon {
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+.form-control#contactTxtArea {
+  height: 100%;
+  width: 100%;
+  resize: both;
+}
+
+.form-control.contactMessage {
+  margin-bottom: 34px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+.form-control.contactMessage::-moz-placeholder {
+  color: #707070;
+}
+
+.form-control.contactMessage::placeholder {
+  color: #707070;
+}
+
+@media screen and (max-width: 992px) {
+  .form-control.contactMessage {
+    margin-bottom: 14px;
+  }
+  .form-control#contactTxtArea {
+    width: 100%;
+    height: 150px;
+    resize: both;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contactIcon {
+    font-size: 25px;
+    margin-top: 8px;
+  }
+  .form-control.contactMessage {
+    margin-bottom: 16px;
+  }
+}/*# sourceMappingURL=contact.css.map */
