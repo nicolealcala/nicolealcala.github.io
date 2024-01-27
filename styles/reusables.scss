@@ -2,20 +2,20 @@
 
 $pink: #FF7CAD;
 $blue: #9DD6FF;
-$darkTxt: #303030;
+$darkTxt: #252525;
 $lightTxt: #DEDEDE;
 $white: white;
 $yellow: #FFDF66;
 
 html {
     scroll-behavior: smooth !important;
+    font-size: 16px;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
     scroll-behavior: smooth;
     background-color: #FFFFFE;
 }
@@ -32,19 +32,22 @@ body {
 
 //Scrollbar
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 14px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #FEFEFE;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $blue;
+    background: #757575;
     border-radius: 2px;
     transform: 0.3s ease-in;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box;
 }
 
 /* Handle on hover */
@@ -59,17 +62,17 @@ body {
 
 // Texts and Colors
 .heading {
-    font-size: 98px;
+    font-size: 5.5rem;
     font-weight: 700;
 }
 
 .secondaryTxt {
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
 .tertiaryTxt {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -140,15 +143,6 @@ body {
     color: #505050;
 }
 
-.contactTxt {
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.smallTxt {
-    font-size: 14px;
-}
-
 p {
     line-height: 30px;
 }
@@ -158,83 +152,82 @@ nav {
     position: absolute;
     top: 0;
     background-color: transparent;
-    padding: 24px;
+    padding: 20px;
     z-index: 8;
     width: 100%;
 
     .navbar-brand,
-    #menuText {
+    #menuTxt {
         font-weight: 500;
-        font-size: 20px;
-        text-decoration: none;
+        font-size: 1.2rem;
+    }
+}
+
+#menuBtn {
+    border: none;
+
+    #menuTxt {
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-size: 1.1rem;
     }
 
-    #menuBtn {
-        border: none;
+    .icon-menu {
+        --gap: 5px;
+        --height-bar: 2px;
+        --pos-y-bar-one: 0;
+        --pos-y-bar-three: 0;
+        --scale-bar: 1;
+        --rotate-bar-one: 0;
+        --rotate-bar-three: 0;
+        width: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap);
+        cursor: pointer;
+        position: relative;
+    }
 
-        #menuText {
-            font-weight: 400;
-            letter-spacing: 2px;
-            font-size: 18px;
-        }
+    .bar {
+        position: relative;
+        height: var(--height-bar);
+        width: 100%;
+        border-radius: .5rem;
+    }
 
-        .icon-menu {
-            --gap: 5px;
-            --height-bar: 2px;
-            --pos-y-bar-one: 0;
-            --pos-y-bar-three: 0;
-            --scale-bar: 1;
-            --rotate-bar-one: 0;
-            --rotate-bar-three: 0;
-            width: 25px;
-            display: flex;
-            flex-direction: column;
-            gap: var(--gap);
-            cursor: pointer;
-            position: relative;
-        }
+    .bar-1 {
+        top: var(--pos-y-bar-one);
+        transform: rotate(var(--rotate-bar-one));
+        transition: top 200ms 100ms, transform 100ms;
+    }
 
-        .bar {
-            position: relative;
-            height: var(--height-bar);
-            width: 100%;
-            border-radius: .5rem;
-        }
+    .bar-2 {
+        transform: scaleX(var(--scale-bar));
+        transition: transform 150ms 100ms;
+        width: 20px;
+        align-self: end;
+    }
 
-        .bar-1 {
-            top: var(--pos-y-bar-one);
-            transform: rotate(var(--rotate-bar-one));
-            transition: top 200ms 100ms, transform 100ms;
-        }
+    .bar-3 {
+        bottom: var(--pos-y-bar-three);
+        transform: rotate(var(--rotate-bar-three));
+        transition: bottom 200ms 100ms, transform 100ms;
+    }
 
-        .bar-2 {
-            transform: scaleX(var(--scale-bar));
-            transition: transform 150ms 100ms;
-            width: 20px;
-            align-self: end;
-        }
+    .check-icon:checked+.icon-menu>.bar--1 {
+        transition: top 200ms, transform 200ms 100ms;
+    }
 
-        .bar-3 {
-            bottom: var(--pos-y-bar-three);
-            transform: rotate(var(--rotate-bar-three));
-            transition: bottom 200ms 100ms, transform 100ms;
-        }
+    .check-icon:checked+.icon-menu>.bar--3 {
+        transition: bottom 200ms, transform 200ms 100ms;
+    }
 
-        .check-icon:checked+.icon-menu>.bar--1 {
-            transition: top 200ms, transform 200ms 100ms;
-        }
-
-        .check-icon:checked+.icon-menu>.bar--3 {
-            transition: bottom 200ms, transform 200ms 100ms;
-        }
-
-        .check-icon:checked+.icon-menu {
-            --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
-            --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
-            --scale-bar: 0;
-            --rotate-bar-one: 45deg;
-            --rotate-bar-three: -45deg;
-        }
+    .check-icon:checked+.icon-menu {
+        --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+        --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+        --scale-bar: 0;
+        --rotate-bar-one: 45deg;
+        --rotate-bar-three: -45deg;
     }
 }
 
@@ -248,7 +241,7 @@ nav {
 
 .navTxt {
     position: relative;
-    font-size: 75px;
+    font-size: 4.5rem;
     font-weight: 700;
 }
 
@@ -276,9 +269,15 @@ section {
     z-index: 0;
 }
 
+section:last-child {
+    padding: 100px 0px 50px 0px;
+}
+
 .darkSection {
     background-color: #131313;
 }
+
+
 
 .lightSection {
     background-color: #FFFFFE;
@@ -318,7 +317,7 @@ section {
     transition: all 0.3s ease !important;
 
     .fa-arrow-up {
-        font-size: 20px;
+        font-size: 1.2rem;
     }
 }
 
@@ -349,7 +348,7 @@ a {
 
 .footerIcon,
 .iconBg {
-    font-size: 35px;
+    font-size: 2.1rem;
     margin: 0px 5px;
     color: $lightTxt;
 }
@@ -361,7 +360,7 @@ a {
 }
 
 .faIcon {
-    font-size: 23px;
+    font-size: 1.4rem;
     color: $darkTxt;
 }
 
@@ -376,14 +375,14 @@ a {
 }
 
 .footerIconBg {
-    font-size: 25px;
+    font-size: 1.6rem;
     font-weight: 600;
     color: #131313;
 }
 
 // Images
 .bigPics {
-    max-width: 95%;
+    max-width: 90%;
     height: auto;
     position: relative;
     z-index: 5;
@@ -400,15 +399,16 @@ a {
 
 #pinkBg,
 #blueBg {
-    z-index: 0;
     position: absolute;
-    top: auto;
-    max-width: 100%;
+    top: 19%;
+    right: auto;
+    max-width: 83%;
     height: auto;
 
 }
 
 #blueBg {
+    max-width: 100%;
     right: 15px;
 }
 
@@ -442,7 +442,7 @@ a {
 
 // Groups/Components
 .socials {
-    width: 360px;
+    width: 350px;
 }
 
 .lightSocials,
@@ -533,7 +533,7 @@ a {
 
 .slick-dots li button:before {
     content: '•';
-    font-size: 30px;
+    font-size: 1.8rem;
     line-height: 20px;
     position: absolute;
     top: 0;
@@ -596,16 +596,19 @@ a {
 
     // Texts and Colors
     .heading {
-        font-size: 85px;
-        font-weight: 700;
+        font-size: 4.5rem;
     }
 
     .secondaryTxt {
-        font-size: 28px;
+        font-size: 1.5rem;
     }
 
     .tertiaryTxt {
-        font-size: 18px;
+        font-size: 1.1rem;
+    }
+
+    #pinkBg {
+        max-width: 100%;
     }
 
     #blueBg {
@@ -619,12 +622,8 @@ a {
         width: auto;
     }
 
-    .heading {
-        font-size: 70px;
-    }
-
     .secondaryTxt {
-        font-size: 25px;
+        font-size: 1.4rem;
     }
 
     p {
@@ -642,7 +641,7 @@ a {
 
     .footerIcon,
     .iconBg {
-        font-size: 30px;
+        font-size: 1.8rem;
         margin: 0px 4px;
         color: $lightTxt;
     }
@@ -654,16 +653,12 @@ a {
     }
 
     .faIcon {
-        font-size: 20px;
+        font-size: 1.2rem;
         color: $darkTxt;
     }
 }
 
 @media screen and (max-width: 576px) {
-    body {
-        font-size: 16px;
-    }
-
     nav {
         padding: 24px 5px;
     }
@@ -680,14 +675,6 @@ a {
 
     section {
         padding: 80px 0;
-    }
-
-    .secondaryTxt {
-        font-size: 22px;
-    }
-
-    .tertiaryTxt {
-        font-size: 16px;
     }
 
     #featuredProject {
@@ -722,11 +709,15 @@ a {
 
     // Texts and Colors
     .heading {
-        font-size: 55px;
+        font-size: 3.5rem;
     }
 
     .secondaryTxt {
-        font-size: 20px;
+        font-size: 1.2rem;
+    }
+
+    .tertiaryTxt {
+        font-size: 1rem;
     }
 
     .highlightTxt {
@@ -763,7 +754,7 @@ a {
 
     .footerIcon,
     .iconBg {
-        font-size: 25px;
+        font-size: 1.5rem;
         margin: 0px 2px;
         color: $lightTxt;
     }
@@ -775,7 +766,7 @@ a {
     }
 
     .faIcon {
-        font-size: 16px;
+        font-size: 1rem;
         color: $darkTxt;
     }
 }
@@ -792,11 +783,7 @@ a {
 
     // Texts and Colors
     .heading {
-        font-size: 40px;
-    }
-
-    .secondaryTxt {
-        font-size: 18px;
+        font-size: 2.8rem;
     }
 
     .highlightTxt {

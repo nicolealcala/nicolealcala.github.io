@@ -3,21 +3,20 @@ html {
 }
 
 body {
-  color: #303030;
+  color: #252525;
 }
 
 .bar {
-  background-color: #303030;
+  background-color: #252525;
 }
 
 #landingPic {
-  max-width: 100%;
-  width: 95%;
+  max-width: 75%;
   height: auto;
 }
 
 #landingPage {
-  padding-top: 90px;
+  padding-top: 80px;
 }
 
 #landingSummary {
@@ -26,18 +25,10 @@ body {
   font-weight: 400;
 }
 
-#aboutText {
+#aboutTxt {
   color: white;
-  font-size: 55px;
+  font-size: 3.4rem;
   font-weight: 700;
-}
-
-#aboutTextStroked {
-  color: transparent;
-  font-size: 55px;
-  font-weight: 700;
-  -webkit-text-stroke: 1px white;
-  -moz-text-stroke: 1px white;
 }
 
 .feedbackSlider {
@@ -48,7 +39,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  opacity: 0.5;
+  opacity: 0.6;
   height: 100px;
   width: auto;
 }
@@ -63,6 +54,7 @@ body {
 .feedbackCard {
   height: 300px;
   padding: 5px;
+  cursor: grab;
 }
 .feedbackCard .feedbackContent {
   max-width: 100%;
@@ -104,8 +96,11 @@ body {
   #landingPage {
     padding-top: 150px;
   }
+  #landingPic {
+    max-width: 100%;
+  }
   #landingSummary {
-    width: 480px;
+    width: 75%;
   }
   #quoteImg {
     margin: auto;
@@ -142,41 +137,33 @@ body {
     padding-top: 120px;
   }
   #landingSummary {
-    width: 430px;
+    width: 85%;
   }
-  #aboutText {
-    color: white;
-    font-size: 45px;
+  #aboutTxt {
+    font-size: 2.8rem;
   }
 }
 @media screen and (max-width: 576px) {
-  #aboutText {
-    color: white;
-    font-size: 40px;
+  #aboutTxt {
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 500px) {
   #landingSummary {
-    width: 340px;
-  }
-  #aboutText {
-    color: white;
-    font-size: 40px;
+    width: 90%;
   }
 }
 @media screen and (max-width: 400px) {
   #landingSummary {
-    width: 250px;
+    width: 100%;
   }
-  #aboutText {
-    color: white;
-    font-size: 35px;
+  #aboutTxt {
+    font-size: 2.1rem;
   }
   .feedbackCard {
     height: auto;
   }
   .feedbackCard .feedbackTxt {
-    font-size: 16px;
     font-style: italic;
   }
 }/*# sourceMappingURL=index.css.map */

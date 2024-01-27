@@ -1,5 +1,5 @@
 .contactIcon {
-  font-size: 30px;
+  font-size: 1.8rem;
   margin-top: 8px;
 }
 
@@ -35,7 +35,7 @@
 }
 @media screen and (max-width: 768px) {
   .contactIcon {
-    font-size: 25px;
+    font-size: 1.5rem;
     margin-top: 8px;
   }
   .form-control.contactMessage {

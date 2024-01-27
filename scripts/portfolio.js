@@ -32,48 +32,41 @@ $(document).ready(function () {
             $('.design').show();
         }
     });
-
-    // Slick Slider
-    $("#mockupSlider").slick({
-        slidesToShow: 1,
-        infinite: false,
-        dots: true,
-        centerMode: true,
-        centerPadding: "auto",
-        arrows: true,
-        prevArrow: '<button type="button" class="btn rounded-pill slickBtn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>',
-        nextArrow: '<button type="button" class="btn rounded-pill slickBtn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>',
-    })
-
-    $('#prevBtn').prependTo(".slickWrapper");
-    $('#nextBtn').appendTo(".slickWrapper");
-
 })
 
 const projectModal = new bootstrap.Modal(document.getElementById('projectModal'));
 const modalBody = $("#modalBodyImg");
-var modalHeader = $(".modal-title");
+const modalHeader = $(".modal-title");
 var imgUrls = [];
 var modalImg = '';
 
 function openModal(project) {
+    modalImg = '';
+    modalHeader[0].innerHTML = "";
+    modalBody[0].innerHTML = modalImg;
+    loadContents(project);
+}
+
+function closeModal() {
+    projectModal.hide();
+}
+
+function loadContents(project) {
     if (project === 'sws') {
         imgUrls = [
             "design/sws/thumbnail.png",
         ]
-        imgUrls.forEach(url => modalImg += '<img src="' + url + '" class="modalImg" alt="Grad Invitation Preview">');
 
-        modalBody[0].innerHTML = modalImg;
-
+        appendImages(imgUrls, "Strays Worth Saving (SWS) Unofficial Web Design Preview");
+        modalHeader[0].innerHTML = "Strays Worth Saving (SWS) Unofficial Web Design";
         projectModal.show();
     } else if (project === "loungescape") {
         imgUrls = [
             "design/loungescape/thumbnail.png",
         ]
-        imgUrls.forEach(url => modalImg += '<img src="' + url + '" class="modalImg" alt="Grad Invitation Preview">');
 
-        modalBody[0].innerHTML = modalImg;
-
+        appendImages(imgUrls, "Loungescape Preview");
+        modalHeader[0].innerHTML = "Loungescape";
         projectModal.show();
     } else if (project === "kkis") {
         imgUrls = [
@@ -93,37 +86,40 @@ function openModal(project) {
             "design/kkis/14.png",
             "design/kkis/15.png"
         ]
-        imgUrls.forEach(url => modalImg += '<img src="' + url + '" class="modalImg" alt="KKIS Preview">');
 
-        modalBody[0].innerHTML = modalImg;
-        modalHeader[0].innerHTML = "Katipunan ng Kabataan Information System (KKIS)"
+        appendImages(imgUrls, "KKIS Preview");
+        modalHeader[0].innerHTML = "Katipunan ng Kabataan Information System (KKIS)";
         projectModal.show();
     } else if (project === "unblokc") {
         imgUrls = [
             "design/unblokc/thumbnail.png",
         ]
-        imgUrls.forEach(url => modalImg += '<img src="' + url + '" class="modalImg" alt="Grad Invitation Preview">');
 
-        modalBody[0].innerHTML = modalImg;
-
+        appendImages(imgUrls, "UNBLOKC Hackathon Website Preview");
+        modalHeader[0].innerHTML = "UNBLOKC Hackathon Website";
         projectModal.show();
     } else if (project === "medeco") {
         imgUrls = [
             "design/medeco/thumbnail.png",
+            "design/medeco/01.png",
+            "design/medeco/02.png",
+            "design/medeco/03.png",
+
         ]
-        imgUrls.forEach(url => modalImg += '<img src="' + url + '" class="modalImg" alt="Grad Invitation Preview">');
-
+        appendImages(imgUrls, "Medeco Preview");
         modalBody[0].innerHTML = modalImg;
-
+        modalHeader[0].innerHTML = "Medeco";
         projectModal.show();
     } else if (project === "portfolio") {
         imgUrls = [
-            "design/portfolio/thumbnail.png",
+            "design/portfolio/01.png",
+            "design/portfolio/02.png",
+            "design/portfolio/03.png",
+            "design/portfolio/04.png"
         ]
-        imgUrls.forEach(url => modalImg += '<img src="' + url + '" class="modalImg" alt="Grad Invitation Preview">');
 
-        modalBody[0].innerHTML = modalImg;
-
+        appendImages(imgUrls, "Portfolio Website Preview");
+        modalHeader[0].innerHTML = "Portfolio Website";
         projectModal.show();
     } else if (project === "gradInvi") {
         imgUrls = [
@@ -131,17 +127,14 @@ function openModal(project) {
             "design/gradInvi/01.png",
             "design/gradInvi/02.png",
         ]
-        imgUrls.forEach(url => modalImg += '<img src="' + url + '" class="modalImg" alt="Grad Invitation Preview">');
 
-        modalBody[0].innerHTML = modalImg;
-
+        appendImages(imgUrls, "Class of 2023 Graduation Invitation Design Concept Preview");
+        modalHeader[0].innerHTML = "Class of 2023 Graduation Invitation Design Concept";
         projectModal.show();
     }
 }
 
-function closeModal() {
-    modalImg = '';
-    modalHeader[0].innerHTML = "";
+function appendImages(imgSet, imgAlt) {
+    imgSet.forEach(url => modalImg += '<img src="' + url + '" class="modalImg" alt="' + imgAlt + '">');
     modalBody[0].innerHTML = modalImg;
-    projectModal.hide();
 }
