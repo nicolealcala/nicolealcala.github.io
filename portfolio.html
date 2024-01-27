@@ -23,6 +23,9 @@
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
@@ -148,7 +151,7 @@
             </p>
             <a href="https://hackathon.theblokc.media" target="_blank" class="btn rounded-3 actionBtn mt-4">
               Visit site
-              <i class="ms-2 fas fa-external-link-alt"></i>
+              <i class="ms-2 fa-solid fa-arrow-up-right-from-square"></i></i>
             </a>
             <!-- Featured project left end -->
           </div>
@@ -207,9 +210,9 @@
           <div class="col-12 d-flex justify-content-start justify-content-lg-end">
             <div class="filters d-flex justify-content-center align-items-center">
               <ul class="d-flex list-unstyled justify-content-between align-items-center my-0">
-                <li class="active" id="allNav">All</li>
-                <li id="deployedNav">Deployed</li>
-                <li id="designNav">Designs</li>
+                <li class="mx-2 px-2 active" id="allNav">All</li>
+                <li class="mx-2 px-2" id="deployedNav">Deployed</li>
+                <li class="mx-2 px-2" id="designNav">Designs</li>
               </ul>
             </div>
           </div>
@@ -225,12 +228,8 @@
                   <div class="col-12 text-center">
                     Graduation Invitation Concept
                   </div>
-                  <div class="col-12 align-items-center text-center mt-3">
-                    <div class="d-flex justify-content-center align-content-center mt-2">
-                      <!-- <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2272&mode=design"
-                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
-                          class="fa-brands fa-figma"></i></a> -->
-                    </div>
+                  <div class="col-12 d-flex justify-content-center align-items-center mt-3">
+                    <i class="mx-2 fa-regular fa-eye" onclick="openModal('gradInvi')"></i>
                   </div>
                 </div>
               </div>
@@ -249,31 +248,32 @@
                   <div class="col-12 text-center">
                     Portfolio Website
                   </div>
-                  <div class="col-12 align-items-center text-center mt-3">
-                    <div class="d-flex justify-content-center align-content-center smallTxt">
-                      <ul class="d-flex justify-content-evenly align-items-center p-0 w-100">
-                        <li class="text-center mx-0">HTML</li>
-                        <li class="viewDivider"></li>
-                        <li class="text-center">CSS/Sass</li>
-                        <li class="viewDivider"></li>
-                        <li class="text-center">Bootstrap</li>
-                        <li class="viewDivider"></li>
-                        <li class="text-center">JavaScript/jQuery</li>
-                      </ul>
-                    </div>
-                    <div class="d-flex justify-content-center align-content-center mt-2">
-                      <a href="https://nicolealcala.github.io/" target="_blank"
-                        class="mx-2 d-flex justify-content-center align-items-center"><i
-                          class="fa-regular fa-eye"></i></a>
+                  <div class="col-12 align-items-center text-center mt-3 smallTxt">
+                    <ul class="d-flex justify-content-evenly align-items-center p-0 w-100">
+                      <li class="text-center mx-0">HTML</li>
+                      <li class="viewDivider"></li>
+                      <li class="text-center">CSS/Sass</li>
+                      <li class="viewDivider"></li>
+                      <li class="text-center">Bootstrap</li>
+                      <li class="viewDivider"></li>
+                      <li class="text-center">JavaScript/jQuery</li>
+                    </ul>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center align-items-center mt-2">
+                    <!-- <i class="mx-2 fa-regular fa-eye" data-bs-toggle="modal" data-bs-target="#projectModal"></i> -->
+                    <i class="mx-2 fa-regular fa-eye" onclick="openModal('portfolio')"></i>
 
-                      <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2273&mode=design"
-                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
-                          class="fa-brands fa-figma"></i></a>
-                    </div>
+                    <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2273&mode=design"
+                      target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-figma"></i></a>
+
+                    <a href="https://nicolealcala.github.io/" target="_blank"
+                      class="mx-2 d-flex justify-content-center align-items-center"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
                   </div>
                 </div>
               </div>
-              <img src="design/portfolio/mockup.png" class="portfolioPic" alt="Portfolio">
+              <img src="design/portfolio/thumbnail.png" class="portfolioPic" alt="Portfolio">
             </div>
           </div>
 
@@ -288,16 +288,16 @@
                   <div class="col-12 text-center">
                     Health, Ecommerce
                   </div>
-                  <div class="col-12 align-items-center text-center mt-3">
-                    <div class="d-flex justify-content-center align-content-center mt-2">
-                      <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=0-1&mode=design"
-                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
-                          class="fa-brands fa-figma"></i></a>
-                    </div>
+                  <div class="col-12 d-flex justify-content-center align-items-center mt-3">
+                    <i class="mx-2 fa-regular fa-eye" onclick="openModal('medeco')"></i>
+
+                    <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=0-1&mode=design"
+                      target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-figma"></i></a>
                   </div>
                 </div>
               </div>
-              <img src="design/medeco/mockup.png" class="portfolioPic" alt="Medeco">
+              <img src="design/medeco/thumbnail.png" class="portfolioPic" alt="Medeco">
             </div>
           </div>
 
@@ -312,31 +312,31 @@
                   <div class="col-12 text-center">
                     Informational Website
                   </div>
-                  <div class="col-12 align-items-center text-center mt-3">
-                    <div class="d-flex justify-content-center align-content-center smallTxt">
-                      <ul class="d-flex justify-content-evenly align-items-center p-0 w-100">
-                        <li class="text-center mx-0">HTML</li>
-                        <li class="viewDivider"></li>
-                        <li class="text-center">CSS/Sass</li>
-                        <li class="viewDivider"></li>
-                        <li class="text-center">Bootstrap</li>
-                        <li class="viewDivider"></li>
-                        <li class="text-center">JavaScript/jQuery</li>
-                      </ul>
-                    </div>
-                    <div class="d-flex justify-content-center align-content-center mt-2">
-                      <a href="https://hackathon.theblokc.media/" target="_blank"
-                        class="mx-2 d-flex justify-content-center align-items-center"><i
-                          class="fa-regular fa-eye"></i></a>
+                  <div class="col-12 align-items-center text-center mt-3 smallTxt">
+                    <ul class="d-flex justify-content-evenly align-items-center p-0 w-100">
+                      <li class="text-center mx-0">HTML</li>
+                      <li class="viewDivider"></li>
+                      <li class="text-center">CSS/Sass</li>
+                      <li class="viewDivider"></li>
+                      <li class="text-center">Bootstrap</li>
+                      <li class="viewDivider"></li>
+                      <li class="text-center">JavaScript/jQuery</li>
+                    </ul>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center align-items-center mt-2">
+                    <i class="mx-2 fa-regular fa-eye" onclick="openModal('unblokc')"></i>
 
-                      <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2271&mode=design"
-                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
-                          class="fa-brands fa-figma"></i></a>
-                    </div>
+                    <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2271&mode=design"
+                      target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-figma"></i></a>
+
+                    <a href="https://hackathon.theblokc.media/" target="_blank"
+                      class="mx-2 d-flex justify-content-center align-items-center"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
                   </div>
                 </div>
               </div>
-              <img src="design/hackathon/mockup.png" class="portfolioPic" alt="UNBLOKC Hackathon Website">
+              <img src="design/unblokc/thumbnail.png" class="portfolioPic" alt="UNBLOKC Hackathon Website">
             </div>
           </div>
 
@@ -349,35 +349,35 @@
                     Katipunan ng Kabataan IS
                   </div>
                   <div class="col-12 text-center">
-                    Capstone Project | Data Management
+                    Capstone Project
                   </div>
-                  <div class="col-12 align-items-center text-center mt-3">
-                    <div class="d-flex justify-content-center align-content-center smallTxt">
-                      <ul class="d-flex justify-content-evenly align-items-center p-0 w-100">
-                        <li class="text-center mx-0">PHP</li>
-                        <li class="viewDivider"></li>
-                        <li class="text-center">CSS/Sass</li>
-                        <li class="viewDivider"></li>
-                        <li class="text-center">Bootstrap</li>
-                        <li class="viewDivider"></li>
-                        <li class="text-center">JavaScript/jQuery</li>
-                        <li class="viewDivider"></li>
-                        <li class="text-center">SQL</li>
-                      </ul>
-                    </div>
-                    <div class="d-flex justify-content-center align-content-center mt-2">
-                      <a href="https://kkinfosystem.000webhostapp.com/" target="_blank"
-                        class="mx-2 d-flex justify-content-center align-items-center"><i
-                          class="fa-regular fa-eye"></i></a>
+                  <div class="col-12 align-items-center text-center mt-3 smallTxt">
+                    <ul class="d-flex justify-content-evenly align-items-center p-0 w-100">
+                      <li class="text-center mx-0">PHP</li>
+                      <li class="viewDivider"></li>
+                      <li class="text-center">CSS/Sass</li>
+                      <li class="viewDivider"></li>
+                      <li class="text-center">Bootstrap</li>
+                      <li class="viewDivider"></li>
+                      <li class="text-center">JavaScript/jQuery</li>
+                      <li class="viewDivider"></li>
+                      <li class="text-center">SQL</li>
+                    </ul>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center align-items-center mt-2">
+                    <i class="mx-2 fa-regular fa-eye" onclick="openModal('kkis')"></i>
 
-                      <a href="https://github.com/nicolealcala/KKIS" target="_blank"
-                        class="mx-2 d-flex justify-content-center align-items-center"><i
-                          class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/nicolealcala/KKIS" target="_blank"
+                      class="mx-2 d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-github"></i></a>
 
-                      <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=1-1292&mode=design"
-                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
-                          class="fa-brands fa-figma"></i></a>
-                    </div>
+                    <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=1-1292&mode=design"
+                      target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-figma"></i></a>
+
+                    <a href="https://kkinfosystem.000webhostapp.com/" target="_blank"
+                      class="mx-2 d-flex justify-content-center align-items-center"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
                   </div>
                 </div>
               </div>
@@ -393,23 +393,23 @@
                   <div class="col-12 secondaryTxt text-center">
                     Loungescape
                   </div>
-                  <div class="col-12 text-center ">
+                  <div class="col-12 text-center">
                     Entertainment Website (Local)
                   </div>
-                  <div class="col-12 align-items-center text-center mt-3">
-                    <div class="d-flex justify-content-center align-content-center mt-2">
-                      <a href="https://github.com/markprongoso/LoungEscape" target="_blank"
-                        class="mx-2 d-flex justify-content-center align-items-center"><i
-                          class="fa-brands fa-github"></i></a>
+                  <div class="col-12 d-flex justify-content-center align-items-center mt-3">
+                    <i class="mx-2 fa-regular fa-eye" onclick="openModal('loungescape')"></i>
 
-                      <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2274&mode=design"
-                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
-                          class="fa-brands fa-figma"></i></a>
-                    </div>
+                    <a href="https://github.com/markprongoso/LoungEscape" target="_blank"
+                      class="mx-2 d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-github"></i></a>
+
+                    <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2274&mode=design"
+                      target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-figma"></i></a>
                   </div>
                 </div>
               </div>
-              <img src="design/loungescape/mockup.png" class="portfolioPic" alt="Loungscape">
+              <img src="design/loungescape/thumbnail.png" class="portfolioPic" alt="Loungscape">
             </div>
           </div>
 
@@ -424,16 +424,32 @@
                   <div class="col-12 text-center">
                     Unofficial Web Design
                   </div>
-                  <div class="col-12 align-items-center text-center mt-3">
-                    <div class="d-flex justify-content-center align-content-center mt-2">
-                      <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2272&mode=design"
-                        target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
-                          class="fa-brands fa-figma"></i></a>
-                    </div>
+                  <div class="col-12 d-flex justify-content-center align-items-center mt-3">
+                    <i class="mx-2 fa-regular fa-eye" onclick="openModal('sws')"></i>
+
+                    <a href="https://www.figma.com/file/mW1bi8A8LOLZBUBaK5rKnB/UI%2FUX-Projects?type=design&node-id=18-2272&mode=design"
+                      target="_blank" class="mx-2 d-flex justify-content-center align-items-center"><i
+                        class="fa-brands fa-figma"></i></a>
                   </div>
                 </div>
               </div>
-              <img src="design/sws/mockup.png" class="portfolioPic" alt="Strays Worth Saving Unofficial Web Design">
+              <img src="design/sws/thumbnail.png" class="portfolioPic" alt="Strays Worth Saving Unofficial Web Design">
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="projectModal">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+              <div class="modal-header d-flex justify-content-end">
+                <h5 class="modal-title poppinsFont darkTxt"></h5>
+                <button type="button" class="btn-close" onclick="closeModal()"></button>
+              </div>
+              <div class="modal-body position-relative">
+                <div class="d-flex flex-column justify-content-center align-items-center" id="modalBodyImg">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -466,7 +482,6 @@
       </div>
       <!-- Projects Portfolio end -->
     </section>
-
   </main>
   <!-- Jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -477,6 +492,9 @@
 
   <!-- FONTAWESOME -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+  <!-- Slick Carousel -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <!-- Custom Scripts -->
   <script src="scripts/loader.js"></script>

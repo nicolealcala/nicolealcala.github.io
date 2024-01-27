@@ -30,6 +30,28 @@ body {
     color: white;
 }
 
+//Scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $blue;
+    border-radius: 2px;
+    transform: 0.3s ease-in;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #78c4fa;
+}
+
 // Fonts
 .poppinsFont {
     font-family: 'Poppins', sans-serif;
@@ -137,7 +159,7 @@ nav {
     top: 0;
     background-color: transparent;
     padding: 24px;
-    z-index: 20;
+    z-index: 8;
     width: 100%;
 
     .navbar-brand,
@@ -479,8 +501,96 @@ a {
     text-decoration: underline;
 }
 
+//Slick Carousel
+.slick-dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
 
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    z-index: 10;
+    cursor: pointer;
+}
 
+.slick-dots li button {
+    font-size: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border: 0;
+    background: transparent;
+}
+
+.slick-dots li button:before {
+    content: '•';
+    font-size: 30px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    opacity: .25;
+    color: #ADADAD;
+    transition: 0.3s ease-in;
+}
+
+.slick-dots .slick-active button:before {
+    opacity: 1;
+}
+
+.slickBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 49%;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 255, 255, 0.3);
+
+    z-index: 11;
+
+    .svg-inline--fa {
+        color: $blue;
+        height: 25px;
+        width: 25px;
+        transition: color 0.3s ease-in;
+    }
+}
+
+.slickBtn:not(.slick-disabled):hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255, 0.4);
+    transition: 0.1s ease-in;
+}
+
+.slickBtn.slick-disabled {
+    background-color: transparent;
+}
+
+.slick-disabled>.svg-inline--fa {
+    color: #707070;
+}
+
+#prevBtn {
+    left: -20px;
+}
+
+#nextBtn {
+    right: -20px;
+}
 
 @media screen and (max-width: 992px) {
 

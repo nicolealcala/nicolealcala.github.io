@@ -20,8 +20,8 @@ body {
         width: 100%;
 
         li {
-            padding: 0px 10px;
-            margin: 0px 10px 0px 0px;
+            // padding: 0px 10px;
+            // margin: 0px 10px 0px 0px;
             cursor: pointer;
             position: relative;
         }
@@ -30,13 +30,13 @@ body {
 
 .projectCol {
     transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
+    transition: 0.4s ease;
 }
 
 .filters li::before {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: -4px;
     left: 0;
     right: 0;
     width: 0;
@@ -47,6 +47,45 @@ body {
 
 .filters li.active::before {
     width: 100%;
+}
+
+.slickWrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: fit-content;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#mockupSlider {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sliderDiv {
+    position: relative;
+    height: auto !important;
+}
+
+.sliderImg {
+    max-width: 85% !important;
+    height: auto !important;
+    display: block;
+    margin: auto;
+}
+
+.slickBackdrop {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9;
 }
 
 .projectBox {
@@ -67,10 +106,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    color: #FFFFFF;
-    background-color: rgba(79, 181, 255, 0.88);
+    background-color: rgba(79, 181, 255, 0.90);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .overlay:hover {
@@ -83,13 +122,34 @@ body {
     background-color: white;
 }
 
-a:not(.darkSocials, .fSocials) {
+a:not(.darkSocials, .fSocials, .viewCV) {
     .svg-inline--fa:hover {
         color: $darkTxt;
         transition: 0.2s ease-in;
     }
 }
 
+.fa-eye:hover {
+    color: $darkTxt;
+    transition: 0.2s ease-in;
+}
+
 ul {
     list-style-type: none;
+}
+
+.modalImg {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.modal-content {
+    max-height: 95vh !important;
+    // background-color: rgba(255, 255, 255, 0.7);
+    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    // backdrop-filter: blur(2px);
+    // -webkit-backdrop-filter: blur(2px);
 }
