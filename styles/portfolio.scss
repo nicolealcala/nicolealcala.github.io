@@ -141,6 +141,12 @@ ul {
 }
 
 .modal-content {
-    max-height: 98vh !important;
-    // background-color: #EEE;
+    max-height: 95vh !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        max-height: 90vh !important;
+    }
 }

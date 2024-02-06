@@ -129,5 +129,11 @@ ul {
 }
 
 .modal-content {
-  max-height: 98vh !important;
+  max-height: 95vh !important;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    max-height: 90vh !important;
+  }
 }/*# sourceMappingURL=portfolio.css.map */
