@@ -31,29 +31,29 @@ body {
 }
 
 //Scrollbar
-::-webkit-scrollbar {
-    width: 14px;
-}
+// ::-webkit-scrollbar {
+//     width: 14px;
+// }
 
 /* Track */
-::-webkit-scrollbar-track {
-    background-color: #FEFEFE;
-}
+// ::-webkit-scrollbar-track {
+//     background-color: #FEFEFE;
+// }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
-    background: #757575;
-    border-radius: 2px;
-    transform: 0.3s ease-in;
-    border: 3px solid transparent;
-    border-radius: 10px;
-    background-clip: padding-box;
-}
+// ::-webkit-scrollbar-thumb {
+//     background: #757575;
+//     border-radius: 2px;
+//     transform: 0.3s ease-in;
+//     border: 3px solid transparent;
+//     border-radius: 10px;
+//     background-clip: padding-box;
+// }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #78c4fa;
-}
+// ::-webkit-scrollbar-thumb:hover {
+//     background: #78c4fa;
+// }
 
 // Fonts
 .poppinsFont {
