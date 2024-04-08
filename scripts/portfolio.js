@@ -213,18 +213,20 @@ function loadCarouselSlides(project) {
 
         createCarouselSlide(imgSrcs, "Class of 2023 Graduation Invitation Design Concept Preview");
     }
+
+
 }
 
 function createCarouselSlide(imgSrcs, imgAlt) {
     var counter = 1;
+    //Indicator
+    var carouselIndicatorRow = $("#carouselIndicatorRow");
 
-    imgSrcs.forEach((imgSrc) => {
-        //Indicator
-        var carouselIndicatorRow = $("#carouselIndicatorRow");
+    for (let i = 0; i < imgSrcs.length; i++) {
         var buttonIndicator = document.createElement("button");
         buttonIndicator.type = 'button';
         buttonIndicator.dataset.bsTarget = '#projectCarousel';
-        buttonIndicator.dataset.bsSlideTo = counter - 1;
+        buttonIndicator.dataset.bsSlideTo = i;
         buttonIndicator.classList.add('active');
         buttonIndicator.setAttribute('aria-current', 'true');
         buttonIndicator.setAttribute('aria-label', 'Slide ' + counter);
@@ -234,6 +236,7 @@ function createCarouselSlide(imgSrcs, imgAlt) {
         //Slide Div
         var slideDiv = document.createElement("div");
         slideDiv.classList.add("carousel-item");
+
         if (counter === 1) {
             slideDiv.classList.add("active");
         }
@@ -249,5 +252,5 @@ function createCarouselSlide(imgSrcs, imgAlt) {
         $("#carouselInner").append(slideDiv);
         counter++;
         $('#projectCarousel').carousel();
-    });
+    }
 }
