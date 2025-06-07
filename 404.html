@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicole Alcala">
+    <title>About</title>
+
+    <!-- ICON -->
+    <link rel="icon" href="assets/titleLogo.png" type="image/png">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="stylesheet" href="styles/reusables.css">
+    <link rel="stylesheet" href="styles/about.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+    <!-- Loader start -->
+    <section class="darkSection" style="width: 100%; height: 100vh" id="sectionLoader">
+        <div class="container d-flex align-items-center justify-content-center">
+            <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="loader">
+                <defs>
+                    <path id="move-path"
+                        d="M102.546 83.5C109.859 70.8333 128.141 70.8333 135.454 83.5L157.971 122.5C165.284 135.167 156.143 151 141.517 151H96.4833C81.8571 151 72.7158 135.167 80.0289 122.5L102.546 83.5Z"
+                        fill="#FF7CAD"></path>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 60 -32">
+                        </feColorMatrix>
+                    </filter>
+                </defs>
+                <g filter="url(#goo)">
+                    <circle cx="119" cy="74" r="20" stroke="#FF7CAD " stroke-width="8"></circle>
+                    <circle cx="79" cy="141" r="20" stroke="#9DD6FF" stroke-width="8"></circle>
+                    <circle cx="157" cy="141" r="20" stroke="#FFDF66" stroke-width="8"></circle>
+                    <circle id="liquid" cx="119" cy="74" r="14" fill="#FF7CAD">
+                    </circle>
+                </g>
+            </svg>
+        </div>
+        <!-- Loader end -->
+    </section>
+
+    <!-- Back to Top start -->
+    <button class="btn rounded-pill d-flex align-items-center justify-content-center" id="backToTop"><i
+            class="fas fa-arrow-up"></i></button>
+
+    <main>
+        <section class="darkSection mx-0 d-flex align-items-center justify-content-center"
+            style="height: 90vh; width: 100%;">
+            <div class="container">
+                <div class="col-12 text-center">
+                    <span class="poppinsFont heading white">Not</span>
+                    <span class="poppinsFont heading whiteStroked">Found</span>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <a class="poppinsFont viewCV" href="/index.html">Back to home <i
+                            class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FONTAWESOME -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="scripts/about.js"></script>
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/backtoTop.js"></script>
+
+</body>
+
+</html>
