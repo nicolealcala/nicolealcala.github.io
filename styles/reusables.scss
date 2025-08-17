@@ -1,33 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
-$pink: #FF7CAD;
-$blue: #9DD6FF;
+$pink: #ff7cad;
+$blue: #9dd6ff;
 $darkTxt: #252525;
-$lightTxt: #DEDEDE;
+$lightTxt: #dedede;
 $white: white;
-$yellow: #FFDF66;
+$yellow: #ffdf66;
 
 html {
-    scroll-behavior: smooth !important;
-    font-size: 16px;
+  scroll-behavior: smooth !important;
+  font-size: 16px;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-    background-color: #FFFFFE;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #fffffe;
 }
 
 #logo {
-    width: 35px;
-    height: auto;
+  width: 35px;
+  height: auto;
 }
 
 ::selection {
-    background-color: $pink;
-    color: white;
+  background-color: $pink;
+  color: white;
 }
 
 //Scrollbar
@@ -57,764 +57,761 @@ body {
 
 // Fonts
 .poppinsFont {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 // Texts and Colors
 .heading {
-    font-size: 5.5rem;
-    font-weight: 700;
+  font-size: 5.5rem;
+  font-weight: 700;
 }
 
 .secondaryTxt {
-    font-size: 1.8rem;
-    font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .tertiaryTxt {
-    font-size: 1.2rem;
-    font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 #featuredProject {
-    letter-spacing: 10px;
-    color: #6cc2ff;
+  letter-spacing: 10px;
+  color: #6cc2ff;
 }
 
 .subTxtTitle {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .subTxtDetails {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .pink {
-    color: $pink;
+  color: $pink;
 }
 
 .blue {
-    color: $blue;
+  color: $blue;
 }
 
 .yellow {
-    color: $yellow;
+  color: $yellow;
 }
 
 .white {
-    color: white;
+  color: white;
 }
 
 .whiteBg {
-    background-color: $white;
+  background-color: $white;
 }
 
 .darkBg {
-    background-color: $darkTxt;
+  background-color: $darkTxt;
 }
 
 .stroked {
-    color: transparent;
-    -webkit-text-stroke: 2px $darkTxt;
-    -moz-text-stroke: 2px $darkTxt;
+  color: transparent;
+  -webkit-text-stroke: 2px $darkTxt;
+  -moz-text-stroke: 2px $darkTxt;
 }
 
 .pinkStroked {
-    color: transparent;
-    -webkit-text-stroke: 2px #FF7CAD;
-    -moz-text-stroke: 2px #FF7CAD;
+  color: transparent;
+  -webkit-text-stroke: 2px #ff7cad;
+  -moz-text-stroke: 2px #ff7cad;
 }
 
 .whiteStroked {
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-    -moz-text-stroke: 2px white;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  -moz-text-stroke: 2px white;
 }
 
 .highlightTxt {
-    line-height: 40px;
+  line-height: 40px;
 }
 
 .lightTxt {
-    color: $lightTxt;
+  color: $lightTxt;
 }
 
 .darkTxt {
-    color: #505050;
+  color: #505050;
 }
 
 p {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 // Nav
 nav {
-    position: absolute;
-    top: 0;
-    background-color: transparent;
-    padding: 20px;
-    z-index: 8;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  padding: 20px;
+  z-index: 8;
+  width: 100%;
 
-    .navbar-brand,
-    #menuTxt {
-        font-weight: 500;
-        font-size: 1.2rem;
-    }
+  .navbar-brand,
+  #menuTxt {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
 }
 
 #menuBtn {
-    border: none;
+  border: none;
 
-    #menuTxt {
-        font-weight: 400;
-        letter-spacing: 2px;
-        font-size: 1.1rem;
-    }
+  #menuTxt {
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+  }
 
-    .icon-menu {
-        --gap: 5px;
-        --height-bar: 2px;
-        --pos-y-bar-one: 0;
-        --pos-y-bar-three: 0;
-        --scale-bar: 1;
-        --rotate-bar-one: 0;
-        --rotate-bar-three: 0;
-        width: 25px;
-        display: flex;
-        flex-direction: column;
-        gap: var(--gap);
-        cursor: pointer;
-        position: relative;
-    }
+  .icon-menu {
+    --gap: 5px;
+    --height-bar: 2px;
+    --pos-y-bar-one: 0;
+    --pos-y-bar-three: 0;
+    --scale-bar: 1;
+    --rotate-bar-one: 0;
+    --rotate-bar-three: 0;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    cursor: pointer;
+    position: relative;
+  }
 
-    .bar {
-        position: relative;
-        height: var(--height-bar);
-        width: 100%;
-        border-radius: .5rem;
-    }
+  .bar {
+    position: relative;
+    height: var(--height-bar);
+    width: 100%;
+    border-radius: 0.5rem;
+  }
 
-    .bar-1 {
-        top: var(--pos-y-bar-one);
-        transform: rotate(var(--rotate-bar-one));
-        transition: top 200ms 100ms, transform 100ms;
-    }
+  .bar-1 {
+    top: var(--pos-y-bar-one);
+    transform: rotate(var(--rotate-bar-one));
+    transition: top 200ms 100ms, transform 100ms;
+  }
 
-    .bar-2 {
-        transform: scaleX(var(--scale-bar));
-        transition: transform 150ms 100ms;
-        width: 20px;
-        align-self: end;
-    }
+  .bar-2 {
+    transform: scaleX(var(--scale-bar));
+    transition: transform 150ms 100ms;
+    width: 20px;
+    align-self: end;
+  }
 
-    .bar-3 {
-        bottom: var(--pos-y-bar-three);
-        transform: rotate(var(--rotate-bar-three));
-        transition: bottom 200ms 100ms, transform 100ms;
-    }
+  .bar-3 {
+    bottom: var(--pos-y-bar-three);
+    transform: rotate(var(--rotate-bar-three));
+    transition: bottom 200ms 100ms, transform 100ms;
+  }
 
-    .check-icon:checked+.icon-menu>.bar--1 {
-        transition: top 200ms, transform 200ms 100ms;
-    }
+  .check-icon:checked + .icon-menu > .bar--1 {
+    transition: top 200ms, transform 200ms 100ms;
+  }
 
-    .check-icon:checked+.icon-menu>.bar--3 {
-        transition: bottom 200ms, transform 200ms 100ms;
-    }
+  .check-icon:checked + .icon-menu > .bar--3 {
+    transition: bottom 200ms, transform 200ms 100ms;
+  }
 
-    .check-icon:checked+.icon-menu {
-        --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
-        --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
-        --scale-bar: 0;
-        --rotate-bar-one: 45deg;
-        --rotate-bar-three: -45deg;
-    }
+  .check-icon:checked + .icon-menu {
+    --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
+    --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
+    --scale-bar: 0;
+    --rotate-bar-one: 45deg;
+    --rotate-bar-three: -45deg;
+  }
 }
 
 #navBg {
-    position: absolute;
-    top: auto;
-    width: auto;
-    height: 500px;
-    opacity: 0.75;
+  position: absolute;
+  top: auto;
+  width: auto;
+  height: 500px;
+  opacity: 0.75;
 }
 
 .navTxt {
-    position: relative;
-    font-size: 4.5rem;
-    font-weight: 700;
+  position: relative;
+  font-size: 4.5rem;
+  font-weight: 700;
 }
 
 .navTxt::after {
-    content: "";
-    /* Create the pseudo-element content */
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0px;
-    height: 5px;
-    background-color: $darkTxt;
-    opacity: 1;
-    transition: width 0.2s;
+  content: "";
+  /* Create the pseudo-element content */
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0px;
+  height: 5px;
+  background-color: $darkTxt;
+  opacity: 1;
+  transition: width 0.2s;
 }
 
 .navTxt:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 // Sections
 section {
-    background-color: transparent;
-    padding: 100px 0px;
-    z-index: 0;
+  background-color: transparent;
+  padding: 100px 0px;
+  z-index: 0;
 }
 
 section:last-child {
-    padding: 100px 0px 50px 0px;
+  padding: 100px 0px 50px 0px;
 }
 
 .darkSection {
-    background-color: #131313;
+  background-color: #131313;
 }
 
-
-
 .lightSection {
-    background-color: #FFFFFE;
+  background-color: #fffffe;
 }
 
 #sectionLoader {
-    width: 100%;
-    height: 100%;
-    z-index: 25;
+  width: 100%;
+  height: 100%;
+  z-index: 25;
 
-    .container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 #sectionNav {
-    width: 100%;
-    height: 100vh;
-    vertical-align: middle;
-    color: #303030;
+  width: 100%;
+  height: 100vh;
+  vertical-align: middle;
+  color: #303030;
 }
 
 // Buttons
 #backToTop {
-    opacity: 0;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    background-color: #FFDF66;
-    color: $darkTxt;
-    height: 50px;
-    width: 50px;
-    z-index: 3;
-    transition: all 0.3s ease !important;
+  opacity: 0;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #ffdf66;
+  color: $darkTxt;
+  height: 50px;
+  width: 50px;
+  z-index: 3;
+  transition: all 0.3s ease !important;
 
-    .fa-arrow-up {
-        font-size: 1.2rem;
-    }
+  .fa-arrow-up {
+    font-size: 1.2rem;
+  }
 }
 
 .backToTopShow {
-    opacity: 1 !important;
-    transition: all 0.3s ease !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease !important;
 }
 
 .actionBtn {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    padding: 10px 20px;
-    background-color: #9DD6FF;
-    width: 140px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: #9dd6ff;
+  width: 140px;
 }
 
 .actionBtn:hover {
-    outline: 3px solid #9DD6FF;
-    outline-offset: -3px;
-    color: #9DD6FF
+  outline: 3px solid #9dd6ff;
+  outline-offset: -3px;
+  color: #9dd6ff;
 }
 
 // Anchors
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .footerIcon,
 .iconBg {
-    font-size: 2.1rem;
-    margin: 0px 5px;
-    color: $lightTxt;
+  font-size: 2.1rem;
+  margin: 0px 5px;
+  color: $lightTxt;
 }
 
 .iconBg {
-    width: 35px;
-    height: 35px;
-    background-color: $lightTxt;
+  width: 35px;
+  height: 35px;
+  background-color: $lightTxt;
 }
 
 .faIcon {
-    font-size: 1.4rem;
-    color: $darkTxt;
+  font-size: 1.4rem;
+  color: $darkTxt;
 }
 
 .footerIcon:hover {
-    color: $blue;
-    transition: 0.2s ease-in;
+  color: $blue;
+  transition: 0.2s ease-in;
 }
 
 .iconBg:hover {
-    background-color: $blue;
-    transition: 0.2s ease-in;
+  background-color: $blue;
+  transition: 0.2s ease-in;
 }
 
 .footerIconBg {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #131313;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #131313;
 }
 
 // Images
 .bigPics {
-    max-width: 90%;
-    height: auto;
-    position: relative;
-    z-index: 5;
+  max-width: 90%;
+  height: auto;
+  position: relative;
+  z-index: 5;
 }
 
 #unblokcPic {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .picShadow {
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
 }
 
 #pinkBg,
 #blueBg {
-    position: absolute;
-    top: 19%;
-    right: auto;
-    max-width: 83%;
-    height: auto;
-
+  position: absolute;
+  top: 19%;
+  right: auto;
+  max-width: 83%;
+  height: auto;
 }
 
 #blueBg {
-    max-width: 100%;
-    right: 15px;
+  max-width: 100%;
+  right: 15px;
 }
 
 .widIcon {
-    height: 50px;
-    width: auto;
+  height: 50px;
+  width: auto;
 }
 
 .midBg {
-    background-color: #222222;
-    height: 100%;
+  background-color: #222222;
+  height: 100%;
 }
 
 // Divider
 .dividerHr {
-    height: 2px;
-    width: 100%;
-    margin-top: 60px;
+  height: 2px;
+  width: 100%;
+  margin-top: 60px;
 }
 
 .horizontalDividerLight,
 .horizontalDividerDark {
-    width: 1px;
-    height: 60px;
-    background-color: $lightTxt;
+  width: 1px;
+  height: 60px;
+  background-color: $lightTxt;
 }
 
 .horizontalDividerDark {
-    background-color: #aeaeae;
+  background-color: #aeaeae;
 }
 
 // Groups/Components
 .socials {
-    width: 350px;
+  display: flex;
+  //   width: 350px;
+  max-width: 80%;
+  gap: 32px;
 }
 
 .lightSocials,
 .darkSocials {
-    color: inherit;
+  color: inherit;
 
-    .svg-inline--fa {
-        height: 20px;
-        width: auto;
-    }
+  .svg-inline--fa {
+    height: 20px;
+    width: auto;
+  }
 }
 
-
 .lightSocials:hover {
-    color: #808080;
+  color: #808080;
 }
 
 .darkSocials:hover {
-    color: #656565;
+  color: #656565;
 }
 
 .viewCV {
-    position: relative;
-    font-weight: 500;
-    color: $pink;
+  position: relative;
+  font-weight: 500;
+  color: $pink;
 }
 
 .viewCV::after {
-    content: "";
-    /* Create the pseudo-element content */
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0px;
-    height: 3px;
-    background-color: $pink;
-    opacity: 1;
-    transition: width 0.2s;
+  content: "";
+  /* Create the pseudo-element content */
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0px;
+  height: 3px;
+  background-color: $pink;
+  opacity: 1;
+  transition: width 0.2s;
 }
 
 .viewCV:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .viewExternal {
-    font-weight: 300;
+  font-weight: 300;
 
-    .svg-inline--fa {
-        height: 12px;
-        width: auto;
-    }
+  .svg-inline--fa {
+    height: 12px;
+    width: auto;
+  }
 }
 
 .viewExternal:hover {
-    color: $darkTxt;
-    text-decoration: underline;
+  color: $darkTxt;
+  text-decoration: underline;
 }
 
 //Slick Carousel
 .slick-dots {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
 }
 
 .slick-dots li {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    z-index: 10;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .slick-dots li button {
-    font-size: 0;
-    display: block;
-    width: 25px;
-    height: 25px;
-    padding: 5px;
-    border: 0;
-    background: transparent;
+  font-size: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border: 0;
+  background: transparent;
 }
 
 .slick-dots li button:before {
-    content: '•';
-    font-size: 1.8rem;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    opacity: .25;
-    color: #ADADAD;
-    transition: 0.3s ease-in;
+  content: "•";
+  font-size: 1.8rem;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  opacity: 0.25;
+  color: #adadad;
+  transition: 0.3s ease-in;
 }
 
 .slick-dots .slick-active button:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .slickBtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 49%;
-    height: 50px;
-    width: 50px;
-    background-color: rgb(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 49%;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(255, 255, 255, 0.3);
 
-    z-index: 11;
+  z-index: 11;
 
-    .svg-inline--fa {
-        color: $blue;
-        height: 25px;
-        width: 25px;
-        transition: color 0.3s ease-in;
-    }
+  .svg-inline--fa {
+    color: $blue;
+    height: 25px;
+    width: 25px;
+    transition: color 0.3s ease-in;
+  }
 }
 
 .slickBtn:not(.slick-disabled):hover {
-    transform: scale(1.1);
-    background-color: rgb(255, 255, 255, 0.4);
-    transition: 0.1s ease-in;
+  transform: scale(1.1);
+  background-color: rgb(255, 255, 255, 0.4);
+  transition: 0.1s ease-in;
 }
 
 .slickBtn.slick-disabled {
-    background-color: transparent;
+  background-color: transparent;
 }
 
-.slick-disabled>.svg-inline--fa {
-    color: #707070;
+.slick-disabled > .svg-inline--fa {
+  color: #707070;
 }
 
 #prevBtn {
-    left: -20px;
+  left: -20px;
 }
 
 #nextBtn {
-    right: -20px;
+  right: -20px;
 }
 
 @media screen and (max-width: 992px) {
+  // Texts and Colors
+  .heading {
+    font-size: 4.5rem;
+  }
 
-    // Texts and Colors
-    .heading {
-        font-size: 4.5rem;
-    }
+  .secondaryTxt {
+    font-size: 1.5rem;
+  }
 
-    .secondaryTxt {
-        font-size: 1.5rem;
-    }
+  .tertiaryTxt {
+    font-size: 1.1rem;
+  }
 
-    .tertiaryTxt {
-        font-size: 1.1rem;
-    }
+  #pinkBg {
+    max-width: 100%;
+  }
 
-    #pinkBg {
-        max-width: 100%;
-    }
-
-    #blueBg {
-        right: auto;
-    }
+  #blueBg {
+    right: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    #navBg {
-        height: 500px;
-        width: auto;
-    }
+  #navBg {
+    height: 500px;
+    width: auto;
+  }
 
-    .secondaryTxt {
-        font-size: 1.4rem;
-    }
+  .secondaryTxt {
+    font-size: 1.4rem;
+  }
 
-    p {
-        line-height: 25px;
-    }
+  p {
+    line-height: 25px;
+  }
 
-    .highlightTxt {
-        line-height: 35px;
-    }
+  .highlightTxt {
+    line-height: 35px;
+  }
 
-    // Groups/Components
-    .socials {
-        width: 330px;
-    }
+  // Groups/Components
+  .socials {
+    width: 330px;
+  }
 
-    .footerIcon,
-    .iconBg {
-        font-size: 1.8rem;
-        margin: 0px 4px;
-        color: $lightTxt;
-    }
+  .footerIcon,
+  .iconBg {
+    font-size: 1.8rem;
+    margin: 0px 4px;
+    color: $lightTxt;
+  }
 
-    .iconBg {
-        width: 30px;
-        height: 30px;
-        background-color: $lightTxt;
-    }
+  .iconBg {
+    width: 30px;
+    height: 30px;
+    background-color: $lightTxt;
+  }
 
-    .faIcon {
-        font-size: 1.2rem;
-        color: $darkTxt;
-    }
+  .faIcon {
+    font-size: 1.2rem;
+    color: $darkTxt;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    nav {
-        padding: 24px 5px;
-    }
+  nav {
+    padding: 24px 5px;
+  }
 
-    #navBg {
-        height: 400px;
-        width: auto;
-    }
+  #navBg {
+    height: 400px;
+    width: auto;
+  }
 
-    #logo {
-        width: 30px;
-        height: auto;
-    }
+  #logo {
+    width: 30px;
+    height: auto;
+  }
 
-    section {
-        padding: 80px 0;
-    }
+  section {
+    padding: 80px 0;
+  }
 
-    #featuredProject {
-        letter-spacing: 5px;
-    }
+  #featuredProject {
+    letter-spacing: 5px;
+  }
 
-    // Groups/Components
-    .socials {
-        width: 330px;
-    }
+  // Groups/Components
+  .socials {
+    width: 330px;
+  }
 
-    .lightSocials,
-    .darkSocials {
-        .svg-inline--fa {
-            height: 18px;
-            width: auto;
-        }
+  .lightSocials,
+  .darkSocials {
+    .svg-inline--fa {
+      height: 18px;
+      width: auto;
     }
+  }
 
-    #backToTop {
-        bottom: 15px;
-        right: 15px;
-    }
+  #backToTop {
+    bottom: 15px;
+    right: 15px;
+  }
 
-    .horizontalDividerLight,
-    .horizontalDividerDark {
-        height: 45px;
-    }
+  .horizontalDividerLight,
+  .horizontalDividerDark {
+    height: 45px;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  // Texts and Colors
+  .heading {
+    font-size: 3.5rem;
+  }
 
-    // Texts and Colors
-    .heading {
-        font-size: 3.5rem;
-    }
+  .secondaryTxt {
+    font-size: 1.2rem;
+  }
 
-    .secondaryTxt {
-        font-size: 1.2rem;
-    }
+  .tertiaryTxt {
+    font-size: 1rem;
+  }
 
-    .tertiaryTxt {
-        font-size: 1rem;
-    }
+  .highlightTxt {
+    line-height: 30px;
+  }
 
-    .highlightTxt {
-        line-height: 30px;
-    }
+  .stroked {
+    -webkit-text-stroke: 1.5px $darkTxt;
+    -moz-text-stroke: 1.5px $darkTxt;
+  }
 
-    .stroked {
-        -webkit-text-stroke: 1.5px $darkTxt;
-        -moz-text-stroke: 1.5px $darkTxt;
-    }
+  .pinkStroked {
+    -webkit-text-stroke: 1.5px #ff7cad;
+    -moz-text-stroke: 1.5px #ff7cad;
+  }
 
-    .pinkStroked {
-        -webkit-text-stroke: 1.5px #FF7CAD;
-        -moz-text-stroke: 1.5px #FF7CAD;
-    }
+  .whiteStroked {
+    -webkit-text-stroke: 1.5px white;
+    -moz-text-stroke: 1.5px white;
+  }
 
-    .whiteStroked {
-        -webkit-text-stroke: 1.5px white;
-        -moz-text-stroke: 1.5px white;
-    }
+  // Groups/Components
+  .socials {
+    width: 250px;
+  }
 
-    // Groups/Components
-    .socials {
-        width: 250px;
+  .lightSocials,
+  .darkSocials {
+    .svg-inline--fa {
+      height: 15px;
+      width: auto;
     }
+  }
 
-    .lightSocials,
-    .darkSocials {
-        .svg-inline--fa {
-            height: 15px;
-            width: auto;
-        }
-    }
+  .footerIcon,
+  .iconBg {
+    font-size: 1.5rem;
+    margin: 0px 2px;
+    color: $lightTxt;
+  }
 
-    .footerIcon,
-    .iconBg {
-        font-size: 1.5rem;
-        margin: 0px 2px;
-        color: $lightTxt;
-    }
+  .iconBg {
+    width: 25px;
+    height: 25px;
+    background-color: $lightTxt;
+  }
 
-    .iconBg {
-        width: 25px;
-        height: 25px;
-        background-color: $lightTxt;
-    }
-
-    .faIcon {
-        font-size: 1rem;
-        color: $darkTxt;
-    }
+  .faIcon {
+    font-size: 1rem;
+    color: $darkTxt;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    nav {
-        padding: 24px 0px;
-    }
+  nav {
+    padding: 24px 0px;
+  }
 
-    #navBg {
-        height: 200px;
-        width: auto;
-    }
+  #navBg {
+    height: 200px;
+    width: auto;
+  }
 
-    // Texts and Colors
-    .heading {
-        font-size: 2.8rem;
-    }
+  // Texts and Colors
+  .heading {
+    font-size: 2.8rem;
+  }
 
-    .highlightTxt {
-        line-height: 25px;
-    }
+  .highlightTxt {
+    line-height: 25px;
+  }
 
-    .stroked {
-        -webkit-text-stroke: 1px $darkTxt;
-        -moz-text-stroke: 1px $darkTxt;
-    }
+  .stroked {
+    -webkit-text-stroke: 1px $darkTxt;
+    -moz-text-stroke: 1px $darkTxt;
+  }
 
-    .pinkStroked {
-        -webkit-text-stroke: 1px #FF7CAD;
-        -moz-text-stroke: 1px #FF7CAD;
-    }
+  .pinkStroked {
+    -webkit-text-stroke: 1px #ff7cad;
+    -moz-text-stroke: 1px #ff7cad;
+  }
 
-    .whiteStroked {
-        -webkit-text-stroke: 1px white;
-        -moz-text-stroke: 1px white;
-    }
+  .whiteStroked {
+    -webkit-text-stroke: 1px white;
+    -moz-text-stroke: 1px white;
+  }
 
-    .lightSocials,
-    .darkSocials {
-        .svg-inline--fa {
-            height: 15px;
-            width: auto;
-        }
+  .lightSocials,
+  .darkSocials {
+    .svg-inline--fa {
+      height: 15px;
+      width: auto;
     }
+  }
 
-    #featuredProject {
-        letter-spacing: 2px;
-        margin-bottom: 10px;
-    }
+  #featuredProject {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
 }
