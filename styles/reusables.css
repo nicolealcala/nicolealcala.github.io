@@ -395,7 +395,8 @@ a {
 
 .socials {
   display: flex;
-  max-width: 80%;
+  width: 100%;
+  max-width: 350px;
 }
 
 .lightSocials,
